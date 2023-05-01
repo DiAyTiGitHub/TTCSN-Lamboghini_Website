@@ -1,0 +1,19 @@
+*{
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    background-color: black;
+    height: 94px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
