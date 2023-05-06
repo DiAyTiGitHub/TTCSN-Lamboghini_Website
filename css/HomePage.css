@@ -1,4 +1,4 @@
-*{
+* {
     padding: unset;
     margin: unset;
     box-sizing: border-box;
@@ -7,21 +7,31 @@
 /* 
 --reconfig for bootstrap
 */
-.container, .row{
+.container,
+.row {
     height: 100%;
 }
 
-html{
+html {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: auto;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     scroll-behavior: smooth;
-    font-family: Roboto,Helvetica Neue,Arial;
+    font-family: Roboto, Helvetica Neue, Arial;
 }
 
-.header{
+.main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
     background-color: black;
     height: auto;
     padding: 10px;
@@ -30,20 +40,20 @@ html{
     justify-content: flex-start;
 }
 
-.header__logoSection{
+.header__logoSection {
     padding-right: 12px;
 }
 
-.logo{
+.logo {
     width: 50px;
     height: 100%;
 }
 
-.header__itemContainer{
+.header__itemContainer {
     padding: 0 12px;
 }
 
-.header__item{
+.header__item {
     padding: 0 8px;
     height: 100%;
     display: flex;
@@ -51,7 +61,7 @@ html{
     justify-content: center;
 }
 
-.item__content{
+.item__content {
     transition: font-size 0.3s ease-in-out;
     font-size: 0.8rem;
     font-weight: lighter;
@@ -60,10 +70,10 @@ html{
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    font-family: Roboto,Helvetica Neue,Arial;
+    font-family: Roboto, Helvetica Neue, Arial;
 }
 
-.item__content:hover{
+.item__content:hover {
     text-decoration: none;
     color: white;
 }
