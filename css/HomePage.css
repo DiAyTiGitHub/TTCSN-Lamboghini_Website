@@ -26,18 +26,24 @@ html {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
     width: 100%;
 }
 
 .header {
     width: 100%;
-    background-color: black;
+    background-color: #181818;
     height: auto;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 .header__logoSection {
@@ -78,4 +84,206 @@ html {
     color: white;
 }
 
-/* test*/
+.model__slider{
+    width: 100%;
+}
+
+.video__slider{
+    min-height: 100vh;
+    margin-top: 72px;
+}
+
+#content .slider2 {
+    position: relative;
+    height: 100vh;
+    min-height: 680px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+    #content .slider2 {
+        display: none;
+    }
+}
+
+#content .slider2 .slides2 {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+}
+
+#content .slider2 .slides2 .slide2 {
+    position: relative;
+    width: 29.2vw;
+    height: 100%;
+    transition: width 0.5s ease-out;
+}
+
+#content .slider2 .slides2 .slide2.active {
+    width: 60vw;
+}
+
+#content .slider2 .slides2 .slide2.active .slide2-skew::after {
+    opacity: 0;
+}
+
+#content .slider2 .slides2 .slide2 .slide2-skew {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: skew(-20deg);
+    transform-origin: bottom left;
+    background-color: black;
+    overflow: hidden;
+}
+
+#content .slider2 .slides2 .slide2 .slide2-skew::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 1;
+}
+
+#content .slider2 .slides2 .slide2 .slide2-skew .skew-fix {
+    position: relative;
+    width: 236%;
+    height: 100%;
+    transform: skew(20deg);
+    transform-origin: bottom left;
+}
+
+#content .slider2 .slides2 .slide2 .slide2-skew .skew-fix img {
+    max-width: unset;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    left: 21%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+#content .slider2 .slider2-navigation {
+    position: absolute;
+    z-index: 5;
+    top: 17%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#content .slider2 .slider2-navigation .tittle {
+    font-size: 3.4rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 3.5rem;
+    line-height: 1;
+}
+
+#content .slider2 .slider2-navigation .slider2-navigation-btn {
+    display: inline-block;
+}
+
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn {
+    display: inline-block;
+    width: 4.3rem;
+    height: 4.3rem;
+    cursor: pointer;
+}
+
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:first-child {
+    margin-right: 3.4rem;
+}
+
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn path {
+    stroke: white;
+    fill: transparent;
+}
+
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:hover path {
+    fill: white;
+}
+
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:hover .icon.on-dark {
+    stroke: black;
+}
+
+#content .slider2 .slide2-text-container {
+    position: relative;
+    top: 50%;
+    right: -9%;
+}
+
+#content .slider2 .slide2-text-container .text-container {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    transform: translateX(-105rem);
+    opacity: 0;
+    transition: transform 0.2s ease-out, opacity 0.3s ease;
+}
+
+#content .slider2 .slide2-text-container .text-container.active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 0.5s ease-out, opacity 0.5s ease;
+}
+
+#content .slider2 .slide2-text-container .text-container .name-car {
+    font-size: 11.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#content .slider2 .slide2-text-container .text-container .slogan-car {
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+
+#content .slider2 .slide2-text-container .slider2-explore {
+    position: relative;
+    top: 250px;
+    left: -4px;
+    display: flex;
+    padding-left: 1rem;
+}
+
+#content .slider2 .slide2-text-container .slider2-explore-icon {
+    display: block;
+    width: 4.3rem;
+    height: 4.3rem;
+    margin-right: 2.5rem;
+    cursor: pointer;
+}
+
+#content .slider2 .slide2-text-container .slider2-explore-icon path {
+    fill: transparent;
+    stroke: white;
+}
+
+#content .slider2 .slide2-text-container .slider2-explore-icon:hover path {
+    fill: white;
+}
+
+#content .slider2 .slide2-text-container .slider2-explore-icon:hover .icon.on-dark path {
+    stroke: black;
+}
+
+#content .slider2 .slide2-text-container .slider2-explore-text {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: white;
+    line-height: 2.5rem;
+}
+
+.config__slider{
+    min-height: 100vh;
+}
