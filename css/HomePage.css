@@ -22,6 +22,11 @@ html{
 }
 
 .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
     background-color: black;
     height: auto;
     padding: 10px;
@@ -68,4 +73,58 @@ html{
     color: white;
 }
 
-/* test*/
+/* video_slide */
+.video__slider {
+    width: 100%;
+    height: 100vh;
+}
+
+.img_bg {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+    /* filter:brightness(10%); */
+}
+
+.wapper {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 160px;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* các trình duyệt khác */
+}
+
+.video__slider--title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 2.4rem;
+    letter-spacing: 1.36px;
+}
+
+.word {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.word.active {
+    opacity: 1;
+}
+
+.video__slider--content {
+    opacity: 0;
+    transform: translateX(-116%);
+    font-size: 5.8rem;
+    font-weight: 700 !important;
+    line-height: 0.9;
+    letter-spacing: -5.48px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.video__slider--content.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
