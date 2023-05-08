@@ -66,11 +66,30 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+.header__item:after {
+    content: "";
+    position: absolute;
+    height: 1.4px;
+    top: calc(80%);
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease-in-out;
+    z-index: 100;
+    width: 0;
+}
+
+.header__item:hover::after{
+    width: 100%;
+    z-index: 100;
+    cursor: pointer;
 }
 
 .item__content {
     transition: font-size 0.3s ease-in-out;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: lighter;
     color: #ffffff;
     text-transform: uppercase;
@@ -107,10 +126,14 @@ html {
     color: #fff;
     text-transform: uppercase;
     margin-bottom: 160px;
-    -webkit-user-select: none; /* Chrome, Safari, Opera */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* các trình duyệt khác */
+    -webkit-user-select: none;
+    /* Chrome, Safari, Opera */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* các trình duyệt khác */
 }
 
 .video__slider--title {
@@ -171,7 +194,7 @@ html {
     }
 }
 
-.model__slider{
+.model__slider {
     width: 100%;
 }
 
@@ -367,6 +390,6 @@ html {
     line-height: 1.6rem;
 }
 
-.config__slider{
+.config__slider {
     min-height: 100vh;
 }
