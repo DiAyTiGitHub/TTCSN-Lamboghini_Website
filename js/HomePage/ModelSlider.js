@@ -17,8 +17,6 @@ const slider2Forward = () => {
             // console.log(slides);
         }, 501)
     }, 1)
-
-
 }
 
 const slider2Back = () => {
@@ -53,7 +51,7 @@ const sloganCar = () => {
     slogan.classList.add('active');
 }
 
-const content = () => {
+const logicForModelSlider = () => {
     const navBtns = document.querySelectorAll('.slider2-navigation-btn .btn')
     navBtns.forEach(btn => {
         let check = true;
@@ -62,17 +60,16 @@ const content = () => {
             while (check == true) {
                 check = false;
                 const sloganActive = document.querySelector(`.slide2-text-container .active`);
-                sloganActive.classList.remove('active');
-                if (btn.classList.contains('btn-left')) {
+                sloganActive?.classList?.remove('active');
+                if (btn?.classList?.contains('btn-left')) {
                     slider2Back();
                 } else {
                     slider2Forward();
                 }
                 setTimeout(() => {
-                    check = true
+                    check = true;
                     sloganCar();
-
-                }, 650)
+                }, 650);
             }
         }
     });
@@ -87,7 +84,4 @@ const content = () => {
     })
 }
 
-const startModelSlider = () => {
-    console.log('hello');
-    content();
-}
+logicForModelSlider();
