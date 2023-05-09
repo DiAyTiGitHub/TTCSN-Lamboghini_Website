@@ -23,6 +23,7 @@ html {
 }
 
 .main {
+    background-color: #000;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -87,6 +88,23 @@ html {
 /* video_slide */
 .video__slider {
     height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease, visibility 1.5s ease;
+    will-change: opacity; 
+}
+
+.video__slider.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(farthest-corner at 85% 10%, rgba(0,0,0,0) 50%, rgba(0,0,0, 0.6) 100%);
 }
 
 .img_bg {
@@ -268,11 +286,11 @@ html {
     line-height: 1;
 }
 
-#content .slider2 .slider2-navigation .slider2-navigation-btn {
+.slider2-navigation-btn {
     display: inline-block;
 }
 
-#content .slider2 .slider2-navigation .slider2-navigation-btn .btn {
+.slider2-navigation-btn .btn {
     display: inline-block;
     width: 4.3rem;
     height: 4.3rem;
@@ -283,16 +301,16 @@ html {
     margin-right: 10%;
 }
 
-#content .slider2 .slider2-navigation .slider2-navigation-btn .btn path {
+.slider2-navigation-btn .btn path {
     stroke: white;
     fill: transparent;
 }
 
-#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:hover path {
+.slider2-navigation-btn .btn:hover path {
     fill: white;
 }
 
-#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:hover .icon.on-dark {
+.slider2-navigation-btn .btn:hover .icon.on-dark {
     stroke: black;
 }
 

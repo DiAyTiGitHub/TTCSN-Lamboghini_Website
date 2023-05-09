@@ -1,10 +1,13 @@
+const videoSlider = document.querySelector(".video__slider");
 const videoSliderContent = document.querySelector(".video__slider--content");
 
-function moveText() {
+function active() {
+    videoSlider.classList.add("active");
     videoSliderContent.classList.add("active");
+    displayEachWord('60th Anniversary', '.video__slider--title', 30)
 }
 
-window.addEventListener("load", moveText);
+window.addEventListener("load", active);
 
 function displayEachWord(text, element, delay) {
     const wordsStorage = document.querySelector(element);
@@ -26,6 +29,3 @@ function displayEachWord(text, element, delay) {
         }, 50);
     },delay)
 }
-
-
-window.addEventListener("load", displayEachWord('60th Anniversary', '.video__slider--title', 30));
