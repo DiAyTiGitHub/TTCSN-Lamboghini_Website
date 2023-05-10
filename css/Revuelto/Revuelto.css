@@ -114,6 +114,10 @@ body::before {
     .vid-row > div {
       height: 20rem;
     }
+    .car__video {
+        padding: 2rem 0px;
+        width: 100%;
+    }
     
   }
   
@@ -123,6 +127,10 @@ body::before {
     }
     .vid-row > div {
       height: 28rem;
+    }
+    .car__video {
+        padding: 5rem 0px;
+        width: 100%;
     }
   }
   
