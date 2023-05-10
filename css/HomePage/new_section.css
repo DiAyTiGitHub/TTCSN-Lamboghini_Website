@@ -1,6 +1,10 @@
 .news__section {
     width: 100%;
 }
+.news__section a {
+    text-decoration: none;
+}
+
 
 .main_new {
     
@@ -43,6 +47,7 @@
     color: #000;
 }
 
+
 .main-news-abstract {
     margin-top: 1.3rem;
     font-size: 1.2rem;
@@ -81,6 +86,10 @@
 
 .news_list {
     padding-top: 4rem;
+}
+
+.news__section_new {
+    margin-bottom: 60px;
 }
 
 .news_readmore {
