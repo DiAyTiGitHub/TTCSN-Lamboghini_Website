@@ -23,6 +23,13 @@
     font-family: Roboto, Helvetica Neue, Arial;
 }
 
+body {
+    /* overflow-y: hidden; */
+    /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar */
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
