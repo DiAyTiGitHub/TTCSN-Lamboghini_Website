@@ -37,6 +37,7 @@ html {
     text-rendering: auto;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .main {
