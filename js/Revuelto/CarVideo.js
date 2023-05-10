@@ -1,4 +1,4 @@
-console.log('test');
+// video toggle 
 const playBtn = document.querySelector("#play-button");
 const exitBtn = document.querySelector("#exit-button");
 const videoContainer = document.querySelector(".vid-cont");
@@ -43,3 +43,25 @@ function toggleExitButton() {
 playBtn.addEventListener('click', toggleFullscreen);
 exitBtn.addEventListener('click', toggleFullscreen);
 
+//media query check
+
+const smallDevice = window.matchMedia("(min-width:992px)");
+const desktopView = document.querySelector(".desktop-view");
+const tabletView = document.querySelector(".tablet-view");
+
+smallDevice.addListener(handleDeviceChange);
+
+function handleDeviceChange(e) {
+  if (e.matches) {
+    console.log("desktop");
+    desktopView.style.display = "block";
+    tabletView.style.display = "none";    
+  }
+  else {
+    console.log("tablet");
+    desktopView.style.display = "none";
+    tabletView.style.display = "block";
+  }
+}
+
+handleDeviceChange(smallDevice);
