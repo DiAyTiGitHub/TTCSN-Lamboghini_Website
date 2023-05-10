@@ -14,6 +14,13 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Font text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -25,7 +32,10 @@
     <title>Lamboghini - Home Page</title>
   </head>
 
-  <link rel="stylesheet" href="../css/HomePage.css" />
+  <link rel="stylesheet" href="../css/common/common.css" />
+  <link rel="stylesheet" href="../css/common/Header.css" />
+  <link rel="stylesheet" href="../css/HomePage/HomePage.css" />
+  <link rel="stylesheet" href="../css/HomePage/ModelSlider.css" />
 
   <body>
     <div class="main">
@@ -34,15 +44,16 @@
           <div class="row">
             <div class="header__logoSection">
               <img
-                class="logo"
+                class="header__logo"
                 src="../resources/common/imgs/logo.webp"
                 alt="Logo"
               />
             </div>
             <div class="header__itemContainer">
               <div class="header__item">
-                <a href="./HomePage.html" class="item__content">MODELS</a>
-                <div class="sub__header"></div>
+                <a href="./HomePage.html" class="header__item__content"
+                  >MODELS</a
+                >
               </div>
             </div>
           </div>
@@ -50,37 +61,37 @@
       </header>
 
       <div class="video__slider">
-        <div class="container-fluid pl-0 h-100">
-          <img alt="" class="img_bg" />
-          <div class="bg-overlay"></div>
-          <div class="row mx-0 align-items-center">
-            <div class="px-md-0 col-12 col-sm-10 col-md-7 col-xl-6 offset-sm-1">
+        <div class="container-fluid px-0 h-100">
+          <span alt="" class="img_bg" src=""></span>
+          <div class=""></div>
+          <div class="row mx-0 align-items-end bg-overlay">
+            <div class="px-md-0 col-12 col-sm-10 col-md-7 col-xl-8 offset-sm-1">
               <div class="wapper px-1">
-                <div class="video__slider--title"></div>
-                <h2 class="video__slider--content">
+                <div
+                  class="video__slider--title"
+                ></div>
+                <div class="video__slider--content move">
                   Happy Birthday Automobili Lamborghini!
-                </h2>
-                <div class="slider2-navigation-btn">
-                  <span class="btn btn-left">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 50.464 58.271"
-                    >
-                      <g stroke-width="1" transform="translate(-1624 -187.923)">
-                        <path
-                          d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                          transform="translate(1623.5 187.345)"
-                          class="hexagon on-dark"
-                        ></path>
-                        <path
-                          class="icon on-dark"
-                          d="M0 5.675L7.432 0l7.432 5.675"
-                          transform="rotate(-90 935.432 -711.068)"
-                        ></path>
-                      </g>
-                    </svg>
-                  </span>
                 </div>
+                <span class="video__slider--btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50.464 58.271"
+                  >
+                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                      <path
+                        d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                        transform="translate(1623.5 187.345)"
+                        class="hexagon on-dark"
+                      ></path>
+                      <path
+                        class="icon on-dark"
+                        d="M0 0l7.432 5.674L14.864 0"
+                        transform="rotate(-90 935.432 -711.068)"
+                      ></path>
+                    </g>
+                  </svg>
+                </span>
               </div>
             </div>
           </div>
@@ -158,17 +169,19 @@
           <div class="slide2-text-container">
             <div class="slogan1 text-container">
               <span class="name-car">AVENTADOR</span>
-              <span class="slogan-car">REAL EMOTIONS SHAPE THE FUTURE</span>
+              <span class="slogan-car move"
+                >REAL EMOTIONS SHAPE THE FUTURE</span
+              >
             </div>
 
-            <div class="slogan2 text-container active">
+            <div class="slogan2 text-container">
               <span class="name-car">URUS</span>
-              <span class="slogan-car">UNLOCK ANY ROAD</span>
+              <span class="slogan-car move">UNLOCK ANY ROAD</span>
             </div>
 
             <div class="slogan0 text-container">
               <span class="name-car">HURACÁN</span>
-              <span class="slogan-car"
+              <span class="slogan-car move"
                 >UNLOCK ANY ROADBASED ON A TRUE STORY</span
               >
             </div>
@@ -208,13 +221,31 @@
 
       <div class="config__slider">config__slider section</div>
 
-      <div class="deal_slider"></div>
+      <div class="deal_slider">
+        <div class="deal_slider_bg">
+          <span>
+            <img src="../resources/HomePage/imgs/deal_slider.jpg" alt="" />
+          </span>
+          <div class="deal_slider_content">
+            <div class="deal_slider_overlay"></div>
+            <div class="deal_slider_link offset-sm-1">
+              <h4>DEALER LOCATOR</h4>
+              <h2 class="mb-5">
+                FIND YOUR <br />
+                COUNTRY DEALER
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="news__section"></div>
     </div>
 
     <!-- Optional JavaScript -->
-    <script src="../JS/video-slider.js"></script>
+    <script src="../js/HomePage/VideoSlider.js"></script>
+    <script src="../js/HomePage/ModelSlider.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

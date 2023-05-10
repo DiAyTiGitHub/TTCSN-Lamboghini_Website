@@ -1,0 +1,45 @@
+* {
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+}
+
+/* 
+--reconfig for bootstrap
+*/
+.container,
+.row {
+    height: 100%;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: auto;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    scroll-behavior: smooth;
+    font-family: Roboto, Helvetica Neue, Arial;
+}
+
+.main {
+    margin-top: 70px;
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.app{
+    margin-left: 80px;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+a + a{
+    margin-top: 40px;
+}

@@ -1,0 +1,280 @@
+/* video_slide */
+.video__slider {
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1.5s ease, visibility 1.5s ease;
+    will-change: opacity; 
+}
+
+.video__slider.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(farthest-corner at 85% 10%, rgba(0,0,0,0) 50%, rgba(0,0,0, 0.6) 100%);
+}
+
+.img_bg {
+    background-image: url(../../resources/HomePage/imgs/video_slider.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    background-origin: border-box;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+
+.wapper {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 160px;
+    -webkit-user-select: none; /* Chrome, Safari, Opera */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* các trình duyệt khác */
+}
+
+.video__slider--title {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 1.36px;
+    line-height: 45.22px;
+}
+
+.word {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.word.active {
+    opacity: 1;
+}
+
+.video__slider--content {
+    /* opacity: 0; */
+    /* transform: translateX(-116%); */
+    font-size: 110px;
+    font-weight: 700;
+    line-height: 99px;
+    letter-spacing: -3.48px;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.animated-text {
+    animation: typing 10s steps(20) 1s 1 normal both;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid;
+    font-size: 20px;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+/* .video__slider--content.active {
+    opacity: 1;
+    transform: translateX(0);
+} */
+
+.move {
+    animation: slide-in 1s ease-out;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(-116%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* responsive on mobile */
+@media (max-width: 768px) {
+    .img_bg {
+        background-image: url(../../resources/HomePage/imgs/video_slider_mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-clip: border-box;
+        background-origin: border-box;
+        object-fit: cover;
+    }
+
+    .video__slider--title {
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.62px;
+        margin-bottom: 15px;
+    }
+
+    .video__slider--content {
+        outline: #181818;
+        font-size: 40px;
+        font-weight: normal;
+        letter-spacing: -1.5px;
+        line-height: 1.5;
+    }
+}
+/* CSS hexa button */
+.video__slider--btn {
+    margin-left: 7px;
+    margin-top: 15px;
+    width: 3.6rem;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+    transform: scale(0);
+    transition: transform 1s ease 1s;
+}
+
+.video__slider--btn.active {
+    transform: scale(1);
+}
+
+.video__slider--btn path {
+    stroke: white;
+    fill: transparent;
+    transition: fill 0.3s ease-out;
+}
+
+.video__slider--btn:hover path {
+    fill: white;
+}
+
+.video__slider--btn .icon.on-dark {
+    transition: stroke 0.3s ease-out,fill 0.3s ease-out;
+}
+
+.video__slider--btn:hover .icon.on-dark {
+    stroke: black;
+}
+
+
+.config__slider {
+    min-height: 100vh;
+}
+
+.deal_slider{
+    padding: 0px;
+    width: 100%;
+}
+
+.deal_slider_bg{
+    position: relative;
+    background-color: #e5e5e5;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    min-height: 18rem;
+}
+
+.deal_slider_bg span{
+    box-sizing: border-box;
+    display: block;
+    overflow: hidden;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    inset: 0px;
+}
+
+.deal_slider_bg img {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    max-width: 100%;
+}
+
+.deal_slider_content{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.deal_slider_overlay{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-image: radial-gradient(at 85% 10%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.deal_slider_link{
+    padding: 0;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: #ffffff;
+}
+
+.deal_slider_link h4{
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+}
+
+.deal_slider_link h2{
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.deal_slider_link .md-5{
+    margin-bottom: 3rem !important;
+}
+
+@media (min-width: 1025px){
+
+    .deal_slider_bg{
+        min-height: 40rem;
+        max-height: 50rem;
+    }
+    .deal_slider_link h2{
+        font-size: 4.8rem;
+        line-height: 0.97;
+        letter-spacing: -0.228rem;
+        margin: 2rem 0 3rem 0;
+    }
+
+    .deal_slider_link h4{
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 0.12rem;
+    }
+}
