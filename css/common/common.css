@@ -41,7 +41,6 @@ html {
 }
 
 .main {
-    margin-top: 70px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
