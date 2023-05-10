@@ -1,0 +1,173 @@
+.intro {
+    height: 100vh;
+    width: 100%;
+}
+.intro > div {
+    position: relative;
+}
+
+#bg-vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#placeholder {
+    position: absolute;
+    z-index: 2;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+/* car__vid */
+.car__video {
+    padding: 10rem 0px;
+    width: 100%;
+}
+
+.vid-row > div {
+  height: 35rem;
+  padding: 0;
+}
+.vid-cont {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+#play-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    top: 0;
+    right: 0;
+
+}
+
+#exit-button { 
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background-color: transparent;
+    border: none;
+}
+
+svg {
+    height: 5rem;
+    width: 5rem;
+}
+
+path {
+    stroke: white;
+    fill: transparent;
+}
+
+.svg:hover .btnPath{
+    fill: white;
+}
+.svg:hover .on-dark{
+    stroke: black;
+}
+
+/* @media (min-width: 768px) and (max-width: 1024.98px){
+
+} */
+
+body::before {
+    content: "XS";
+    color: red;
+    font-size: 2rem;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+@media (min-width: 0px) and (max-width:576px) {
+  .vid-row > div {
+    height: 25rem;
+  }
+  
+}  
+  /* screen size tracker */
+@media (min-width: 576px) and (max-width: 768px) {
+    body::before {
+      content: "SM";
+    }
+    .vid-row > div {
+      height: 20rem;
+    }
+    .car__video {
+        padding: 2rem 0px;
+        width: 100%;
+    }
+    
+  }
+  
+  @media (min-width: 768px) and (max-width: 992px) {
+    body::before {
+      content: "MD";
+    }
+    .vid-row > div {
+      height: 28rem;
+    }
+    .car__video {
+        padding: 5rem 0px;
+        width: 100%;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px){
+    body::before {
+      content: "LG";
+    }
+    .vid-row > div {
+      height: 35rem;
+    }
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1400px){
+    body::before {
+      content: "XL";
+    }
+    .vid-row > div {
+      height: 35rem;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    body::before {
+      content: "XXL";
+    }
+    .test1 {
+      flex: 0 0 66.66666667%;
+      max-width: 66.66666667%;
+    }
+    
+    .test2 {
+      margin-left: 16.66666667%;
+    }
+  }
+/* 
+  @media (min-width: 1600px) {
+
+  } */
+
+  

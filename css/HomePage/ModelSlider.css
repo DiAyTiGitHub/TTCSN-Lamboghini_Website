@@ -100,11 +100,11 @@
     letter-spacing: 0.05rem;
 }
 
-.slider2-navigation-btn {
+#content .slider2 .slider2-navigation .slider2-navigation-btn {
     display: inline-block;
 }
 
-.slider2-navigation-btn .btn {
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn {
     display: inline-block;
     width: 4.3rem;
     height: 4.3rem;
@@ -113,20 +113,20 @@
     padding-right: 20px;
 }
 
- .slider2-navigation-btn .btn:first-child {
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:first-child {
     margin-right: 10%;
 }
 
- .slider2-navigation-btn .btn path {
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn path {
     stroke: white;
     fill: transparent;
 }
 
- .slider2-navigation-btn .btn:hover path {
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:hover path {
     fill: white;
 }
 
- .slider2-navigation-btn .btn:hover .icon.on-dark {
+#content .slider2 .slider2-navigation .slider2-navigation-btn .btn:hover .icon.on-dark {
     stroke: black;
 }
 

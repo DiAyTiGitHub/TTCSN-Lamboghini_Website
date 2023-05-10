@@ -10,7 +10,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <title>Revuelto | Lamborghini</title>
 </head>
 
@@ -36,15 +35,46 @@
         </header>
 
         <div class="intro">
-
+            <div class="row">
+                <div id="overlay">
+                    placeholder
+                </div>
+                <video id="bg-vid" src="../resources/Revuelto/Revuelto - Lamborghini.com.mp4" type="video/mp4" muted autoplay loop></video>
+            </div>
         </div>
 
         <div class="car__video">
-
+            <div class="row vid-row">
+                <div class="col-12 col-lg-10 offset-lg-1 test1 test2 position-relative no-gutters">
+                    <div class="vid-cont">
+                        <video class="vid" width="1366" height="653" autoplay muted loop playsinline src="../resources/Revuelto/Lamborghini Revuelto – From Now On-sitXeGjm4Mc-1080p-1657455184105.mp4" type="mp4"></video>
+                        <button class="button" id="exit-button"  style = "display: none">
+                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                    <path class="btnPath" d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                                    <g transform="translate(.5 .5)">
+                                        <path class="btnPath on-dark" d="M14 14L0 0" transform="translate(1641.5 209.5)"></path>
+                                        <path class="btnPath on-dark" d="M0 14L14 0" transform="translate(1641.5 209.5)"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                        
+                    </div>
+                    <button id="play-button" class="button">
+                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                            <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                <path class="btnPath" d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" transform="translate(1623.5 187.345)" class="hexagon on-dark"> </path>
+                                <path class="btnPath icon on-dark" d="M22.732 24.713, 32.732 30.713, 22.732 36.713Z" transform="translate(1623 186.923)"></path>
+                            </g>
+                        </svg>
+                    </button> 
+                </div>
+            </div>
         </div>
 
         <div class="car__infor">
-
+            
         </div>
 
         <div class="technical__spec">

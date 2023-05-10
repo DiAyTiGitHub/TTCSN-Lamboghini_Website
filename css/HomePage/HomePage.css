@@ -186,7 +186,7 @@
     width: 100%;
     text-align: left;
     display: flex;
-    min-height: 18rem;
+    min-height: 25rem;
 }
 
 .deal_slider_bg span{
@@ -276,5 +276,11 @@
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 0.12rem;
+    }
+}
+
+@media (max-width: 660px){
+    .deal_slider_bg{
+        min-height: 18rem;
     }
 }
