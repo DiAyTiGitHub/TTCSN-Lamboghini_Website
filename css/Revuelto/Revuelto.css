@@ -1,0 +1,21 @@
+.intro {
+    height: 100vh;
+    width: 100%;
+}
+.intro > div {
+    position: relative;
+}
+
+#bg-vid {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+#overlay {
+    position: absolute;
+    z-index: 2;
+}
