@@ -19,6 +19,10 @@
     }
 }
 
+* {
+    font-family: Roboto, Helvetica Neue, Arial;
+}
+
 html {
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -26,14 +30,6 @@ html {
     text-rendering: auto;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     scroll-behavior: smooth;
-    font-family: Roboto, Helvetica Neue, Arial;
-}
-
-body {
-    /* overflow-y: hidden; */
-    /* Hide vertical scrollbar */
-    overflow-x: hidden;
-    /* Hide horizontal scrollbar */
 }
 
 .main {
