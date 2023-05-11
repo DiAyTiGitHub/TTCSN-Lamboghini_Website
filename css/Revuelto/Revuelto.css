@@ -100,6 +100,7 @@ p {
     padding: 2em 0;
     font-size: 1rem;
     line-height: 2rem;
+    font-weight: 100;
 }
 
 
@@ -117,9 +118,17 @@ p {
 }
 
 .header-span {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 600;
+  line-height: 1.2;
 }
+
+.tablet-view .header-span
+{
+  margin-top: 2rem;
+}
+
+
 .middle {
   height: 43rem;
   overflow: hidden;
@@ -248,6 +257,13 @@ p {
 /* 
   @media (min-width: 1600px) {
 
+  } */
+
+  /* @media (max-width: 990px)
+  {
+    .header-span{
+      margin-top: 2rem;
+    }
   } */
 
   
