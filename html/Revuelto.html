@@ -21,7 +21,7 @@
     <div class="main">
         <header class="header">
             <div class="container">
-                <div class="row">
+                <div class="row w-100 h-100 position-relative">
                     <div class="header__logoSection">
                         <img class="header__logo" src="../resources/common/imgs/logo.webp" alt="Logo" />
                     </div>
@@ -35,72 +35,91 @@
         </header>
 
         <div class="intro">
-            <div class="row">
-                <div id="overlay">
-                    placeholder
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="overlay">
+                        placeholder
+                    </div>
+                    <video id="bg-vid" src="../resources/Revuelto/Revuelto - Lamborghini.com.mp4" type="video/mp4" muted
+                        autoplay loop></video>
                 </div>
-                <video id="bg-vid" src="../resources/Revuelto/Revuelto - Lamborghini.com.mp4" type="video/mp4" muted
-                    autoplay loop></video>
             </div>
         </div>
 
         <div class="car__video">
-            <div class="row vid-row">
-                <div class="col-12 col-lg-10 offset-lg-1 test1 test2 position-relative no-gutters">
-                    <div class="vid-cont">
-                        <video class="vid" width="1366" height="653" autoplay muted loop playsinline
-                            src="../resources/Revuelto/Lamborghini Revuelto – From Now On-sitXeGjm4Mc-1080p-1657455184105.mp4"
-                            type="mp4"></video>
-                        <button class="button" id="exit-button" style="display: none">
-                            <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
-                                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                                    <path class="btnPath"
-                                        d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                                        transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
-                                    <g transform="translate(.5 .5)">
-                                        <path class="btnPath on-dark" d="M14 14L0 0"
-                                            transform="translate(1641.5 209.5)"></path>
-                                        <path class="btnPath on-dark" d="M0 14L14 0"
-                                            transform="translate(1641.5 209.5)"></path>
+                <div class="container-fluid">
+                    <div class="row vid-row">
+                        <div class="col-12 col-lg-10 offset-lg-1 test1 test2 position-relative no-gutters">
+                            <div class="vid-cont">
+                                <video class="vid" width="1366" height="653" autoplay muted loop playsinline
+                                    src="../resources/Revuelto/Lamborghini Revuelto – From Now On-sitXeGjm4Mc-1080p-1657455184105.mp4"
+                                    type="mp4"></video>
+                                <button class="button" id="exit-button" style="display: none">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                        <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                            <path class="btnPath"
+                                                d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                                transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                                            <g transform="translate(.5 .5)">
+                                                <path class="btnPath on-dark" d="M14 14L0 0"
+                                                    transform="translate(1641.5 209.5)"></path>
+                                                <path class="btnPath on-dark" d="M0 14L14 0"
+                                                    transform="translate(1641.5 209.5)"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button id="play-button" class="button">
+                                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                        <path class="btnPath"
+                                            d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                            transform="translate(1623.5 187.345)" class="hexagon on-dark"> </path>
+                                        <path class="btnPath icon on-dark" d="M22.732 24.713, 32.732 30.713, 22.732 36.713Z"
+                                            transform="translate(1623 186.923)"></path>
                                     </g>
-                                </g>
-                            </svg>
-                        </button>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
-                    <button id="play-button" class="button">
-                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
-                            <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                                <path class="btnPath"
-                                    d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                                    transform="translate(1623.5 187.345)" class="hexagon on-dark"> </path>
-                                <path class="btnPath icon on-dark" d="M22.732 24.713, 32.732 30.713, 22.732 36.713Z"
-                                    transform="translate(1623 186.923)"></path>
-                            </g>
-                        </svg>
-                    </button>
-                </div>
             </div>
         </div>
 
         <div class="car__infor">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-8">
-                        <div class="image-wrapper ">
-                            <div class="skew-cont">
-                                <div class="skew-fix">
-                                    <img class="info-image" src="../resources/Revuelto/overview_d.webp" alt="">                            
+            <div class="desktop-view">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-8">
+                            <div class="image-wrapper ">
+                                <div class="skew-cont">
+                                    <div class="skew-fix">
+                                        <img class="info-image" src="../resources/Revuelto/overview_d.webp" alt="">                            
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-4">
+                        <div class="text-wrapper">
+                                <span class="header-span">OVERVIEW</span>
+                                <p>
+                                    Just before the 60th anniversary of the marque, Lamborghini unveiled Revuelto, the first HPEV (High Performance Electrified Vehicle) hybrid super sports car. With the Revuelto, Lamborghini has established a new benchmark in performance, on-board technology, and driving pleasure. The ultimate thrill provided by the Revuelto is reached thanks to a powertrain that delivers 1015 CV total, combining the power of a brand-new 12-cylinder internal combustion engine with three high-density electric motors and a groundbreaking transversal dual clutch e-gearbox. The power of hybridization is harnessed to take performance and driving emotions to an unprecedented level.
+                                </p>
+                        </div> 
+                        </div>
                     </div>
-                    <div class="col-4">
-                       <div class="text-wrapper">
+                </div>
+            </div>
+            <div class="tablet-view">
+                <div class="container-fluid">
+                    <div class="tablet-spacing">
+                        <img src="../resources/Revuelto/s2_desk.jpg" alt="" class="tablet-img">
+                        <div class="text-wrapper">
                             <span class="header-span">OVERVIEW</span>
                             <p>
                                 Just before the 60th anniversary of the marque, Lamborghini unveiled Revuelto, the first HPEV (High Performance Electrified Vehicle) hybrid super sports car. With the Revuelto, Lamborghini has established a new benchmark in performance, on-board technology, and driving pleasure. The ultimate thrill provided by the Revuelto is reached thanks to a powertrain that delivers 1015 CV total, combining the power of a brand-new 12-cylinder internal combustion engine with three high-density electric motors and a groundbreaking transversal dual clutch e-gearbox. The power of hybridization is harnessed to take performance and driving emotions to an unprecedented level.
                             </p>
-                       </div> 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -206,7 +225,7 @@
         <!-- tablet-view -->
         <div class="tablet-view">
             <div class="container-fluid">
-                <div class="tablet-top">
+                <div class="tablet-spacing">
                     <img src="../resources/Revuelto/s2_desk.jpg" alt="" class="tablet-img">
                     <div class="text-wrapper">
                         <span class="header-span">EXTERIOR</span>
@@ -218,7 +237,7 @@
                         <button class="tablet-design-button">EXTERIOR DESIGN 3D VIEW</button>
                     </div>
                 </div>
-                <div class="tablet-bottom">
+                <div class="tablet-spacing">
                     <img src="../resources/Revuelto/s2_desk.jpg" alt="" class="tablet-img">
                     <div class="text-wrapper">
                         <span class="header-span">INTERIOR</span>
