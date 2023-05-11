@@ -12,6 +12,7 @@
     right: 0;
     z-index: 999;
     transition: top 0.2s;
+    transform: translateY(-100%);
 }
 
 .header__logoSection {

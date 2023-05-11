@@ -53,6 +53,7 @@ html {
 ::-webkit-scrollbar {
     width: 8px;
     cursor: pointer;
+    transition: right 0.2s;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -68,4 +69,9 @@ html {
     background-color: #fff;
     cursor: pointer;
     background: linear-gradient(to right, #201c29, #201c29 1px, #100e17 1px, #100e17);
+}
+
+.remove__padding__margin {
+    padding: unset !important;
+    margin: unset !important;
 }
