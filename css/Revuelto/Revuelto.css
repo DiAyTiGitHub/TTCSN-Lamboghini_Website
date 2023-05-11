@@ -152,7 +152,7 @@ p {
 }
 
 .header-span {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   line-height: 1.2;
 }
@@ -160,6 +160,10 @@ p {
 .tablet-view .header-span
 {
   margin-top: 2rem;
+}
+
+.tablet-view .text-wrapper p{
+  margin-bottom: 0;
 }
 
 .middle {
