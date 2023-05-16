@@ -1,10 +1,8 @@
 /* video_slide */
 .video__slider {
     height: 100vh;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1.5s ease, visibility 1.5s ease;
-    will-change: opacity; 
+    width: 100%;
+    background-color: #000;
 }
 
 .video__slider.active {
@@ -18,6 +16,7 @@
     width: 100%;
     height: 100vh;
     background-image: radial-gradient(farthest-corner at 85% 10%, rgba(0,0,0,0) 50%, rgba(0,0,0, 0.6) 100%);
+
 }
 
 .img_bg {
@@ -31,7 +30,21 @@
     height: 100vh;
     position: absolute;
     object-fit: cover;
+    opacity: 0;
+    
+    transition: opacity 1.5s ease, visibility 1.5s ease; 
+    will-change: opacity; 
+    animation: fade-in 1s ease-in-out forwards;
 }
+
+@keyframes fade-in {
+    0% {
+      opacity: 0; /* Độ trong suốt ban đầu */
+    }
+    100% {
+      opacity: 1; /* Độ trong suốt sau khi load */
+    }
+  }
 
 .wapper {
     color: #fff;
@@ -61,39 +74,23 @@
 }
 
 .video__slider--content {
-    /* opacity: 0; */
-    /* transform: translateX(-116%); */
+    opacity: 0;
+    transform: translateX(-116%);
     font-size: 110px;
     font-weight: 700;
     line-height: 99px;
     letter-spacing: -3.48px;
-    transition: transform 1s ease-out, opacity 1s ease-out;
+    transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 }
 
-.animated-text {
-    animation: typing 10s steps(20) 1s 1 normal both;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid;
-    font-size: 20px;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-
-/* .video__slider--content.active {
+.video__slider--content.active {
     opacity: 1;
     transform: translateX(0);
-} */
+}
 
-.move {
-    animation: slide-in 1s ease-out;
+/* .move {
+    animation: slide-in 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
 }
 
 @keyframes slide-in {
@@ -105,7 +102,7 @@
         opacity: 1;
         transform: translateX(0);
     }
-}
+} */
 
 /* responsive on mobile */
 @media (max-width: 768px) {

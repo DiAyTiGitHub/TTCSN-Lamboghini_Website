@@ -47,8 +47,9 @@ const slider2Back = () => {
 const sloganCar = () => {
     const carActive = document.querySelector('.slide2.active').getAttribute("data-index");
     const slogan = document.querySelector(`.slide2-text-container .slogan${carActive}`);
-    
     slogan.classList.add('active');
+    let nameCar = slogan.firstElementChild;
+    displayEachWord(nameCar, 70)
 }
 
 const logicForModelSlider = () => {
@@ -59,7 +60,7 @@ const logicForModelSlider = () => {
             e.stopPropagation();
             while (check == true) {
                 check = false;
-                const sloganActive = document.querySelector(`.slide2-text-container .active`);
+                const sloganActive = document.querySelector(`.text-container.active`);
                 sloganActive?.classList?.remove('active');
                 if (btn?.classList?.contains('btn-left')) {
                     slider2Back();
@@ -85,3 +86,5 @@ const logicForModelSlider = () => {
 }
 
 logicForModelSlider();
+
+  
