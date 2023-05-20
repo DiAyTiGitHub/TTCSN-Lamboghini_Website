@@ -29,13 +29,59 @@
     padding: 0 12px;
 }
 
+.header__overlay{
+    position: absolute;
+    top: 100%;
+    background-color: #181818;
+    left: 0;
+    right: 0;
+    transition: top 0.2s;
+    height: fit-content;
+}
+
 .header__item {
-    padding: 0 8px;
+    padding: 0 16px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+
+.header__item:hover .sub__header{
+    display: flex;
+}
+
+.sub__header{
+    display: none;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    padding-top: 12px;
+    left: 0;
+    background-color: #181818;
+}
+
+.sub__header__content{
+    cursor: pointer;
+    padding: 20px 16px;
+    color: #6f6f6f;
+    display: block;
+    width: fit-content;
+    font-size: 0.95rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    /* color: white; */
+    transition: color 0.3s ease-out 0s;
+    /* position: relative; */
+}
+
+.sub__header__content:hover{
+    text-decoration: none;
+    color: white;
 }
 
 .header__item:after {
@@ -60,7 +106,7 @@
     /* font-family: Arial, Helvetica, sans-serif; */
     transition: font-size 0.3s ease-in-out;
     font-size: 1rem;
-    font-weight: 200;
+    font-weight: 400;
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
@@ -72,4 +118,36 @@
 .header__item__content:hover {
     text-decoration: none;
     color: white;
+}
+
+.sub__header__item{
+    position: relative;
+}
+
+.sub__header2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub__header__item:hover .sub__header2{
+    /* display: flex; */
+}
+
+.sub__header2__content{
+    cursor: pointer;
+    padding: 20px 16px;
+    color: #6f6f6f;
+    /* display: block; */
+    width: fit-content;
+    font-size: 0.95rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    /* color: white; */
+    transition: color 0.3s ease-out 0s;
 }
