@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box; 
 }
+a {
+  text-decoration: none;
+}
 
 .text-wrapper {
   padding: 2rem;
@@ -17,21 +20,55 @@
     height: 100vh;
     width: 100%;
 }
-
+#overlay-header {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  top: 5rem;
+  font-weight: 800;
+}
+#overlay-header > h1 {
+  font-size: 7rem;
+}
+#info-wrapper {
+  position: absolute;
+  z-index: 99;
+  color:white;
+  top: 10rem;
+}
+#info-wrapper > .col-auto > :first-child{
+  font-weight: 800;
+}
+.icon-wrapper {
+  width: 50px;
+  height: 60px;
+}
+#config-wrapper {
+  position: absolute;
+  z-index: 99;
+  text-decoration: none;
+  color: white;
+  left: 60%;
+  bottom: 0;
+}
+.config-text {
+  font-size: 2rem;
+  font-weight: 100;
+}
 #bg-vid {
     width: 100%;
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
+    z-index: 0;
 }
 
-#placeholder {
-    position: absolute;
-    z-index: 2;
+.overlay-button > .svg {
+  width: 4rem;
+  height: 4rem;
 }
-
 /* .car__infor */
 .car__infor > .container-fluid {
   height: 42rem;
@@ -103,6 +140,10 @@
     border: none;
     top: 0;
     right: 0;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 #exit-button { 
@@ -111,6 +152,10 @@
     right: 2rem;
     background-color: transparent;
     border: none;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
 }
 
 .svg {
@@ -146,6 +191,7 @@ p {
 .clip-svg {
   height: 42rem;
 }
+
 .top {
     height: 43rem;
     overflow:hidden;
@@ -172,19 +218,12 @@ p {
   position: relative;
 }
 
-.middle > .col-6 {
-  position: relative;
-  
-}
-
 .bottom {
   height: 32rem;
   overflow: hidden;
 }
 
-.bottom > .col-6{
-  position: relative;
-}
+
 .img1 {
   position: relative;
   left: 16.75rem;

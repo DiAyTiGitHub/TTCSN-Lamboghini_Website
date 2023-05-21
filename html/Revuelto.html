@@ -57,86 +57,102 @@
         </div>
       </header>
 
-      <div class="intro">
-        <div class="container-fluid">
-          <div class="row">
-            <div id="overlay">placeholder</div>
-            <video
-              id="bg-vid"
-              src="../resources/Revuelto/Revuelto - Lamborghini.com.mp4"
-              type="video/mp4"
-              muted
-              autoplay
-              loop
-            ></video>
-          </div>
-        </div>
-      </div>
+        <div class="intro">
+            <div class="container-fluid h-100">
+                <div class="row position-relative align-content-around">
+                        <div class="overlay-wrapper px-md-0 col-xl-6 col-md-7 col-sm-10 col-12 offset-sm-1">
+                            <div id="overlay-header">
+                                <h2>REVUELTO</h2>
+                                <h1>FROM NOW ON</h1>
+                                <a href="" class="overlay-button on-dark" style="transform: translate(0px, 0px);">
+                                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                        <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                            <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
+                                            <path class="btnPath icon on-dark" d="M1641.906,214.094l7.354,5.666,7.518-5.666" transform="translate(-0.406 0.406)"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="px-0 col-lg-7 col-md-8 col-sm-10 col-12 offset-sm-1">
+                            <div class="row" id="info-wrapper">
+                                <div class="col-auto">
+                                    <div class="">POWER (combined ICE+EE)</div>
+                                    <div class="">1015CV</div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="">MAX. SPEED</div>
+                                    <div class="">>350 km/h</div>
+                                </div>
+                                <div class="col-auto">
+                                    <div class="">0-100 km/h</div>
+                                    <div class="">2.5 s</div>
+                                </div>
+                            </div>
+                        </div>    
+                            <a id="config-wrapper"href="">
+                                <div class="overlay-button d-none d-md-flex align-items-center">
+                                        <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                            <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                                <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" transform="translate(1623.5 187.345)" class="btnPath hexagon on-dark"></path>
+                                                <path class="btnPath icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)"></path>
+                                            </g>
+                                        </svg>
+                                    <div class="text-wrapper">
+                                        <div class="" style="opacity: 1; transform: translate(0px, 0px);">CONFIGURATOR</div>
+                                        <div class="config-text" style="opacity: 1; transform: translate(0px, 0px);">Create your Revuelto</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
 
-      <div class="car__video">
-        <div class="container-fluid">
-          <div class="row vid-row">
-            <div
-              class="col-12 col-lg-10 offset-lg-1 col-xxl offset-xxl position-relative no-gutters"
-            >
-              <div class="vid-cont">
-                <video
-                  class="vid"
-                  width="1366"
-                  height="653"
-                  autoplay
-                  muted
-                  loop
-                  playsinline
-                  src="../resources/Revuelto/Lamborghini Revuelto – From Now On-sitXeGjm4Mc-1080p-1657455184105.mp4"
-                  type="mp4"
-                ></video>
-                <button class="button" id="exit-button" style="display: none">
-                  <svg class="svg" viewBox="0 0 50.464 58.271">
-                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                      <path
-                        class="btnPath"
-                        d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                        transform="translate(1623.5 187.345)"
-                        class="hexagon on-dark"
-                      ></path>
-                      <g transform="translate(.5 .5)">
-                        <path
-                          class="btnPath on-dark"
-                          d="M14 14L0 0"
-                          transform="translate(1641.5 209.5)"
-                        ></path>
-                        <path
-                          class="btnPath on-dark"
-                          d="M0 14L14 0"
-                          transform="translate(1641.5 209.5)"
-                        ></path>
-                      </g>
-                    </g>
-                  </svg>
-                </button>
-              </div>
-              <button id="play-button" class="button">
-                <svg class="svg" viewBox="0 0 50.464 58.271">
-                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                    <path
-                      class="btnPath"
-                      d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                      transform="translate(1623.5 187.345)"
-                      class="hexagon on-dark"
-                    ></path>
-                    <path
-                      class="btnPath icon on-dark"
-                      d="M22.732 24.713, 32.732 30.713, 22.732 36.713Z"
-                      transform="translate(1623 186.923)"
-                    ></path>
-                  </g>
-                </svg>
-              </button>
+
+                    <video id="bg-vid" src="../resources/Revuelto/Revuelto - Lamborghini.com.mp4" type="video/mp4" muted
+                        autoplay loop></video>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+
+        <div class="car__video">
+                <div class="container-fluid">
+                    <div class="row vid-row">
+                        <div class="col-12 col-lg-10 offset-lg-1 col-xxl offset-xxl position-relative no-gutters">
+                            <div class="vid-cont">
+                                <video class="vid" width="1366" height="653" autoplay muted loop playsinline
+                                    src="../resources/Revuelto/Lamborghini Revuelto – From Now On-sitXeGjm4Mc-1080p-1657455184105.mp4"
+                                    type="mp4"></video>
+                                <button class="button" id="exit-button" style="display: none">
+                                    <svg class="svg" viewBox="0 0 50.464 58.271">
+                                        <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                            <path
+                                                d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                                transform="translate(1623.5 187.345)" class="btnPath hexagon on-dark"></path>
+                                            <g transform="translate(.5 .5)">
+                                                <path class="btnPath on-dark" d="M14 14L0 0"
+                                                    transform="translate(1641.5 209.5)"></path>
+                                                <path class="btnPath on-dark" d="M0 14L14 0"
+                                                    transform="translate(1641.5 209.5)"></path>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </button>
+                            </div>
+                            <button id="play-button" class="button">
+                                <svg class="svg" viewBox="0 0 50.464 58.271">
+                                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                        <path class="btnPath"
+                                            d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                            transform="translate(1623.5 187.345)" class="hexagon on-dark"> </path>
+                                        <path class="btnPath icon on-dark" d="M22.732 24.713, 32.732 30.713, 22.732 36.713Z"
+                                            transform="translate(1623 186.923)"></path>
+                                    </g>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
 
       <div class="car__infor">
         <div class="desktop-view">
@@ -210,158 +226,98 @@
       <div class="technical__spec">
         <!-- desktop-view -->
         <div class="desktop-view">
-          <div class="container-fluid">
-            <div class="top row align-items-center">
-              <div class="col-6">
-                <!--text-->
-                <div class="row">
-                  <div
-                    class="col-12 col-lg-10 col-xl-8 offset-2 offset-xl-4 no-gutters"
-                  >
-                    <span class="header-span">EXTERIOR</span>
-                    <p>
-                      The Revuelto honors the Lamborghini tradition and ushers
-                      in a new era even in its exterior design. While the car’s
-                      silhouette follows the iconic single center line, the
-                      sharply sculpted lines and smooth negative radiuses create
-                      a high-tech shape that puts the Revuelto unmistakably in
-                      the new generation of Lamborghini supercars. The iconic
-                      V12 is celebrated by being on full display in the rear.
-                    </p>
-                  </div>
+            <div class="container-fluid">
+                <div class="top row align-items-center">
+                    <div class="col-6"> <!--text-->
+                        <div class="row">
+                            <div class="col-12 col-lg-10 col-xl-8 offset-2 offset-xl-4 no-gutters">
+                                <span class="header-span">EXTERIOR</span>
+                                <p>
+                                    The Revuelto honors the Lamborghini tradition and ushers in a new era even in its exterior design. While the car’s silhouette follows the iconic single center line, the sharply sculpted lines and smooth negative radiuses create a high-tech shape that puts the Revuelto unmistakably in the new generation of Lamborghini supercars. The iconic V12 is celebrated by being on full display in the rear.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-6 "> <!--img-->
+                        <div class="cont-item img1">
+                            <svg viewBox="0 0 23.5 11" class="clip-svg">
+                                <defs>
+                                    <clipPath id = "polygon-cp">
+                                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
+                                        <rect x="8" y="0" width="7.5" height="11"></rect>
+                                        <polygon points="15.4 0, 23.5 0, 15.5 11, 15.4 11"></polygon>
+                                    </clipPath>
+                                </defs>
+                                    <g clip-path="url(#polygon-cp)">
+                                        <image class="left" src="" alt="" href="../resources/Revuelto/s1.webp" width="100%" height="100%" x="0%" y="0%"></image>
+                                    </g>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-6">
-                <!--img-->
-                <div class="cont-item img1">
-                  <svg viewBox="0 0 23.5 11" class="clip-svg">
-                    <defs>
-                      <clipPath id="polygon-cp">
-                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                        <rect x="8" y="0" width="7.5" height="11"></rect>
-                        <polygon
-                          points="15.4 0, 23.5 0, 15.5 11, 15.4 11"
-                        ></polygon>
-                      </clipPath>
-                    </defs>
-                    <g clip-path="url(#polygon-cp)">
-                      <image
-                        class="left"
-                        src=""
-                        alt=""
-                        href="../resources/Revuelto/s1.webp"
-                        width="100%"
-                        height="100%"
-                        x="0%"
-                        y="0%"
-                      ></image>
-                    </g>
-                  </svg>
+                <div class="row middle">
+                    <div class="col-6 position-relative">
+                        <div class="cont-item img2">
+                            <svg height="100%" viewBox="0 0 24 11" class="clip-svg">
+                                <defs>
+                                    <clipPath id="polygon-cp">
+                                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
+                                        <rect x="8" y="0" width="8" height="11"></rect>
+                                        <polygon points="15.9 0, 24 0, 16 11, 15.9 11"></polygon>
+                                    </clipPath>
+                                </defs>
+                                    <g clip-path="url(#polygon-cp)">
+                                    <image class="" alt="" href="../resources/Revuelto/s3_desk.jpg" width="100%" height="100%" x="0%" y="0%"></image>
+                                    </g>
+                                </svg>
+                        </div>
+                    </div>
+                    <div class="col-6 position-relative"> 
+                        <div class="cont-item img3">
+                            <svg viewBox="0 0 23.5 11" class="clip-svg">
+                                <defs>
+                                    <clipPath id = "polygon-cp">
+                                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
+                                        <rect x="8" y="0" width="7.5" height="11"></rect>
+                                        <polygon points="15.4 0, 23.5 0, 15.5 11, 15.4 11"></polygon>
+                                    </clipPath>
+                                </defs>
+                                    <g clip-path="url(#polygon-cp)">
+                                    <image class="" src="" alt="" href="../resources/Revuelto/s2_desk.jpg" width="100%" height="100%" x="0%" y="0%"></image>                            </g>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="row middle">
-              <div class="col-6">
-                <div class="cont-item img2">
-                  <svg height="100%" viewBox="0 0 24 11" class="clip-svg">
-                    <defs>
-                      <clipPath id="polygon-cp">
-                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                        <rect x="8" y="0" width="8" height="11"></rect>
-                        <polygon
-                          points="15.9 0, 24 0, 16 11, 15.9 11"
-                        ></polygon>
-                      </clipPath>
-                    </defs>
-                    <g clip-path="url(#polygon-cp)">
-                      <image
-                        class=""
-                        alt=""
-                        href="../resources/Revuelto/s3_desk.jpg"
-                        width="100%"
-                        height="100%"
-                        x="0%"
-                        y="0%"
-                      ></image>
-                    </g>
-                  </svg>
+                <div class="row bottom align-items-center">
+                    <div class="col-6 position-relative">
+                        <div class="cont-item img4">
+                            <svg viewBox="0 0 23.5 11"  class="clip-svg">
+                                <defs>
+                                    <clipPath id = "polygon-cp">
+                                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
+                                        <rect x="8" y="0" width="7.5" height="11"></rect>
+                                        <polygon points="15.4 0, 23.5 0, 15.5 11, 15.4 11"></polygon>
+                                    </clipPath>
+                                </defs>
+                                    <g clip-path="url(#polygon-cp)">
+                                        <image class="" src="" alt="" href="../resources/Revuelto/s4_desk.webp" width="100%" height="100%" x="0%" y="0%"></image>
+                                    </g>
+                                </svg>
+                        </div>
+                    </div>
+                    <div class="col-6 position-relative">
+                        <div class="row">
+                            <div class="col-12 col-lg-10 col-xl-8 no-gutters">
+                                <span class="header-span">INTERIOR</span>
+                                <p>
+                                    The interior of the Revuelto brings the “Feel Like a Pilot” concept to its utmost expression: simple volumes, symmetry, and a driver-focused approach make the cockpit an empowering station for the driver. The futuristic environment creates a seamless connection between driver and machine, while exclusive hexagon-shaped elements fulfill the dual mission of evoking past models and highlighting brand-new functional features.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-6">
-                <div class="cont-item img3">
-                  <svg viewBox="0 0 23.5 11" class="clip-svg">
-                    <defs>
-                      <clipPath id="polygon-cp">
-                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                        <rect x="8" y="0" width="7.5" height="11"></rect>
-                        <polygon
-                          points="15.4 0, 23.5 0, 15.5 11, 15.4 11"
-                        ></polygon>
-                      </clipPath>
-                    </defs>
-                    <g clip-path="url(#polygon-cp)">
-                      <image
-                        class=""
-                        src=""
-                        alt=""
-                        href="../resources/Revuelto/s2_desk.jpg"
-                        width="100%"
-                        height="100%"
-                        x="0%"
-                        y="0%"
-                      ></image>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="row bottom align-items-center">
-              <div class="col-6">
-                <div class="cont-item img4">
-                  <svg viewBox="0 0 23.5 11" class="clip-svg">
-                    <defs>
-                      <clipPath id="polygon-cp">
-                        <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                        <rect x="8" y="0" width="7.5" height="11"></rect>
-                        <polygon
-                          points="15.4 0, 23.5 0, 15.5 11, 15.4 11"
-                        ></polygon>
-                      </clipPath>
-                    </defs>
-                    <g clip-path="url(#polygon-cp)">
-                      <image
-                        class=""
-                        src=""
-                        alt=""
-                        href="../resources/Revuelto/s4_desk.webp"
-                        width="100%"
-                        height="100%"
-                        x="0%"
-                        y="0%"
-                      ></image>
-                    </g>
-                  </svg>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="row">
-                  <div class="col-12 col-lg-10 col-xl-8 no-gutters">
-                    <span class="header-span">INTERIOR</span>
-                    <p>
-                      The interior of the Revuelto brings the “Feel Like a
-                      Pilot” concept to its utmost expression: simple volumes,
-                      symmetry, and a driver-focused approach make the cockpit
-                      an empowering station for the driver. The futuristic
-                      environment creates a seamless connection between driver
-                      and machine, while exclusive hexagon-shaped elements
-                      fulfill the dual mission of evoking past models and
-                      highlighting brand-new functional features.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </div>
         </div>
         <!-- tablet-view -->
         <div class="tablet-view">
