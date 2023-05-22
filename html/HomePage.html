@@ -20,20 +20,28 @@
 <link rel="stylesheet" href="../css/common/common.css" />
 <link rel="stylesheet" href="../css/common/Header.css" />
 <link rel="stylesheet" href="../css/common/Footer.css" />
+<link rel="stylesheet" href="../css/common/LoadingOverlay.css">
 <link rel="stylesheet" href="../css/HomePage/HomePage.css" />
 <link rel="stylesheet" href="../css/HomePage/ModelSlider.css" />
 <link rel="stylesheet" href="../css/HomePage/NewSection.css" />
 
 <body>
+  <div class="loading__overlay">
+    <div class="loading__overlay__inner">
+      <div class="loading__overlay__content"><span class="loading__spinner"></span></div>
+    </div>
+  </div>
   <div class="main">
     <header class="header">
       <div class="header__overlay">
-        
+
       </div>
       <div class="container">
         <div class="row">
           <div class="header__logoSection">
-            <img class="header__logo" src="../resources/common/imgs/logo.webp" alt="Logo" />
+            <a href="./HomePage.html">
+              <img class="header__logo" src="../resources/common/imgs/logo.webp" alt="Logo" />
+            </a>
           </div>
           <div class="header__itemContainer">
             <div class="header__item">
@@ -197,7 +205,7 @@
     <div class="deal_slider">
       <div class="deal_slider_bg">
         <span>
-          <img src="../resources/HomePage/imgs/deal_slider.jpg" alt="" >
+          <img src="../resources/HomePage/imgs/deal_slider.jpg" alt="">
         </span>
         <div class="deal_slider_content">
           <div class="deal_slider_overlay"></div>
@@ -224,9 +232,9 @@
           <div class="row no-gutters">
             <div class="col-12">
               <a href="" class="d-block">
-                
-                  <img src="../resources/HomePage/imgs/new2.webp" class=" main_new_image" />
-                
+
+                <img src="../resources/HomePage/imgs/new2.webp" class=" main_new_image" />
+
               </a>
             </div>
           </div>
@@ -247,9 +255,9 @@
                 </a>
                 <div class="d-none d-md-block main-news-abstract">
                   <p class="">
-                    The diverse landscape of California provides the perfect environment in which to appreciate 
+                    The diverse landscape of California provides the perfect environment in which to appreciate
                     the eclectic spirit of the Huracán Sterrato, evident as soon as the tires hit tarmac and then
-                     sand, on road and raceway.
+                    sand, on road and raceway.
                   </p>
                 </div>
               </div>
@@ -346,6 +354,7 @@
 
   <!-- Optional JavaScript -->
   <script src="../js/common/Header.js"></script>
+  <script src="../js/HomePage/HomePage.js"></script>
   <script src="../js/HomePage/VideoSlider.js"></script>
   <script src="../js/HomePage/ModelSlider.js"></script>
 

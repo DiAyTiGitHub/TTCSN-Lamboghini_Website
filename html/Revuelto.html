@@ -18,11 +18,17 @@
 </head>
 
 <link rel="stylesheet" href="../css/common/common.css" />
+<link rel="stylesheet" href="../css/common/LoadingOverlay.css">
 <link rel="stylesheet" href="../css/common/Header.css" />
 <link rel="stylesheet" href="../css/Revuelto/Revuelto.css" />
 <link rel="stylesheet" href="../css/Revuelto/Technical_spec.css" />
 
 <body>
+  <div class="loading__overlay">
+    <div class="loading__overlay__inner">
+      <div class="loading__overlay__content"><span class="loading__spinner"></span></div>
+    </div>
+  </div>
   <div class="main">
     <header class="header">
       <div class="header__overlay">
@@ -31,7 +37,9 @@
       <div class="container">
         <div class="row">
           <div class="header__logoSection">
-            <img class="header__logo" src="../resources/common/imgs/logo.webp" alt="Logo" />
+            <a href="./HomePage.html">
+              <img class="header__logo" src="../resources/common/imgs/logo.webp" alt="Logo" />
+            </a>
           </div>
           <div class="header__itemContainer">
             <div class="header__item">
@@ -133,7 +141,7 @@
       </div>
 
 
-      <video id="bg-vid" src="../resources/Revuelto/Revuelto - Lamborghini.com.mp4" type="video/mp4" muted autoplay
+      <video id="bg-vid" src="../resources/Revuelto/Revuelto - Lamborghini.com.mp4" type="video/mp4" muted
         loop></video>
     </div>
   </div>
@@ -763,6 +771,7 @@
   <!-- Optional JavaScript -->
   <script src="../js/common/Header.js"></script>
   <script src="../js/Revuelto/CarVideo.js"></script>
+  <script src="../js/Revuelto/BackgroundCarVideo.js"></script>
   <script src="../js/Revuelto/MediaQuery.js"></script>
   <script src="../js/Revuelto/TechnicalSpec.js"></script>
 
