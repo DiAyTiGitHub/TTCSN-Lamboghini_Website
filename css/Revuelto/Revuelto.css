@@ -303,7 +303,7 @@ p {
 }
 
 .tablet-img {
-  width: 113%;
+  width: 100%;
   object-fit: cover;
 }
 
