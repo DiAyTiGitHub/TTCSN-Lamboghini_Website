@@ -1,29 +1,24 @@
 //media query check
-
 const smallDevice = window.matchMedia("(min-width:992px)");
-const desktopView = document.querySelectorAll(".desktop-view");
-const tabletView = document.querySelectorAll(".tablet-view");
+const infoLoop = document.querySelectorAll(".info-loop");
 
 smallDevice.addListener(handleDeviceChange);
 
 function handleDeviceChange(e) {
-  if (e.matches) {
-    console.log("desktop");
-    desktopView.forEach((view) => {
-      view.style.display = "block";
-    })
-    tabletView.forEach((view) => {
-      view.style.display = "none";  
-    })
-  }
-  else {
-    console.log("tablet");
-    desktopView.forEach((view) => {
-      view.style.display = "none";
-    })
-    tabletView.forEach((view) => {
-      view.style.display = "block";  
-    })
+  if (!e.matches) {
+    let count = 0;
+    setInterval(() => {
+      infoLoop.forEach((info) => {
+        info.classList.add("d-none");
+        if(info.dataset.infoIndex == count) {
+          info.classList.remove("d-none");
+        }
+      })
+      count++;
+      if(count > 2) {
+        count = 0;
+      }
+    },5000)
   }
 }
 
