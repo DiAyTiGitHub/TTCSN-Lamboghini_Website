@@ -1,8 +1,9 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 a {
   text-decoration: none;
 }
@@ -17,8 +18,8 @@ a {
 
 /* intro */
 .intro {
-    height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
 }
 
 #overlay-header {
@@ -29,6 +30,7 @@ a {
   font-weight: 800;
   padding-bottom: 26%;
 }
+
 #overlay-h1 {
   font-weight: 700;
   font-size: 2rem;
@@ -45,33 +47,41 @@ a {
   opacity: 1;
   transform: translateX(0);
 }
+
 .word {
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
+
 .word.active {
   opacity: 1;
 }
+
 .info-sect {
-  bottom:50px;
+  bottom: 50px;
 }
+
 #info-wrapper {
   position: relative;
   z-index: 99;
-  color:white;
+  color: white;
   bottom: 0;
 }
-#info-wrapper > .col-auto > :nth-child(1){
+
+#info-wrapper>.col-auto> :nth-child(1) {
   font-size: 0.8rem;
 }
-#info-wrapper > .col-auto > :nth-child(2){
+
+#info-wrapper>.col-auto> :nth-child(2) {
   font-size: 1rem;
   font-weight: 100;
 }
+
 .icon-wrapper {
   width: 50px;
   height: 60px;
 }
+
 #config-wrapper {
   position: absolute;
   z-index: 99;
@@ -80,42 +90,51 @@ a {
   left: 60%;
   bottom: 0;
 }
+
 .config-text1 {
   font-size: 0.8rem;
 }
+
 .config-text2 {
   font-size: 1.5rem;
   font-weight: 300;
 }
+
 #bg-vid {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
 }
+
 .overlay-button {
   transform: scale(0);
   transition: transform 1s ease 1s;
 }
+
 .overlay-button.active {
   transform: scale(1);
 }
-.overlay-button > .svg {
+
+.overlay-button>.svg {
   width: 4rem;
   height: 4rem;
 }
+
 .overlay-vert {
-  transform: translateY(999px); 
+  transform: translateY(999px);
   transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 }
+
 .overlay-vert.active {
   transform: translateY(0);
 }
+
 /* .car__infor */
-.car__infor > .container-fluid {
+.car__infor>.container-fluid {
   height: 42rem;
 }
 
@@ -137,7 +156,7 @@ a {
   width: 100%;
   height: 100%;
   transform: skew(-35deg);
-  transform-origin: center center;  
+  transform-origin: center center;
   background-color: gray;
   overflow: hidden;
   right: 16rem;
@@ -146,7 +165,7 @@ a {
 .skew-fix {
   position: absolute;
   left: -30rem;
-  width: calc(100% + 45.85rem);  
+  width: calc(100% + 45.85rem);
   height: 100%;
   transform: skew(35deg);
   transform-origin: center center;
@@ -154,90 +173,95 @@ a {
 
 /* car__vid */
 .car__video {
-    padding: 10rem 0px;
-    width: 100%;
+  padding: 10rem 0px;
+  width: 100%;
 }
 
-.vid-row > div {
+.vid-row>div {
   height: 35rem;
   padding: 0;
 }
 
 .vid-cont {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
 .vid {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 #play-button {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    border: none;
-    top: 0;
-    right: 0;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  top: 0;
+  right: 0;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
-#exit-button { 
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    background-color: transparent;
-    border: none;
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+#exit-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  border: none;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .svg {
-    height: 5rem;
-    width: 5rem;
+  height: 5rem;
+  width: 5rem;
 }
 
 .btnPath {
-    fill: transparent;
-    transition: stroke 0.3s ease-out, fill 0.3s ease-out;
-}
-.on-dark {
-    stroke: white;
-}
-.on-light {
-    stroke: black;
+  fill: transparent;
+  transition: stroke 0.3s ease-out, fill 0.3s ease-out;
 }
 
-.svg:hover .on-dark{
-    fill: white;
+.on-dark {
+  stroke: white;
 }
-.svg:hover .icon-on-dark{
-    stroke: black;
+
+.on-light {
+  stroke: black;
 }
-.svg:hover .on-light{
+
+.svg:hover .on-dark {
+  fill: white;
+}
+
+.svg:hover .icon-on-dark {
+  stroke: black;
+}
+
+.svg:hover .on-light {
   fill: black;
 }
-.svg:hover .icon-on-light{
+
+.svg:hover .icon-on-light {
   stroke: white;
 }
 
 /* tech__layout */
-p { 
-    padding: 2em 0;
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 100;
+p {
+  padding: 2em 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 100;
 }
 
 .cont-item {
@@ -250,8 +274,8 @@ p {
 }
 
 .top {
-    height: 43rem;
-    overflow:hidden;
+  height: 43rem;
+  overflow: hidden;
 }
 
 .header-span {
@@ -260,12 +284,11 @@ p {
   line-height: 1.2;
 }
 
-.tablet-view .header-span
-{
+.tablet-view .header-span {
   margin-top: 2rem;
 }
 
-.tablet-view .text-wrapper p{
+.tablet-view .text-wrapper p {
   margin-bottom: 0;
 }
 
@@ -285,6 +308,7 @@ p {
   position: relative;
   left: 16.75rem;
 }
+
 .img2 {
   position: absolute;
   top: 5rem;
@@ -293,9 +317,10 @@ p {
 
 .img3 {
   position: absolute;
-  top:0;
+  top: 0;
   left: -13rem;
 }
+
 .img4 {
   position: absolute;
   top: -20rem;
@@ -319,130 +344,148 @@ p {
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
 }
+
 .tablet-design-button:hover {
   background-color: black;
   color: white;
-} 
+}
 
 @media (min-width: 0px) and (max-width:576px) {
-  .vid-row > div {
+  .vid-row>div {
     height: 25rem;
   }
-  
-}  
+
+}
 
 @media (min-width: 576px) and (max-width: 768px) {
 
-    .vid-row > div {
-      height: 20rem;
-    }
-    .car__video {
-        padding: 2rem 0px;
-        width: 100%;
-    }
-    
-  }
-  
-  @media (min-width: 768px) and (max-width: 992px) {
-    .vid-row > div {
-      height: 28rem;
-    }
-    .car__video {
-        padding: 5rem 0px;
-        width: 100%;
-    }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1200px){
-    #overlay-header > h1 {
-      font-size: 5rem;
-    }
-    #overlay-h2 {
-      font-size: 1.7rem;
-    }
-    #info-wrapper > .col-auto > :nth-child(1){
-      font-size: 0.9rem;
-    }
-    #info-wrapper > .col-auto > :nth-child(2){
-      font-size: 1.1rem;
-    }
-    .config-text1 {
-      font-size: 0.9rem;
-    }
-    .config-text2 {
-      font-size: 1.7rem;
-      font-weight: 300;
-    }
-    .vid-row > div {
-      height: 35rem;
-    }
-  }
-  
-  @media (min-width: 1200px) and (max-width: 1400px){
-    #overlay-header > h1 {
-      font-size: 5rem;
-    }
-    #overlay-h2 {
-      font-size: 1.7rem;
-    }
-    #info-wrapper > .col-auto > :nth-child(1){
-      font-size: 1rem;
-    }
-    #info-wrapper > .col-auto > :nth-child(2){
-      font-size: 1.2rem;
-    }
-    .config-text1 {
-      font-size: 0.9rem;
-    }
-    .config-text2 {
-      font-size: 1.7rem;
-      font-weight: 300;
-    }
-    .vid-row > div {
-      height: 35rem;
-    }
-  }
-  
-  @media (min-width: 1400px) {
-    #overlay-header > h1 {
-      font-size: 7rem;
-    }
-    #overlay-h2 {
-      font-size: 2.2rem;
-    }
-    #info-wrapper > .col-auto > :nth-child(1){
-      font-size: 1rem;
-    }
-    #info-wrapper > .col-auto > :nth-child(2){
-      font-size: 1.2rem;
-    }
-
-    .config-text1 {
-      font-size: 1rem;
-    }
-    .config-text2 {
-      font-size: 2.2rem;
-      font-weight: 300;
-    }
-    .col-xxl {
-      flex: 0 0 66.66666667%;
-      max-width: 66.66666667%;
-    }
-    
-    .offset-xxl {
-      margin-left: 16.66666667%;
-    }
+  .vid-row>div {
+    height: 20rem;
   }
 
-  p {
-    font-weight: normal;
+  .car__video {
+    padding: 2rem 0px;
+    width: 100%;
   }
 
-  /* @media (max-width: 990px)
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .vid-row>div {
+    height: 28rem;
+  }
+
+  .car__video {
+    padding: 5rem 0px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #overlay-header>h1 {
+    font-size: 5rem;
+  }
+
+  #overlay-h2 {
+    font-size: 1.7rem;
+  }
+
+  #info-wrapper>.col-auto> :nth-child(1) {
+    font-size: 0.9rem;
+  }
+
+  #info-wrapper>.col-auto> :nth-child(2) {
+    font-size: 1.1rem;
+  }
+
+  .config-text1 {
+    font-size: 0.9rem;
+  }
+
+  .config-text2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  .vid-row>div {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #overlay-header>h1 {
+    font-size: 5rem;
+  }
+
+  #overlay-h2 {
+    font-size: 1.7rem;
+  }
+
+  #info-wrapper>.col-auto> :nth-child(1) {
+    font-size: 1rem;
+  }
+
+  #info-wrapper>.col-auto> :nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .config-text1 {
+    font-size: 0.9rem;
+  }
+
+  .config-text2 {
+    font-size: 1.7rem;
+    font-weight: 300;
+  }
+
+  .vid-row>div {
+    height: 35rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  #overlay-header>h1 {
+    font-size: 7rem;
+  }
+
+  #overlay-h2 {
+    font-size: 2.2rem;
+  }
+
+  #info-wrapper>.col-auto> :nth-child(1) {
+    font-size: 1rem;
+  }
+
+  #info-wrapper>.col-auto> :nth-child(2) {
+    font-size: 1.2rem;
+  }
+
+  .config-text1 {
+    font-size: 1rem;
+  }
+
+  .config-text2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+
+  .col-xxl {
+    flex: 0 0 66.66666667%;
+    max-width: 66.66666667%;
+  }
+
+  .offset-xxl {
+    margin-left: 16.66666667%;
+  }
+}
+
+p {
+  font-weight: normal;
+}
+
+/* @media (max-width: 990px)
   {
     .header-span{
       margin-top: 2rem;
     }
   } */
-
-  

@@ -1,6 +1,7 @@
 .endSlider__container {
     position: relative;
     overflow: hidden;
+    max-height: 100vh;
 }
 
 @media only screen and (max-width: 1000px) {
