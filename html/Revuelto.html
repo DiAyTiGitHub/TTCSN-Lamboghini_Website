@@ -18,6 +18,7 @@
 </head>
 
 <link rel="stylesheet" href="../css/common/common.css" />
+<link rel="stylesheet" href="../css/common/EndSlider.css">
 <link rel="stylesheet" href="../css/common/LoadingOverlay.css">
 <link rel="stylesheet" href="../css/common/Header.css" />
 <link rel="stylesheet" href="../css/Revuelto/Revuelto.css" />
@@ -760,8 +761,39 @@
 
   <div class="more"></div>
 
-  <div class="car__slider"></div>
+  <div class="endSlider__container">
+    <div class="endSlider">
+      <div class="box1 box">
+      </div>
+      <div class="box2 box">
+      </div>
+      <div class="box3 box">
+      </div>
+      <div class="box4 box">
+      </div>
+      <div class="box5 box">
+      </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="endSlider__prev" width="56.898" height="91" viewBox="0 0 56.898 91">
+      <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="endSlider__next" width="56.898" height="91" viewBox="0 0 56.898 91">
+      <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff" />
+    </svg>
+    <div class="endSlider__trail">
+      <div class="box1 endSlider__active"></div>
+      <div class="box2"></div>
+      <div class="box3"></div>
+      <div class="box4"></div>
+      <div class="box5"></div>
+    </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/gsap.min.js"></script>
+  <!-- CSSRulePlugin JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.2/CSSRulePlugin.min.js"></script>
+  <!-- Animated Slider JS -->
 
   <!-- Optional JavaScript -->
   <script src="../js/common/Header.js"></script>
@@ -770,6 +802,7 @@
   <script src="../js/Revuelto/MediaQuery.js"></script>
   <script src="../js/Revuelto/TechnicalSpec.js"></script>
   <script src="../js/Revuelto/Overlay.js"></script>
+  <script src="../js/common/EndSlider.js"></script>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
