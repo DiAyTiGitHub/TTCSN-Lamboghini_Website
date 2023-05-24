@@ -20,24 +20,53 @@ a {
     height: 100vh;
     width: 100%;
 }
+
 #overlay-header {
-  position: absolute;
+  position: relative;
   z-index: 10;
   color: white;
   top: 5rem;
   font-weight: 800;
+  padding-bottom: 26%;
 }
-#overlay-header > h1 {
-  font-size: 7rem;
+#overlay-h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translateX(-116%);
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+
+#overlay-h2 {
+  font-size: 1rem;
+}
+
+#overlay-h1.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+.word {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.word.active {
+  opacity: 1;
+}
+.info-sect {
+  bottom:50px;
 }
 #info-wrapper {
-  position: absolute;
+  position: relative;
   z-index: 99;
   color:white;
-  top: 10rem;
+  bottom: 0;
 }
-#info-wrapper > .col-auto > :first-child{
-  font-weight: 800;
+#info-wrapper > .col-auto > :nth-child(1){
+  font-size: 0.8rem;
+}
+#info-wrapper > .col-auto > :nth-child(2){
+  font-size: 1rem;
+  font-weight: 100;
 }
 .icon-wrapper {
   width: 50px;
@@ -51,9 +80,12 @@ a {
   left: 60%;
   bottom: 0;
 }
-.config-text {
-  font-size: 2rem;
-  font-weight: 100;
+.config-text1 {
+  font-size: 0.8rem;
+}
+.config-text2 {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 #bg-vid {
     width: 100%;
@@ -64,10 +96,23 @@ a {
     right: 0;
     z-index: 0;
 }
-
+.overlay-button {
+  transform: scale(0);
+  transition: transform 1s ease 1s;
+}
+.overlay-button.active {
+  transform: scale(1);
+}
 .overlay-button > .svg {
   width: 4rem;
   height: 4rem;
+}
+.overlay-vert {
+  transform: translateY(999px); 
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
+}
+.overlay-vert.active {
+  transform: translateY(0);
 }
 /* .car__infor */
 .car__infor > .container-fluid {
@@ -164,15 +209,27 @@ a {
 }
 
 .btnPath {
-    stroke: white;
     fill: transparent;
+    transition: stroke 0.3s ease-out, fill 0.3s ease-out;
+}
+.on-dark {
+    stroke: white;
+}
+.on-light {
+    stroke: black;
 }
 
-.svg:hover .btnPath{
+.svg:hover .on-dark{
     fill: white;
 }
-.svg:hover .on-dark{
+.svg:hover .icon-on-dark{
     stroke: black;
+}
+.svg:hover .on-light{
+  fill: black;
+}
+.svg:hover .icon-on-light{
+  stroke: white;
 }
 
 /* tech__layout */
@@ -246,7 +303,7 @@ p {
 }
 
 .tablet-img {
-  width: 113%;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -287,7 +344,6 @@ p {
   }
   
   @media (min-width: 768px) and (max-width: 992px) {
-
     .vid-row > div {
       height: 28rem;
     }
@@ -298,21 +354,76 @@ p {
   }
   
   @media (min-width: 992px) and (max-width: 1200px){
-
+    #overlay-header > h1 {
+      font-size: 5rem;
+    }
+    #overlay-h2 {
+      font-size: 1.7rem;
+    }
+    #info-wrapper > .col-auto > :nth-child(1){
+      font-size: 0.9rem;
+    }
+    #info-wrapper > .col-auto > :nth-child(2){
+      font-size: 1.1rem;
+    }
+    .config-text1 {
+      font-size: 0.9rem;
+    }
+    .config-text2 {
+      font-size: 1.7rem;
+      font-weight: 300;
+    }
     .vid-row > div {
       height: 35rem;
     }
   }
   
   @media (min-width: 1200px) and (max-width: 1400px){
-
+    #overlay-header > h1 {
+      font-size: 5rem;
+    }
+    #overlay-h2 {
+      font-size: 1.7rem;
+    }
+    #info-wrapper > .col-auto > :nth-child(1){
+      font-size: 1rem;
+    }
+    #info-wrapper > .col-auto > :nth-child(2){
+      font-size: 1.2rem;
+    }
+    .config-text1 {
+      font-size: 0.9rem;
+    }
+    .config-text2 {
+      font-size: 1.7rem;
+      font-weight: 300;
+    }
     .vid-row > div {
       height: 35rem;
     }
   }
   
   @media (min-width: 1400px) {
+    #overlay-header > h1 {
+      font-size: 7rem;
+    }
+    #overlay-h2 {
+      font-size: 2.2rem;
+    }
+    #info-wrapper > .col-auto > :nth-child(1){
+      font-size: 1rem;
+    }
+    #info-wrapper > .col-auto > :nth-child(2){
+      font-size: 1.2rem;
+    }
 
+    .config-text1 {
+      font-size: 1rem;
+    }
+    .config-text2 {
+      font-size: 2.2rem;
+      font-weight: 300;
+    }
     .col-xxl {
       flex: 0 0 66.66666667%;
       max-width: 66.66666667%;

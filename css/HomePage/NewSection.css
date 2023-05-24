@@ -46,6 +46,11 @@
 
 }
 
+.main_new_image {
+    width: 100%;
+    height: auto;
+}
+
 .news-title--primary {
     margin-top: 1rem;
     font-size: 2rem;
