@@ -49,7 +49,7 @@
 .wapper {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 160px;
+    margin-bottom: 300px;
     -webkit-user-select: none; /* Chrome, Safari, Opera */
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
@@ -107,7 +107,7 @@
 /* responsive on mobile */
 @media (max-width: 768px) {
     .img_bg {
-        background-image: url(../../resources/HomePage/imgs/video_slider_mobile.jpg);
+        background-image: url(../../resources/HomePage/imgs/video_slider_mobile.webp);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
