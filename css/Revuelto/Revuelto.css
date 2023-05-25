@@ -350,6 +350,39 @@ p {
   color: white;
 }
 
+.highlight button, button:active, button:hover{
+  outline:none;
+  border: none;
+  margin-left: 2rem;
+}
+.highlight .svg {
+  width: 3rem;
+  height: 3rem;
+}
+.left-highlights {
+  padding: 4vh 8vw;
+}
+.left-highlights h3{
+  font-weight: 800;
+}
+.left-highlights h4{
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.left-highlights p{
+  font-weight: 400;
+}
+@media (max-width: 992px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item{
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+  }
+}
+
 @media (min-width: 0px) and (max-width:576px) {
   .vid-row>div {
     height: 25rem;
