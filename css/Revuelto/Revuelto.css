@@ -8,6 +8,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .text-wrapper {
   padding: 2rem 0;
 }
@@ -329,6 +335,7 @@ p {
 
 .tablet-img {
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -348,6 +355,57 @@ p {
 .tablet-design-button:hover {
   background-color: black;
   color: white;
+}
+
+.highlight button, button:active, button:hover{
+  outline:none;
+  border: none;
+  margin-left: 2rem;
+}
+.highlight .svg {
+  width: 3rem;
+  height: 3rem;
+}
+.left-highlights {
+  padding: 4vh 8vw;
+  position: relative;
+}
+.left-highlights h3{
+  font-weight: 800;
+}
+.left-highlights h4{
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+.left-highlights p{
+  font-weight: 400;
+}
+.left-highlights .text-wrapper {
+  padding: 0 0 0 2rem;
+}
+.highlight-nav {
+  z-index: 10;
+  position: absolute;
+  bottom: 0;
+}
+.top-highlight-nav {
+  padding-bottom: 2rem;
+}
+.desktop .carousel-item.active {
+  min-height: 35rem;
+}
+/* .carousel-fade .carousel-item {
+  height: auto;
+} */
+@media (max-width: 992px) {
+  .carousel-inner {
+    display: flex;
+  }
+  .carousel-item{
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/1.4);
+  }
 }
 
 @media (min-width: 0px) and (max-width:576px) {
@@ -489,3 +547,9 @@ p {
       margin-top: 2rem;
     }
   } */
+
+  #carouselExampleIndicators .carousel-inner img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
