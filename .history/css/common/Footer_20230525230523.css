@@ -149,7 +149,7 @@
 }
 
 .info-subject .line-effect {
-    /* top: calc(100% + 5px); */
+    top: calc(100% + 5px);
 }
 
 .subject:hover .line-effect{
