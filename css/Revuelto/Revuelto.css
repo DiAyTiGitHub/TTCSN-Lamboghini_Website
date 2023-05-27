@@ -363,7 +363,7 @@ p {
 
 .highlight button, button:active, button:hover{
   outline:none;
-  border: none;
+  /* border: none; */
   /* margin-left: 2rem; */
 }
 .highlight .svg {

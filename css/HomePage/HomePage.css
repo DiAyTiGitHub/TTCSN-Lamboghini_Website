@@ -252,9 +252,44 @@
     font-stretch: normal;
 }
 
-.deal_slider_link .md-5{
+/* .deal_slider_link .md-5{
     margin-bottom: 3rem !important;
+} */
+
+/* .deal_slider_btn{
+    height: 3rem;
+    background-color: antiquewhite;
 }
+
+.deal__slider--btn{
+    width: 3.6rem;
+    height: 4rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 1s ease 1s;
+}
+
+.deal__slider--btn.active {
+    transform: scale(1);
+}
+
+.deal__slider--btn path {
+    stroke: white;
+    fill: transparent;
+    transition: fill 0.3s ease-out;
+}
+
+.deal__slider--btn:hover path {
+    fill: white;
+}
+
+.deal__slider--btn .icon.on-dark {
+    transition: stroke 0.3s ease-out,fill 0.3s ease-out;
+}
+
+.deal__slider--btn:hover .icon.on-dark {
+    stroke: black;
+} */
 
 @media (min-width: 1025px){
 
