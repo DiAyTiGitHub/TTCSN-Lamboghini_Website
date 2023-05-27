@@ -456,10 +456,20 @@ p {
   }
 }
 
+@media (max-width: 768px){
+  .tablet-design-button{
+    width: 100%;
+  }
+  .highlight button, button:active, button:hover{
+    margin-left: 0;
+  }
+}
+
 @media (min-width: 0px) and (max-width:576px) {
   .vid-row>div {
     height: 25rem;
   }
+  
 
 }
 
