@@ -1,0 +1,162 @@
+.footer {
+    color: #ffffff;
+    background-color: #181818;
+}
+
+.content {
+    padding: 50px 20px 60px;
+}
+
+.footer-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+
+.footer-item p {
+    display: inline;
+    position: relative;
+}
+
+.footer-social {
+    cursor: pointer;
+}
+
+.footer-icon {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.footer-disclaimer {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.line-effect {
+    left: 0;
+    top: calc(100% + 5px);
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: all 0.25s ease-in-out;
+}
+.footer {
+    color: #ffffff;
+    background-color: #181818;
+}
+
+.content {
+    padding: 50px 20px 60px;
+}
+
+.footer-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-item {
+    padding: 0;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    word-spacing: 0;
+    text-decoration: none solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+.footer-item {
+    display: flex;
+    position: relative;
+    width: fit-content;
+    margin-bottom:15px;
+}
+
+.footer-item p {
+    margin: 0;
+}
+
+.footer-social {
+    cursor: pointer;
+}
+
+.footer-icon {
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.footer-disclaimer {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.line-effect {
+    left: 0;
+    top: calc(100%);
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    transition: all 0.25s ease-in-out;
+}
+
+.footer-item:hover .line-effect{
+    width: 100%;
+}
+
+.info-subject {
+    width: 100%;
+    justify-content:flex-start;
+    padding-bottom: 25px;
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+    word-spacing: 0;
+    text-decoration: none solid rgb(255, 255, 255);
+    list-style: none;
+}
+
+/* .subject {
+    width: fit-content;
+    position: relative;
+}
+
+.teacher {
+    width: fit-content;
+    position: relative;
+} */
+
+.info-subject .line-effect {
+    /* top: calc(100% + 5px); */
+}
+
+/* .subject:hover .line-effect{
+    width: 100%;
+}
+
+.teacher:hover .line-effect{
+    width: 100%;
+} */
+
+

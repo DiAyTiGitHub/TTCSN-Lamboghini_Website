@@ -1,0 +1,12 @@
+#breadcrumbs {
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    width: fit-content;
+    /* top: 500px; */
+}
+
+.breadcrumb {
+    background-color: rgb(24, 24, 24);
+
+}

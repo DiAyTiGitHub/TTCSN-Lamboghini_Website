@@ -14,6 +14,13 @@ img {
   object-fit: cover;
 }
 
+p {
+  padding: 2em 0;
+  font-size: 1rem;
+  line-height: 2rem;
+  font-weight: 100;
+}
+
 .text-wrapper {
   padding: 2rem 0;
 }
@@ -144,6 +151,10 @@ img {
 }
 
 /* .car__infor */
+.car__infor { 
+    width: 100%;
+    margin: 0 0 5rem 0;
+}
 .car__infor>.container-fluid {
   height: 42rem;
 }
@@ -165,7 +176,7 @@ img {
   position: absolute;
   width: 100%;
   height: 100%;
-  transform: skew(-35deg);
+  transform: skew(-36deg);
   transform-origin: center center;
   background-color: gray;
   overflow: hidden;
@@ -177,7 +188,7 @@ img {
   left: -30rem;
   width: calc(100% + 45.85rem);
   height: 100%;
-  transform: skew(35deg);
+  transform: skew(36deg);
   transform-origin: center center;
 }
 
@@ -267,12 +278,7 @@ img {
 }
 
 /* tech__layout */
-p {
-  padding: 2em 0;
-  font-size: 1rem;
-  line-height: 2rem;
-  font-weight: 100;
-}
+
 
 .cont-item {
   height: 45rem;
@@ -303,7 +309,7 @@ p {
 }
 
 .middle {
-  height: 43rem;
+  height: 48rem;
   overflow: hidden;
   position: relative;
 }
@@ -334,7 +340,7 @@ p {
 .img4 {
   position: absolute;
   top: -20rem;
-  right: 12rem;
+  right: 15rem;
 }
 
 .tablet-img {
@@ -345,7 +351,7 @@ p {
 
 .tablet-design-button {
   font-weight: 400;
-  width: 100%;
+  width: auto;
   padding: 1rem;
   margin: 5px 0;
   border: 1px solid rgb(0, 0, 0);
@@ -361,10 +367,46 @@ p {
   color: white;
 }
 
+.sounding { 
+  width: 100%;
+  margin: 0 0 5rem 0;
+}
+.sounding .middle {
+  margin-top: -10rem;
+}
+.placeholder {
+  background-color: #f1f1f1;
+  text-align: center;
+  color: black;
+  height: 100%;
+}
+
+.sounding  .skew-cont {
+  height: 38rem;
+  bottom: 0rem;
+  right: 5rem;
+}
+
+.sounding .icon { 
+  width: 2rem;
+  margin-left: 1rem;
+}
+.sounding .icon-text {
+  margin-left: 1rem;
+}
+.sounding .expand-button {
+  bottom: 2rem;
+  left: 0rem;
+}
+/* highlight */
+.highlight { 
+  width: 100%;
+  margin: 0 0 5rem 0;
+}
 .highlight button, button:active, button:hover{
   outline:none;
-  /* border: none; */
-  /* margin-left: 2rem; */
+  border: none;
+  margin-left: 2rem;
 }
 .highlight .svg {
   width: 3rem;
@@ -373,6 +415,7 @@ p {
 .left-highlights {
   padding: 4vh 8vw;
   position: relative;
+  background-color: #f1f1f1;
 }
 .left-highlights h3{
   font-weight: 800;
@@ -392,6 +435,7 @@ p {
   position: absolute;
   bottom: 0;
 }
+
 .top-highlight-nav {
   padding-bottom: 2rem;
 }
@@ -471,6 +515,15 @@ p {
 
   .vid-row>div {
     height: 35rem;
+  }
+  .sounding .clip-svg { 
+    height: 38rem;
+  }
+  .sounding .row.middle {
+    height: 42rem;
+  }
+  .sounding .skew-cont{ 
+    height: 34rem;
   }
 }
 
@@ -557,3 +610,4 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
   }
+

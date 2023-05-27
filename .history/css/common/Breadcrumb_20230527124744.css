@@ -1,0 +1,13 @@
+#breadcrumbs {
+    z-index: 9999;
+    position: absolute;
+    left: 0;
+    top: 500px;
+}
+
+.breadcrumb {
+    background-color: rgb(24, 24, 24);
+    width: fit-content;
+    padding: 5px 30px 5px 65px;
+    text-decoration: text-transform: uppercase;;
+}
