@@ -445,6 +445,24 @@ p {
 /* .carousel-fade .carousel-item {
   height: auto;
 } */
+
+.carousel-slider-button{
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    padding: 0px;
+    border: none;
+    position: absolute !important;
+    background: none;
+    box-shadow: none;
+    color: white
+}
+
+.carousel-slider-button svg{
+  width: 3rem;
+  height: 3rem;
+}
 @media (max-width: 992px) {
   .carousel-inner {
     display: flex;
