@@ -94,7 +94,7 @@
 }
 
 .img-item-3 .skew-fix {
-    width: calc(100% + 60rem);
+    width: calc(100% + 45.85rem);
 }
 
 .bgc-grey {
@@ -110,12 +110,4 @@
     p {
         margin: 0;
     }
-}
-
-.cars-info .tablet-design-button {
-    width: 100%;
-}
-
-.cars-info .tablet-design-button:hover {
-    margin: 0;
 }

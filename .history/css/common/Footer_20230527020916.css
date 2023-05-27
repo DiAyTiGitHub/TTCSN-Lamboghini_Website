@@ -14,11 +14,10 @@
     margin-bottom: 30px;
 }
 
+
 .footer-item p {
     display: inline;
     position: relative;
-    margin: 0;
-    padding: 0;
 }
 
 .footer-social {
@@ -41,7 +40,6 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
-    margin-bottom: 16px;
 }
 
 .line-effect {
@@ -77,12 +75,19 @@
     word-spacing: 0;
     text-decoration: none solid rgb(255, 255, 255);
     cursor: pointer;
+}
+
+
+.footer-item {
     display: flex;
     position: relative;
     width: fit-content;
     margin-bottom:15px;
 }
 
+.footer-item p {
+    margin: 0;
+}
 
 .footer-social {
     cursor: pointer;
@@ -98,14 +103,12 @@
     font-weight: 300;
     line-height: 28px;
     margin-bottom: 30px;
-    padding: 0 15px;
 }
 
 .footer-copyright {
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
-    padding: 0 15px;
 }
 
 .line-effect {
@@ -125,7 +128,7 @@
 .info-subject {
     width: 100%;
     justify-content:flex-start;
-    margin-bottom: 0;
+    padding-bottom: 25px;
     font-size: 16px;
     line-height: 32px;
     text-align: left;
@@ -135,7 +138,7 @@
 }
 
 .footer-item-title {
-    margin-right: 5px !important;
+    margin-right: 50px !important;
 }
 
 

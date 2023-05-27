@@ -93,10 +93,6 @@
     left: 230px;
 }
 
-.img-item-3 .skew-fix {
-    width: calc(100% + 60rem);
-}
-
 .bgc-grey {
     background-color: rgb(241, 241, 241);
 }
@@ -110,12 +106,4 @@
     p {
         margin: 0;
     }
-}
-
-.cars-info .tablet-design-button {
-    width: 100%;
-}
-
-.cars-info .tablet-design-button:hover {
-    margin: 0;
 }

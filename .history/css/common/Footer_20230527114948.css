@@ -41,7 +41,6 @@
     font-size: 14px;
     font-weight: 300;
     line-height: 28px;
-    margin-bottom: 16px;
 }
 
 .line-effect {
@@ -80,7 +79,7 @@
     display: flex;
     position: relative;
     width: fit-content;
-    margin-bottom:15px;
+    /* margin-bottom:15px; */
 }
 
 
@@ -98,7 +97,7 @@
     font-weight: 300;
     line-height: 28px;
     margin-bottom: 30px;
-    padding: 0 15px;
+    /* padding: 0 15px; */
 }
 
 .footer-copyright {

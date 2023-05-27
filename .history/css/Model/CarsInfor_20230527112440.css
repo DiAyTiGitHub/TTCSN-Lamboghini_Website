@@ -112,10 +112,6 @@
     }
 }
 
-.cars-info .tablet-design-button {
-    width: 100%;
-}
-
-.cars-info .tablet-design-button:hover {
-    margin: 0;
+.cars-infor-content.tablet-design-button {
+    width: 100% !important;
 }
