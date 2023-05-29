@@ -785,16 +785,17 @@ p {
 
 @media (max-width: 768px) {
   .car__infor-details {
-    display: block;
-    z-index: 999;
-    position: fixed;
-    top: 0; 
-    margin: 0;
-    height: 100%;
-    overflow: auto;
-    padding: 0;
-    transform: scale(0);
-    transition: transform .3s ease-in-out;
+      display: block;
+      /* z-index: 999; */
+      margin-top: 0;
+      position: fixed;
+      top: 0; 
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      padding: 0;
+      /* transform: scale(0); */
+      transition: transform .3s ease-in-out;
   }
 
   .car__infor-details.display {

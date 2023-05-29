@@ -1,17 +1,16 @@
-const openBtn = document.querySelector(".btn-open-click");
+const openBtn = document.querySelector(".car__infor-btn");
 const html = document.querySelector("html");
 const main = document.querySelector(".main");
 const mobileOpenBtn = document.querySelector(".btn-open-mobile");
 const mobileCloseBtn = document.querySelector(".btn-close-mobile");
-const closeBtn = document.querySelector(".btn-close");
+const closeBtn = document.querySelector(".car__infor-btn-close");
 const specificationsGeneral = document.querySelector(".spec-general");
-const specificationsDetail = document.querySelector(".spec-details");
+const carInforDetails = document.querySelector(".car__infor-details");
 
 openBtn.addEventListener("click", () => {
-  console.log(openBtn)
   openBtn.classList.add("disabled");
-  specificationsDetail.classList.add("display");
-  specificationsDetail.scrollIntoView({ behavior: "smooth", block: "start" });
+  carInforDetails.classList.add("display");
+  carInforDetails.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 mobileOpenBtn.addEventListener("click", () => {
