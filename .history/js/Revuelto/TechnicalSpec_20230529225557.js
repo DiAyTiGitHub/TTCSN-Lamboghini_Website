@@ -1,4 +1,4 @@
-const openBtn = document.querySelector(".btn-open-click");
+const openBtn = document.querySelector(".btn-open");
 const html = document.querySelector("html");
 const main = document.querySelector(".main");
 const mobileOpenBtn = document.querySelector(".btn-open-mobile");

@@ -1,4 +1,4 @@
-const openBtn = document.querySelector(".btn-open-click");
+const openBtn = document.querySelector(".btn-open-1");
 const html = document.querySelector("html");
 const main = document.querySelector(".main");
 const mobileOpenBtn = document.querySelector(".btn-open-mobile");
@@ -6,13 +6,6 @@ const mobileCloseBtn = document.querySelector(".btn-close-mobile");
 const closeBtn = document.querySelector(".btn-close");
 const specificationsGeneral = document.querySelector(".spec-general");
 const specificationsDetail = document.querySelector(".spec-details");
-
-// openBtn.addEventListener("click", () => {
-//   console.log(openBtn)
-//   openBtn.classList.add("disabled");
-//   specificationsDetail.classList.add("display");
-//   specificationsDetail.scrollIntoView({ behavior: "smooth", block: "start" });
-// });
 
 openBtn.addEventListener("click", () => {
   console.log(openBtn)
