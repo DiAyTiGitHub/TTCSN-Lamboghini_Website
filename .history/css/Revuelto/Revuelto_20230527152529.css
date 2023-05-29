@@ -133,7 +133,7 @@ img {
 
 .overlay-button {
   height: 55px;
-  width: 55px;
+  width: 50px;
   margin-right: 36px;
   transform: scale(0);
   transition: transform 1s ease 1s;
@@ -251,11 +251,6 @@ img {
   transition: all .2s ease-in;
 }
 
-.button .svg {
-  width: 5rem;
-  height: 5rem;
-}
-
 #exit-button {
   position: absolute;
   top: 2rem;
@@ -279,6 +274,7 @@ img {
 }
 
 .on-dark {
+  width: 58px;
   stroke: white;
 }
 

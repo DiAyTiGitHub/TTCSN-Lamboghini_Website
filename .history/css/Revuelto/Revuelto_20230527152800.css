@@ -132,8 +132,8 @@ img {
 }
 
 .overlay-button {
-  height: 55px;
-  width: 55px;
+  height: 58px;
+  width: 58px;
   margin-right: 36px;
   transform: scale(0);
   transition: transform 1s ease 1s;
@@ -249,11 +249,6 @@ img {
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-}
-
-.button .svg {
-  width: 5rem;
-  height: 5rem;
 }
 
 #exit-button {

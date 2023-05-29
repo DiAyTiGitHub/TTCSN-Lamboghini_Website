@@ -42,21 +42,15 @@ img {
 }
 
 #overlay-h1 {
-  font-size: 110px;
   font-weight: 700;
-  line-height: 99px;
-  letter-spacing: -3.48px;
+  font-size: 2rem;
   opacity: 0;
   transform: translateX(-116%);
   transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 }
 
 #overlay-h2 {
-  display: inline-block;
-    font-weight: 500;
-    font-size: 33px;
-    letter-spacing: 1.36px;
-    line-height: 45.22px;
+  font-size: 1rem;
 }
 
 #overlay-h1.active {
@@ -108,17 +102,12 @@ img {
 }
 
 .config-text1 {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.42px;
-  line-height: 18.62px;
+  font-size: 0.8rem;
 }
 
 .config-text2 {
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: -0.72px;
-  line-height: 47.88px;
 }
 
 #bg-vid {
@@ -132,9 +121,6 @@ img {
 }
 
 .overlay-button {
-  height: 55px;
-  width: 55px;
-  margin-right: 36px;
   transform: scale(0);
   transition: transform 1s ease 1s;
 }
@@ -144,30 +130,17 @@ img {
 }
 
 .overlay-button>.svg {
-  width: 100%;
-  height: 100%;
+  width: 4rem;
+  height: 4rem;
 }
 
 .overlay-vert {
-  font-size: 16px;
   transform: translateY(999px);
   transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out;
 }
 
 .overlay-vert.active {
   transform: translateY(0);
-}
-
-.overlay-vert-title {
-  font-weight: 500;
-  letter-spacing: 0.42px;
-  line-height: 21.76px;
-}
-
-.overlay-vert-content {
-  font-weight: 300;
-  letter-spacing: -0.72px;
-  line-height: 21.28px;
 }
 
 /* .car__infor */
@@ -251,11 +224,6 @@ img {
   transition: all .2s ease-in;
 }
 
-.button .svg {
-  width: 5rem;
-  height: 5rem;
-}
-
 #exit-button {
   position: absolute;
   top: 2rem;
@@ -269,8 +237,8 @@ img {
 }
 
 .svg {
-  height: 100%;
-  width: 100%;
+  height: 5rem;
+  width: 5rem;
 }
 
 .btnPath {
@@ -455,22 +423,6 @@ p {
     height: 25rem;
   }
 
-  #overlay-header>h1 {
-    font-size: 40px;
-  }
-
-  #overlay-h2 {
-    font-size: 18px;
-  }
-
-  .overlay-vert-title {
-    font-size: 12px;
-  }
-  
-  .overlay-vert-content {
-    font-size: 16px;
-  }
-
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
@@ -484,22 +436,6 @@ p {
     width: 100%;
   }
 
-  #overlay-header>h1 {
-    font-size: 40px;
-  }
-
-  #overlay-h2 {
-    font-size: 18px;
-  }
-
-  .overlay-vert-title {
-    font-size: 12px;
-  }
-  
-  .overlay-vert-content {
-    font-size: 16px;
-  }
-
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -511,23 +447,18 @@ p {
     padding: 5rem 0px;
     width: 100%;
   }
-
-  #overlay-header>h1 {
-    font-size: 40px;
-  }
-
-  #overlay-h2 {
-    font-size: 18px;
-  }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   #overlay-header>h1 {
-    font-size: 80px;
+    font-size: 5rem;
   }
 
   #overlay-h2 {
-    font-size: 24px;
+    font-size: 34px !important;
+    font-weight: 500;
+    letter-spacing: 1.36px;
+    line-height: 45.22px;
   }
 
   #info-wrapper>.col-auto> :nth-child(1) {
@@ -539,39 +470,26 @@ p {
   }
 
   .config-text1 {
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.42px;
-    line-height: 17.29px;
+    font-size: 0.9rem;
   }
 
   .config-text2 {
-    font-size: 26px;
+    font-size: 1.7rem;
     font-weight: 300;
-    letter-spacing: -0.65px;
-    line-height: 34.58px;
   }
 
   .vid-row>div {
     height: 35rem;
   }
-
-  .overlay-vert-title {
-    font-size: 13px;
-  }
-  
-  .overlay-vert-content {
-    font-size: 16px;
-  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   #overlay-header>h1 {
-    font-size: 110px;
+    font-size: 5rem;
   }
 
   #overlay-h2 {
-    font-size: 34px;
+    font-size: 1.7rem;
   }
 
   #info-wrapper>.col-auto> :nth-child(1) {
@@ -583,17 +501,12 @@ p {
   }
 
   .config-text1 {
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.42px;
-    line-height: 17.29px;
+    font-size: 0.9rem;
   }
 
   .config-text2 {
-    font-size: 26px;
+    font-size: 1.7rem;
     font-weight: 300;
-    letter-spacing: -0.65px;
-    line-height: 34.58px;
   }
 
   .vid-row>div {
@@ -603,11 +516,11 @@ p {
 
 @media (min-width: 1400px) {
   #overlay-header>h1 {
-    font-size: 110px;
+    font-size: 7rem;
   }
 
   #overlay-h2 {
-    font-size: 34px;
+    font-size: 2.2rem;
   }
 
   #info-wrapper>.col-auto> :nth-child(1) {
@@ -619,17 +532,12 @@ p {
   }
 
   .config-text1 {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.42px;
-    line-height: 18.62px;
+    font-size: 1rem;
   }
 
   .config-text2 {
-    font-size: 36px;
+    font-size: 2.2rem;
     font-weight: 300;
-    letter-spacing: -0.72px;
-    line-height: 47.88px;
   }
 
   .col-xxl {
@@ -658,6 +566,3 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
-
-  

@@ -251,7 +251,7 @@ img {
   transition: all .2s ease-in;
 }
 
-.button .svg {
+.play-button.svg {
   width: 5rem;
   height: 5rem;
 }

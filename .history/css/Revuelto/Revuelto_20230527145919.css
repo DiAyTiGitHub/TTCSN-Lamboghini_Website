@@ -108,17 +108,12 @@ img {
 }
 
 .config-text1 {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.42px;
-  line-height: 18.62px;
+  font-size: 0.8rem;
 }
 
 .config-text2 {
-  font-size: 36px;
+  font-size: 1.5rem;
   font-weight: 300;
-  letter-spacing: -0.72px;
-  line-height: 47.88px;
 }
 
 #bg-vid {
@@ -132,9 +127,6 @@ img {
 }
 
 .overlay-button {
-  height: 55px;
-  width: 55px;
-  margin-right: 36px;
   transform: scale(0);
   transition: transform 1s ease 1s;
 }
@@ -144,8 +136,8 @@ img {
 }
 
 .overlay-button>.svg {
-  width: 100%;
-  height: 100%;
+  width: 4rem;
+  height: 4rem;
 }
 
 .overlay-vert {
@@ -251,11 +243,6 @@ img {
   transition: all .2s ease-in;
 }
 
-.button .svg {
-  width: 5rem;
-  height: 5rem;
-}
-
 #exit-button {
   position: absolute;
   top: 2rem;
@@ -269,8 +256,8 @@ img {
 }
 
 .svg {
-  height: 100%;
-  width: 100%;
+  height: 5rem;
+  width: 5rem;
 }
 
 .btnPath {
@@ -539,17 +526,15 @@ p {
   }
 
   .config-text1 {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.42px;
-    line-height: 17.29px;
+    line-height: 18.62px;
   }
 
   .config-text2 {
-    font-size: 26px;
+    font-size: 36px;
     font-weight: 300;
-    letter-spacing: -0.65px;
-    line-height: 34.58px;
   }
 
   .vid-row>div {
@@ -583,17 +568,12 @@ p {
   }
 
   .config-text1 {
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.42px;
-    line-height: 17.29px;
+    font-size: 0.9rem;
   }
 
   .config-text2 {
-    font-size: 26px;
+    font-size: 1.7rem;
     font-weight: 300;
-    letter-spacing: -0.65px;
-    line-height: 34.58px;
   }
 
   .vid-row>div {
@@ -619,17 +599,12 @@ p {
   }
 
   .config-text1 {
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.42px;
-    line-height: 18.62px;
+    font-size: 1rem;
   }
 
   .config-text2 {
-    font-size: 36px;
+    font-size: 2.2rem;
     font-weight: 300;
-    letter-spacing: -0.72px;
-    line-height: 47.88px;
   }
 
   .col-xxl {

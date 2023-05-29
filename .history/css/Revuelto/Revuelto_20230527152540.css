@@ -251,11 +251,6 @@ img {
   transition: all .2s ease-in;
 }
 
-.button .svg {
-  width: 5rem;
-  height: 5rem;
-}
-
 #exit-button {
   position: absolute;
   top: 2rem;
