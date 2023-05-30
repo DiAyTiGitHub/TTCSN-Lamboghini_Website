@@ -520,9 +520,9 @@ button:hover {
   }
 
   .carousel-item {
-    display: block;
+    /* display: block;
     margin-right: 0;
-    flex: 0 0 calc(100%/1.4);
+    flex: 0 0 calc(100%/1.4); */
   }
 }
 
