@@ -3,17 +3,15 @@
     position: absolute;
     left: 0;
     top: 125px;
-    animation: moveDown 1s ease-in-out;
+    animation: moveDown 2s ease-in-out;
 }
 
 @keyframes moveDown {
     0%  {
         top: 0;
-        opacity: 0;
     }
     100% {
         top: 125px;
-        opacity: 1;
     }
 }
 

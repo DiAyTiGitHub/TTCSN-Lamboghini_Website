@@ -2,8 +2,8 @@
     z-index: 50;
     position: absolute;
     left: 0;
-    top: 125px;
-    animation: moveDown 1s ease-in-out;
+    /* top: 125px; */
+    animation: moveDown 2s ease-in-out;
 }
 
 @keyframes moveDown {
