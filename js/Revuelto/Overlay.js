@@ -40,4 +40,3 @@ function displayEachWord(textElement, delay) {
 }
 
 window.addEventListener("load", active);
-// console.log('fuck');
