@@ -1,0 +1,41 @@
+.config__slider {
+    width: 100%;
+    height: auto;
+}
+
+.config__slider--bg {
+    width: 100%;
+}
+
+.config__slider--btn {
+    margin-left: 7px;
+    margin-top: 15px;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    cursor: pointer;
+    /* transform: scale(0);
+    transition: transform 1s ease 1s; */
+}
+
+.config__slider--btn path {
+    stroke: black;
+    fill: transparent;
+    transition: fill 0.3s ease-out;
+}
+
+.config__slider--btn:hover path {
+    fill: black;
+    stroke: black;
+}
+
+.config__slider--btn .icon.on-dark {
+    fill: white;
+    stroke: black;
+    transition: stroke 0.3s ease-out,fill 0.3s ease-out;
+}
+
+.config__slider--btn:hover .icon.on-dark {
+    /* fill: black;
+    stroke: white; */
+}

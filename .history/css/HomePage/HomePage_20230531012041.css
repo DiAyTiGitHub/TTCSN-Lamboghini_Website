@@ -166,6 +166,10 @@
 }
 
 
+.config__slider {
+    min-height: 100vh;
+}
+
 .deal_slider{
     padding: 0px;
     width: 100%;

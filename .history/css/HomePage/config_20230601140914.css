@@ -1,0 +1,133 @@
+.config__slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.config__slider--wrapper {
+    position: relative;
+    padding: 140px 0 60px 0;
+}
+
+.texts {
+    min-height: 500px;
+    white-space: nowrap;
+}
+
+.config__slider--bg {
+    width: 100%;
+}
+
+.config__slider--btn {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    /* transform: scale(0);
+    transition: transform 1s ease 1s; */
+}
+
+.config__slider--btn path {
+    stroke: black;
+    fill: transparent;
+    transition: fill 0.3s ease-out;
+}
+
+.config__slider--btn:hover path {
+    fill: black;
+    stroke: black;
+}
+
+.config__slider--btn .icon.on-dark {
+    fill: white;
+    stroke: black;
+    transition: stroke 0.3s ease-out,fill 0.3s ease-out;
+}
+
+.config__slider--btn:hover .icon.on-dark {
+    fill: black;
+    stroke: white;
+}
+
+.config__slider--content {
+    color: black;
+    font-size: 76px;
+    font-weight: 700;
+    letter-spacing: -2.28px;
+    line-height: 73.72px;
+}
+
+.pagination-item {
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1;
+    letter-spacing: 0.32px;
+    text-align: left;
+    padding: 0 65px 20px 0;
+    border: none;
+    color: rgba(32, 32, 32, 1);
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid rgba(203, 203, 202, 1);
+}
+
+.pagination-item:hover.pagination-item::before {
+    width: 100%;
+}
+
+.pagination-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    left: 0;
+    height: 2px;
+    bottom: -1px;
+    transition: width .3s ease-in-out;
+    background-color: #000;
+}
+
+.pagination-item.active.pagination-item::before {
+    width: 100%;
+}
+
+.config__slider--title {
+    color: black;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    line-height: 39px;
+}
+
+.word {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.word.active {
+    opacity: 1;
+}
+
+.position-absolute {
+    top: 0;
+    left: 0;
+}
+
+.links {
+    position: relative;
+}
+
+.link-item {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.link-item.active {
+    opacity: 1;
+    visibility: visible;
+}
