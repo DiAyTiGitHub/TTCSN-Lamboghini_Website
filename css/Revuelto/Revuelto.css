@@ -22,7 +22,7 @@ p {
 }
 
 .text-wrapper {
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
 }
 
 .tablet-spacing {
@@ -180,7 +180,7 @@ p {
 /* .car__infor */
 .car__infor {
   width: 100%;
-  margin: 0 0 5rem 0;
+  margin: 0;
 }
 
 .car__infor>.container-fluid {
@@ -512,6 +512,12 @@ button:hover {
 .carousel-slider-svg {
   width: 4rem;
   height: 4rem;
+}
+
+.banner 
+{
+  width: 100%;
+  background-color: black;
 }
 
 @media (max-width: 992px) {
