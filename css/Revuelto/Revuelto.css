@@ -111,7 +111,11 @@ p {
   text-decoration: none;
   color: white;
   left: 60%;
-  bottom: 0;
+  bottom: 6%;
+}
+
+#config-wrapper .text-wrapper {
+  padding-top: 0;
 }
 
 .config-text1 {
@@ -180,7 +184,7 @@ p {
 /* .car__infor */
 .car__infor {
   width: 100%;
-  margin: 0;
+  margin: 0 0 5rem 0 ;
 }
 
 .car__infor>.container-fluid {
@@ -817,6 +821,14 @@ p {
   .car__infor-details.display {
       transform: scale(1);
   }
+}
+
+@media (max-width: 1020px) {
+
+  .car__infor{
+    margin: 0 0 1rem 0;
+  }
+
 }
 
   
