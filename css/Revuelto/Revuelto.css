@@ -518,10 +518,91 @@ button:hover {
   height: 4rem;
 }
 
-.banner 
-{
+.banner_revuelto{
+  margin-bottom: 2rem;
+  padding: 0;
+}
+
+.banner_revuelto .banner_bg {
+  position: relative;
+  min-height: 30rem;
+  background-color: #181818
+}
+
+
+.banner_revuelto .banner_bg img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.banner_revuelto .banner_content {
+  position: relative;
+  z-index: 1;
   width: 100%;
-  background-color: black;
+}
+
+.banner_revuelto .banner_content .link {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  color: #ffffff;
+}
+
+.banner_revuelto .banner_content .link h2{
+  font-size: 3rem;
+  line-height: 1.05;
+}
+
+.banner_btn {
+  
+}
+
+.banner_btn svg {
+  width: 3rem;
+}
+
+.banner_btn span {
+  font-size: 2rem;
+  padding: 0 0 2px 2px ;
+}
+
+.contact_btn {
+  background: none;
+  border: none;
+}
+
+@media (min-width: 1025px) {
+  .banner_revuelto .banner_bg {
+      min-height: 30rem;
+
+  }
+  .banner_revuelto .banner_bg img {
+    object-fit: contain;
+    object-position: right;
+    /* min-width: 86rem;
+    min-height: 36rem; */
+  } 
+  
+
+}
+
+@media (min-width: 768px){
+  .banner_revuelto .banner_bg img {
+      /* object-fit: cover; */
+      object-position: 16rem 0rem;
+  }
 }
 
 @media (max-width: 992px) {
