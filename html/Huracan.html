@@ -19,7 +19,7 @@
 
 <link rel="stylesheet" href="../css/common/common.css" />
 <link rel="stylesheet" href="../css/common/LoadingOverlay.css">
-<link rel="stylesheet" href="../css/common/Header.css" />
+<link rel="stylesheet" href="../css/common/Huy_Header.css">
 <link rel="stylesheet" href="../css/common/Footer.css" />
 <link rel="stylesheet" href="../css/common/Breadcrumb.css">
 <link rel="stylesheet" href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
@@ -36,61 +36,274 @@
     </div>
   </div>
   <div class="main">
-    <header class="header">
-      <div class="header__overlay">
+    <div id="header">
+      <div class="header-nav">
+          <div class="header-nav-left">
+              <div class="logo">
+                  <img src="../resources/common/imgs/logo.webp" alt="">
+              </div>
+              <ul class="header-nav-left__list">
+                  <li class="header-nav-left__item">
+                      <a class="models" href="../html/Model.html">models</a>
+                  </li>
+              </ul>
+
+          </div>
+
+          <div class="header-nav-right">
+              <ul class="header-nav-right__list">
+                  <li class="header-nav-right__item">
+                      <a href="">Your account</a>
+                  </li>
+              </ul>
+              <div class="header-nav-right__icon">
+                  <div class="header-nav-right__icon-box">
+                      <i class="bars-icon-header fas fa-bars"></i>
+                  </div>
+              </div>
+          </div>
 
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="header__logoSection">
-            <a href="./HomePage.html">
-              <img class="header__logo" src="../resources/common/imgs/logo.webp" alt="Logo" />
-            </a>
-          </div>
-          <div class="header__itemContainer">
-            <div class="header__item">
-              <a href="./Model.html" class="header__item__content">MODELS</a>
-              <div class="sub__header">
-                <div class="sub__header__item">
-                  <a href="./Revuelto.html" class="sub__header__content">REVUELTO</a>
-                </div>
-                <div class="sub__header__item">
-                  <a href="../index.html" class="sub__header__content">HURACÁN</a>
-                  <div class="sub__header2">
-                    <div class="sub__header2__item">
-                      <a href="../index.html" class="sub__header2__content">HURACÁN STERRATO</a>
-                    </div>
-                    <div class="sub__header2__item">
-                      <a href="../index.html" class="sub__header2__content">HURACÁN TECHICA</a>
-                    </div>
-                    <div class="sub__header2__item">
-                      <a href="../index.html" class="sub__header2__content">HURACÁN STO</a>
-                    </div>
-                    <div class="sub__header2__item">
-                      <a href="../index.html" class="sub__header2__content">HURACÁN EVO SPYDER</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="sub__header__item">
-                  <a href="../index.html" class="sub__header__content">ADVENTADOR</a>
-                </div>
-                <div class="sub__header__item">
-                  <a href="../index.html" class="sub__header__content">URUS</a>
-                  <div class="sub__header2">
-                    <div class="sub__header2__item">
-                      <a href="../index.html" class="sub__header2__content">URUS S</a>
-                    </div>
-                    <div class="sub__header2__item">
-                      <a href="../index.html" class="sub__header2__content">URUS PERFORMANTE</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+      <div class="maskHeader">
       </div>
-    </header>
+
+      <div id="bars-icon-header" class="bars-overplay">
+          <div class="bars-overplay-exit">
+              <i class="exit-icon-header fas fa-times"></i>
+          </div>
+          <div class="bars-overplay-container">
+              <div class="bars-overplay-row">
+                  <div class="bars-overplay-col ">
+                      <span class="bars-overplay-tittle">LANGUAGES</span>
+                      <ul class="bars-overplay-setting">
+                          <li class="bars-overplay-lan"><a href="">ENGLISH</a> </li>
+                          <li class="bars-overplay-lan"><a class="active" href="">VIETNAM</a> </li>
+                      </ul>
+                  </div>
+                  <div class="bars-overplay-col">
+                      <span class="bars-overplay-tittle">DOCUMENTATION</span>
+                      <ul class="bars-overplay-setting">
+                          <li class="bars-overplay-social"><a href=""><i class="fab fa-facebook-f"></i></a> </li>
+                          <li class="bars-overplay-social"><a href=""><i class="fab fa-instagram"></i></i></a>
+                          </li>
+                          <li class="bars-overplay-social"><a href=""><i class="fab fa-twitter"></i></i></a> </li>
+                          <li class="bars-overplay-social"><a href=""><i class="fab fa-tiktok"></i></a> </li>
+                          <li class="bars-overplay-social"><a href=""><i class="fab fa-linkedin-in"></i></a> </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+
+          <div class="bars-overplay-mcontainer">
+              <div class="bars-overplay-mcontainer-nav">
+                  <ul class="nav-list active">
+                      <li class="nav-item" style="visibility: hidden">
+                          <div class="nav-item-box">
+                              <span class="mmodels">MODELS</span>
+                              <i class="fas fa-chevron-right"></i>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <div class="nav-item-box">
+                              <span class="mmodels">MODELS</span>
+                              <i class="fas fa-chevron-right"></i>
+                          </div>
+                      </li>
+                  </ul>
+
+                  <div class="header-menu-sdevie ">
+                      <div id="mmodels" class="header-menu-sdevice-item">
+                          <div class="header-menu-sdevice-item__list">
+                              <ul>
+                                  <li class="header-menu-item">
+                                      <div class="menu-sdevice-back">
+                                          <span class="menu-sdevice-back-logo">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                                      <path
+                                                          d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                                          transform="translate(1623.5 187.345)"
+                                                          class="hexagon on-dark"></path>
+                                                      <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                                          transform="rotate(-90 935.432 -711.068)"></path>
+                                                  </g>
+                                              </svg>
+                                          </span>
+                                          <span class="menu-sdevice-back-text">BACK</span>
+                                      </div>
+                                  </li>
+                                  <li class="header-menu-item">
+                                      <div class="menu-sdevice-box">
+                                          <a class="mrevuelto" href="">Revuelto</a>
+                                      </div>
+                                  </li>
+                                  <li class="header-menu-item">
+                                      <div class="menu-sdevice-box">
+                                          <a class="mhuracan" href="">huracán</a>
+                                          <i class="fas fa-chevron-right"></i>
+                                      </div>
+                                      <div id="mhuracan" class="menu-sub-sdevice-item">
+                                          <ul>
+                                              <li class="menu-sub-item"><a href="">HURACÁN STERRATO </a></li>
+                                              <li class="menu-sub-item"><a href="">HURACÁN TECNICA</a></li>
+                                              <li class="menu-sub-item"><a href="">HURACÁN STO</a> </li>
+                                              <li class="menu-sub-item"><a href="">HURACÁN EVO SPYDER</a></li>
+                                          </ul>
+                                          <ul style="padding-top: 19px;">
+                                              <li class="menu-sub-item"><a href="">overview</a> </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                                  <li class="header-menu-item">
+                                      <div class="menu-sdevice-box">
+                                          <a class="murus" href="">URUS</a>
+                                          <i class="fas fa-chevron-right"></i>
+                                      </div>
+                                      <div id="murus" class="menu-sub-sdevice-item">
+                                          <ul>
+                                              <li class="menu-sub-item"><a href="">URUS S</a> </li>
+                                              <li class="menu-sub-item"><a href="">URUS PERFORMANTE</a></li>
+                                          </ul>
+                                          <ul style="padding-top: 19px;">
+                                              <li class="menu-sub-item"><a href="">overview</a> </li>
+                                          </ul>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div id="mcustom" class="header-menu-sdevice-item">
+                          <div class="header-menu-sdevice-item__list">
+                              <ul>
+                                  <li class="header-menu-item">
+                                      <div class="menu-sdevice-back">
+                                          <span class="menu-sdevice-back-logo">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                                      <path
+                                                          d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                                          transform="translate(1623.5 187.345)"
+                                                          class="hexagon on-dark"></path>
+                                                      <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                                          transform="rotate(-90 935.432 -711.068)"></path>
+                                                  </g>
+                                              </svg>
+                                          </span>
+                                          <span class="menu-sdevice-back-text">BACK</span>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div id="mownership" class="header-menu-sdevice-item">
+                          <div class="header-menu-sdevice-item__list">
+                              <ul>
+                                  <li class="header-menu-item">
+                                      <div class="menu-sdevice-back">
+                                          <span class="menu-sdevice-back-logo">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                                      <path
+                                                          d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                                          transform="translate(1623.5 187.345)"
+                                                          class="hexagon on-dark"></path>
+                                                      <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                                          transform="rotate(-90 935.432 -711.068)"></path>
+                                                  </g>
+                                              </svg>
+                                          </span>
+                                          <span class="menu-sdevice-back-text">BACK</span>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div id="mmotorsport" class="header-menu-sdevice-item">
+                          <div class="header-menu-sdevice-item__list">
+                              <ul>
+                                  <li class="header-menu-item">
+                                      <div class="menu-sdevice-back">
+                                          <span class="menu-sdevice-back-logo">
+                                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                                                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                                      <path
+                                                          d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                                          transform="translate(1623.5 187.345)"
+                                                          class="hexagon on-dark"></path>
+                                                      <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                                          transform="rotate(-90 935.432 -711.068)"></path>
+                                                  </g>
+                                              </svg>
+                                          </span>
+                                          <span class="menu-sdevice-back-text">BACK</span>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="bars-overplay-mcontainer-social">
+                  <div class="social-item">
+                      <div class="social-item-container">
+                          <div class="social-item-content">
+                              <span class="social-item-logo">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271"
+                                      class="exagon up">
+                                      <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                          <path class="background exagon"
+                                              d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                              transform="translate(1623.5 187.345)"></path>
+                                          <path class="foreground up" d="M0 0l7.432 5.674L14.864 0"
+                                              transform="rotate(-180 828.432 109.068)"></path>
+                                      </g>
+                                  </svg>
+                              </span class="social-item-text">
+                              <span class="social-item-text">LANGUAGES</span>
+                          </div>
+                      </div>
+                      <div class="social-item-details">
+                          <div class="social-item-details-container">
+                              <ul>
+                                  <li>VIETNAM</li>
+                                  <li>ENGLISH</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="header-menu" >
+          <div id="models" class="header-menu-item ">
+              <div class="header-menu-item__list">
+                  <ul>
+                      <li><a class="revuelto" href="../html/Revuelto.html">revuelto</a></li>
+                      <li><a class="huracan" href="../html/Huracan.html">huracán</a> </li>
+                      <li><a class="urus" href="../html/Urus.html">urus</a> </li>
+                  </ul>
+              </div>
+              <div class="menu-sub">
+                  <div id="huracan" class="menu-sub-item">
+                      <ul>
+                          <li><a href="../html/Huracan_Sterrato.html">HURACÁN STERRATO </a></li>
+                          <li><a href="../html/Huracan_Tecnica.html">HURACÁN TECNICA</a></li>
+                          <li><a href="./Huracan_Sto.html">HURACÁN STO</a> </li>
+                          <li><a href="./Huracan_Evo_Spyder.html">HURACÁN EVO SPYDER</a></li>
+                      </ul>
+                  </div>
+                  <div id="urus" class="menu-sub-item">
+                      <ul>
+                          <li><a href="./Urus_S.html">URUS</a> </li>
+                          <li><a href="./Urus_Performante.html">URUS PERFORMANTE</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
     <div class="slider">
       <nav class="d-none d-md-block" aria-label="breadcrumb" id="breadcrumbs">
@@ -174,6 +387,97 @@
                 </g>
               </svg>
             </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="car__info container-fluid">
+      <div class="desktop d-none d-lg-block">
+        <div class="row top align-items-end">
+          <div class="texts col-6 align-self-stretch">
+            <div class="row align-items-center">
+              <div
+                class="offset-1 offset-lg-4 col-8 col-lg-7 col-xl-9"
+              >
+                <div class="texts-wrapper">
+                  <div class="row">
+                    <div class="col-12 col-md-8">
+                      <img
+                        src="../resources/Model/Huracán_logo.webp"
+                        alt=""
+                        class="car__logo"
+                      />
+                    </div>
+                  </div>
+                  <p class="cars-infor-content">
+                    Discover all the new models of this exclusive car family, created to shape to your deepest emotions. Combining the highest expression of Lamborghini’s power with the exclusive refinement of Italian handicraft, this series embodies authentic design and state-of-the-art mechanical technology. The Lamborghini Huracán is the perfect fusion of technology and design. With its crisp, streamlined lines, designed to cut through the air and tame the road, you’ll get a thrill just by looking at it. The only thing better than taking in this beauty from a distance is actually touching it. The finest Italian craftsmanship lavished on finishes of unprecedented prestige and quality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="imgs col-6">
+            <div class="img-wrapper">
+              <svg height="100%" viewBox="0 0 23.5 11" xmlns="http://www.w3.org/2000/svg" xlink:href="http://www.w3.org/1999/xlink" class="clip-svg"><defs><clipPath id="clip-polygon--uid414"><polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon><rect x="8" y="0" width="7.5" height="11"></rect><polygon points="15.4 0, 23.5 0, 15.5 11, 15.4 11"></polygon></clipPath></defs><g clip-path="url(#clip-polygon--uid414)"><image class="" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2023/03_21/s1.jpg" alt="Lamborghini Huracán- Technical Specifications, Pictures, Videos" href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2023/03_21/s1.jpg" width="100%" height="100%" x="0%" y="0%"></image></g></svg>
+            </div>
+          </div>
+        </div>
+        <div class="row middle align-items-stretch">
+          <div class="col-6">
+            <div class="img-wrapper">
+              <svg height="100%" viewBox="0 0 24 11" xmlns="http://www.w3.org/2000/svg" xlink:href="http://www.w3.org/1999/xlink" class="clip-svg"><defs><clipPath id="clip-polygon--uid416"><polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon><rect x="8" y="0" width="8" height="11"></rect><polygon points="15.9 0, 24 0, 16 11, 15.9 11"></polygon></clipPath></defs><g clip-path="url(#clip-polygon--uid416)"><image class="" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2022/11_30_sterrato/gate_hura_s_03.jpg" alt="Lamborghini Huracán- Technical Specifications, Pictures, Videos" href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2022/11_30_sterrato/gate_hura_s_03.jpg" width="100%" height="100%" x="0%" y="0%"></image></g></svg>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="img-wrapper">
+              <svg height="100%" viewBox="0 0 24 11" xmlns="http://www.w3.org/2000/svg" xlink:href="http://www.w3.org/1999/xlink" class="clip-svg"><defs><clipPath id="clip-polygon--uid415"><polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon><rect x="8" y="0" width="8" height="11"></rect><polygon points="15.9 0, 24 0, 16 11, 15.9 11"></polygon></clipPath></defs><g clip-path="url(#clip-polygon--uid415)"><image class="" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2022/11_30_sterrato/gate_hura_s_02.jpg" alt="Lamborghini Huracán- Technical Specifications, Pictures, Videos" href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2022/11_30_sterrato/gate_hura_s_02.jpg" width="100%" height="100%" x="0%" y="0%"></image></g></svg>
+            </div>
+          </div>
+        </div>
+        <div class="row bottom align-items-start">
+          <div class="imgs col-6">
+            <div class="img-wrapper">
+              <svg height="100%" viewBox="0 0 30.2 11" xmlns="http://www.w3.org/2000/svg" xlink:href="http://www.w3.org/1999/xlink" class="clip-svg"><defs><clipPath id="clip-polygon--uid417"><polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon><rect x="8" y="0" width="14.2" height="11"></rect><polygon points="22.1 0, 30.2 0, 22.2 11, 22.1 11"></polygon></clipPath></defs><g clip-path="url(#clip-polygon--uid417)"><image class="" src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2022/11_30_sterrato/gate_hura_s_04.jpg" alt="Lamborghini Huracán- Technical Specifications, Pictures, Videos" href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/model_gw/huracan/s/2022/11_30_sterrato/gate_hura_s_04.jpg" width="100%" height="100%" x="0%" y="0%"></image></g></svg>
+            </div>
+          </div>
+          <div class="texts col-6 align-self-stretch">
+            <div class="row align-items-center">
+              <div class="col-5 col-lg-9 col-xl-8 offset-2 offset-xl-0 no-gutters">
+                <div class="texts-wrapper">
+                  <h2 class="title">DESIGN</h2>
+                  <p class="cars-infor-content">Sculptured and sensual, the Huracán’s design is based on the spiky hexagonal forms of the carbon atom, while the seamless roof profile is an unmistakable mark of the Lamborghini DNA. The Huracán is unique even in the dark, thanks to the alluringly “technological” light of its full-LED lighting system. Choose your favourite Lamborghini Huracán and discover its technical specifications.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile d-block d-lg-none">
+        <div class="container-fluid">
+          <div class="tablet-spacing">
+            <img src="../resources/Huracan/Car_infor01.webp" alt="" class="tablet-img">
+            <div class="text-wrapper">
+              <img class="logo-mobile" src="../resources/Model/Huracán_logo.webp" alt="">
+              <p>
+                Discover all the new models of this exclusive car family, created to shape to your deepest emotions. Combining the highest expression of Lamborghini’s power with the exclusive refinement of Italian handicraft, this series embodies authentic design and state-of-the-art mechanical technology. The Lamborghini Huracán is the perfect fusion of technology and design. With its crisp, streamlined lines, designed to cut through the air and tame the road, you’ll get a thrill just by looking at it. The only thing better than taking in this beauty from a distance is actually touching it. The finest Italian craftsmanship lavished on finishes of unprecedented prestige and quality.
+              </p>
+            </div>
+            <!-- <div class="justify-content-center">
+              <button class="tablet-design-button">EXTERIOR DESIGN 3D VIEW</button>
+            </div> -->
+          </div>
+          <div class="tablet-spacing">
+            <img src="../resources/Huracan/Car_infor02.webp" alt="" class="tablet-img">
+            <div class="text-wrapper">
+              <span class="header-span">DESIGN</span>
+              <p>
+                Sculptured and sensual, the Huracán’s design is based on the spiky hexagonal forms of the carbon atom, while the seamless roof profile is an unmistakable mark of the Lamborghini DNA. The Huracán is unique even in the dark, thanks to the alluringly “technological” light of its full-LED lighting system. Choose your favourite Lamborghini Huracán and discover its technical specifications.
+              </p>
+            </div>
+            <!-- <div class="justify-content-center">
+              <button class="tablet-design-button">EXTERIOR DESIGN 3D VIEW</button>
+            </div> -->
           </div>
         </div>
       </div>
@@ -314,7 +618,7 @@
   </div>
 
   <!-- Optional JavaScript -->
-  <script src="../js/common/Header.js"></script>
+  <script src="../js/common/Huy_header.js"></script>
   <script src="../js/common/Loading.js"></script>
   <script src="../js/Revuelto/CarVideo.js"></script>
   <!-- <script src="../js/Model/ModelSlider.js"></script> -->
