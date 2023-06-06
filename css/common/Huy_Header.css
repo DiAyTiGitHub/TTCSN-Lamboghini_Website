@@ -3,6 +3,8 @@
   z-index: 100;
   width: 100%;
   top:0;
+  transition: top 0.3s;
+  transform: translateY(-100%);
 }
 
 #header .header-nav {
@@ -11,7 +13,7 @@
   width: 100%;
   justify-content: space-between;
   height: 86px;
-  padding: 1.1rem 3.7rem;
+  padding: 0.8rem 3.7rem;
   background-color: #181818;
 }
 

@@ -220,15 +220,16 @@ const header = () => {
 
 }
 
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById('header').style.display = "block";
-    } else {
-        document.getElementById('header').style.display = "none";
-    }
-    prevScrollpos = currentScrollPos;
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.querySelector('#header').style.top = "86px";
+  } else {
+    document.querySelector('#header').style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
 }
 
 header();
