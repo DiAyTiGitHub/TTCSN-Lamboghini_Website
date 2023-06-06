@@ -3,6 +3,12 @@
     user-select: none;
 }
 
+@media (max-width: 420px) {
+    .model__slider{
+        display: none;
+    }
+}
+
 
 #content .slider2 {
     position: relative;
