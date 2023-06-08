@@ -233,5 +233,5 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 }
-
+document.querySelector('#header').style.top = `${document.querySelector('#header').clientHeight}px`;
 header();
