@@ -311,3 +311,31 @@
         min-height: 14rem;
     }
 }
+
+@media (max-width: 790px){
+    .deal__slider--btn svg {
+        min-width: 3rem;
+        height: 3rem;
+    }
+}
+@media (max-width: 580px){
+    .deal_slider_link {
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+    }
+
+    .deal__slider--btn svg {
+        min-width: 2rem;
+        height: 2rem;
+    }
+
+    .deal_slider_link h2{
+        font-size: 1.8rem;
+    }
+
+    .deal_slider_link h4{
+        font-size: 1.3rem;
+    }
+}
+

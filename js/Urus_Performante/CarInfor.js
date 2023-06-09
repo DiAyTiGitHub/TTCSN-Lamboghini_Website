@@ -11,10 +11,10 @@ carInfoOpenBtn.addEventListener("click", () => {
   carInforDetails.scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
-// carInfoMobileOpenBtn.addEventListener("click", () => {
-//   carInforDetails.classList.add("display");
-//   html.style.overflow = "hidden";
-// });
+carInfoMobileOpenBtn.addEventListener("click", () => {
+  carInforDetails.classList.add("display");
+  html.style.overflow = "hidden";
+});
 
 carInfoCloseBtn.addEventListener("click", () => {
   carInfoOpenBtn.classList.remove("disabled");
