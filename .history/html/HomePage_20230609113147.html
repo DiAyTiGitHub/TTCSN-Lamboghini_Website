@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <link rel="icon" type="image/png" href="../resources/common/imgs/favicon-96x96.webp" sizes="96x96" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- set up font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Lamboghini - Home Page</title>
+</head>
+
+<link rel="stylesheet" href="../css/common/common.css" />
+<link rel="stylesheet" href="../css/HomePage/config.css">
+<link rel="stylesheet" href="../css/common/Huy_Header.css">
+<link rel="stylesheet" href="../css/common/Footer.css" />
+<link rel="stylesheet" href="../css/common/LoadingOverlay.css">
+<link rel="stylesheet" href="../css/HomePage/HomePage.css" />
+<link rel="stylesheet" href="../css/HomePage/ModelSlider.css" />
+<link rel="stylesheet" href="../css/HomePage/NewSection.css" />
+<link rel="stylesheet" href="../css/common/Footer.css">
+<link rel="stylesheet"
+  href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+
+
+<body>
+  <div class="loading__overlay">
+    <div class="loading__overlay__inner">
+      <div class="loading__overlay__content"><span class="loading__spinner"></span></div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div id="header">
+      <div class="header-nav">
+        <div class="header-nav-left">
+          <div class="logo">
+            <img src="../resources/common/imgs/logo.webp" alt="">
+          </div>
+          <ul class="header-nav-left__list">
+            <li class="header-nav-left__item">
+              <a class="models" href="../html/HomePage.html">home</a>
+            </li>
+            <li class="header-nav-left__item">
+              <a class="models" href="../html/Model.html">models</a>
+            </li>
+            <li class="header-nav-left__item">
+              <a class="models" href=" ">new</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="header-nav-right">
+          <ul class="header-nav-right__list">
+            <li class="header-nav-right__item">
+              <a href="">Your account</a>
+            </li>
+          </ul>
+          <div class="header-nav-right__icon">
+            <div class="header-nav-right__icon-box">
+              <i class="bars-icon-header fas fa-bars"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="maskHeader">
+      </div>
+
+      <div id="bars-icon-header" class="bars-overplay">
+        <div class="bars-overplay-exit">
+          <i class="exit-icon-header fas fa-times"></i>
+        </div>
+        <div class="bars-overplay-container">
+          <div class="bars-overplay-row">
+            <div class="bars-overplay-col ">
+              <span class="bars-overplay-tittle">LANGUAGES</span>
+              <ul class="bars-overplay-setting">
+                <li class="bars-overplay-lan"><a href="">ENGLISH</a> </li>
+                <li class="bars-overplay-lan"><a class="active" href="">VIETNAM</a> </li>
+              </ul>
+            </div>
+            <div class="bars-overplay-col">
+              <span class="bars-overplay-tittle">DOCUMENTATION</span>
+              <ul class="bars-overplay-setting">
+                <li class="bars-overplay-social"><a href=""><i class="fab fa-facebook-f"></i></a> </li>
+                <li class="bars-overplay-social"><a href=""><i class="fab fa-instagram"></i></i></a>
+                </li>
+                <li class="bars-overplay-social"><a href=""><i class="fab fa-twitter"></i></i></a> </li>
+                <li class="bars-overplay-social"><a href=""><i class="fab fa-tiktok"></i></a> </li>
+                <li class="bars-overplay-social"><a href=""><i class="fab fa-linkedin-in"></i></a> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bars-overplay-mcontainer">
+          <div class="bars-overplay-mcontainer-nav">
+            <ul class="nav-list active">
+              <li class="nav-item" style="visibility: hidden">
+                <div class="nav-item-box">
+                  <span class="mmodels">MODELS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="nav-item-box">
+                  <span class="mmodels">MODELS</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+              </li>
+            </ul>
+
+            <div class="header-menu-sdevie ">
+              <div id="mmodels" class="header-menu-sdevice-item">
+                <div class="header-menu-sdevice-item__list">
+                  <ul>
+                    <li class="header-menu-item">
+                      <div class="menu-sdevice-back">
+                        <span class="menu-sdevice-back-logo">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                            <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                              <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                              <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                transform="rotate(-90 935.432 -711.068)"></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="menu-sdevice-back-text">BACK</span>
+                      </div>
+                    </li>
+                    <li class="header-menu-item">
+                      <div class="menu-sdevice-box">
+                        <a class="mrevuelto" href="">Revuelto</a>
+                      </div>
+                    </li>
+                    <li class="header-menu-item">
+                      <div class="menu-sdevice-box">
+                        <a class="mhuracan" href="">huracán</a>
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      <div id="mhuracan" class="menu-sub-sdevice-item">
+                        <ul>
+                          <li class="menu-sub-item"><a href="">HURACÁN STERRATO </a></li>
+                          <li class="menu-sub-item"><a href="">HURACÁN TECNICA</a></li>
+                          <li class="menu-sub-item"><a href="">HURACÁN STO</a> </li>
+                          <li class="menu-sub-item"><a href="">HURACÁN EVO SPYDER</a></li>
+                        </ul>
+                        <ul style="padding-top: 19px;">
+                          <li class="menu-sub-item"><a href="">overview</a> </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="header-menu-item">
+                      <div class="menu-sdevice-box">
+                        <a class="murus" href="">URUS</a>
+                        <i class="fas fa-chevron-right"></i>
+                      </div>
+                      <div id="murus" class="menu-sub-sdevice-item">
+                        <ul>
+                          <li class="menu-sub-item"><a href="">URUS S</a> </li>
+                          <li class="menu-sub-item"><a href="">URUS PERFORMANTE</a></li>
+                        </ul>
+                        <ul style="padding-top: 19px;">
+                          <li class="menu-sub-item"><a href="">overview</a> </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="mcustom" class="header-menu-sdevice-item">
+                <div class="header-menu-sdevice-item__list">
+                  <ul>
+                    <li class="header-menu-item">
+                      <div class="menu-sdevice-back">
+                        <span class="menu-sdevice-back-logo">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                            <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                              <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                              <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                transform="rotate(-90 935.432 -711.068)"></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="menu-sdevice-back-text">BACK</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="mownership" class="header-menu-sdevice-item">
+                <div class="header-menu-sdevice-item__list">
+                  <ul>
+                    <li class="header-menu-item">
+                      <div class="menu-sdevice-back">
+                        <span class="menu-sdevice-back-logo">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                            <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                              <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                              <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                transform="rotate(-90 935.432 -711.068)"></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="menu-sdevice-back-text">BACK</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="mmotorsport" class="header-menu-sdevice-item">
+                <div class="header-menu-sdevice-item__list">
+                  <ul>
+                    <li class="header-menu-item">
+                      <div class="menu-sdevice-back">
+                        <span class="menu-sdevice-back-logo">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                            <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                              <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                              <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+                                transform="rotate(-90 935.432 -711.068)"></path>
+                            </g>
+                          </svg>
+                        </span>
+                        <span class="menu-sdevice-back-text">BACK</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bars-overplay-mcontainer-social">
+            <div class="social-item">
+              <div class="social-item-container">
+                <div class="social-item-content">
+                  <span class="social-item-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="exagon up">
+                      <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                        <path class="background exagon"
+                          d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                          transform="translate(1623.5 187.345)"></path>
+                        <path class="foreground up" d="M0 0l7.432 5.674L14.864 0"
+                          transform="rotate(-180 828.432 109.068)"></path>
+                      </g>
+                    </svg>
+                  </span class="social-item-text">
+                  <span class="social-item-text">LANGUAGES</span>
+                </div>
+              </div>
+              <div class="social-item-details">
+                <div class="social-item-details-container">
+                  <ul>
+                    <li>VIETNAM</li>
+                    <li>ENGLISH</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-menu">
+        <div id="models" class="header-menu-item ">
+          <div class="header-menu-item__list">
+            <ul>
+              <li><a class="revuelto" href="../html/Revuelto.html">revuelto</a></li>
+              <li><a class="huracan" href="../html/Huracan.html">huracán</a> </li>
+              <li><a class="urus" href="../html/Urus.html">urus</a> </li>
+            </ul>
+          </div>
+          <div class="menu-sub">
+            <div id="huracan" class="menu-sub-item">
+              <ul>
+                <li><a href="../html/Huracan_Sterrato.html">HURACÁN STERRATO </a></li>
+                <li><a href="../html/Huracan_Tecnica.html">HURACÁN TECNICA</a></li>
+                <li><a href="./Huracan_Sto.html">HURACÁN STO</a> </li>
+                <li><a href="./Huracan_Evo_Spyder.html">HURACÁN EVO SPYDER</a></li>
+              </ul>
+            </div>
+            <div id="urus" class="menu-sub-item">
+              <ul>
+                <li><a href="./Urus_S.html">URUS</a> </li>
+                <li><a href="./Urus_Performante.html">URUS PERFORMANTE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video__slider">
+      <div class="container-fluid px-0 h-100">
+        <span alt="" class="img_bg" src=""></span>
+        <div class="row mx-0 align-items-end bg-overlay">
+          <div class="px-md-0 col-12 col-sm-10 col-md-7 col-xl-8 offset-sm-1">
+            <div class="wapper px-1">
+              <div class="video__slider--title" data-text="GIRO 60th Anniversary"></div>
+              <div class="video__slider--content move">
+                JOIN US!
+              </div>
+              <span class="video__slider--btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                    <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                      transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                    <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                    </path>
+                  </g>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="model__slider" id="content">
+      <div class="slider2">
+        <div class="slides2">
+          <div class="slide2" data-index="0">
+            <div class="slide2-skew">
+              <div class="skew-fix">
+                <img src="../resources/HomePage/imgs/huy_model_slider_urus.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slide2" data-index="1">
+            <div class="slide2-skew">
+              <div class="skew-fix">
+                <img src="../resources/HomePage/imgs/huy_model_slider_huracan.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slide2 active" data-index="2">
+            <div class="slide2-skew">
+              <div class="skew-fix">
+                <img src="../resources/HomePage/imgs/huy_model_slider_revuelto.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider2-navigation">
+          <span class="tittle">MODELS</span>
+          <div class="slider2-navigation-btn">
+            <span class="btn btn-left">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                <g stroke-width="1" transform="translate(-1624 -187.923)">
+                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                  <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675" transform="rotate(-90 935.432 -711.068)">
+                  </path>
+                </g>
+              </svg>
+            </span>
+
+            <span class="btn btn-right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                <g stroke-width="1" transform="translate(-1624 -187.923)">
+                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                  <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                  </path>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="slide2-text-container">
+          <div class="slogan1 text-container">
+            <span class="name-car" data-text="HURACÁN">HURACÁN</span>
+            <span class="slogan-car">BEYOND THE CONCRETE</span>
+          </div>
+
+          <div class="slogan2 text-container active">
+            <span class="name-car" data-text="REVUELTO">REVUELTO</span>
+            <span class="slogan-car">FROM NOW ON</span>
+          </div>
+
+          <div class="slogan0 text-container">
+            <span class="name-car" data-text="URUS">URUS</span>
+            <span class="slogan-car"> UNLOCK ANY ROAD</span>
+          </div>
+          <div class="slider2-explore">
+            <span class="slider2-explore-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                  <g class="icon on-dark" transform="translate(627 -5248.5)">
+                    <path d="M0 0v15" transform="translate(1022.5 5458.5)"></path>
+                    <path d="M0 0v15" transform="rotate(90 -2218 3248)"></path>
+                  </g>
+                </g>
+              </svg>
+            </span>
+            <span class="slider2-explore-text">Explore the <br />
+              models</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="config__slider">
+      <div class="d-md-none config__slider--wrapper">
+        <div class="row align-content-stretch no-gutters">
+          <div class="col-10 offset-1 offset-lg-1 texts">
+            <div class="links">
+              <div class="link-item active" data-index="1">
+                <div class="config__slider--title" data-text="MODEL">MODEL</div>
+                <div class="config__slider--content text-uppercase">
+                  <div class="config__slider--subContent">DISCOVER YOUR</div>
+                  <div class="config__slider--nameCar">Revuelto</div>
+                </div>
+                <a href="../html/Revuelto.html" class="config__slider--btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                      <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                        transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                      <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-item" data-index="2">
+                <div class="config__slider--title" data-text="MODEL">MODEL</div>
+                <div class="config__slider--content">
+                  <div class="config__slider--subContent">DISCOVER YOUR</div>
+                  <div class="config__slider--nameCar">Huracán</div>
+                </div>
+                <a href="../html/Huracan.html" class="config__slider--btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                      <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                        transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                      <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-item" data-index="3">
+                <div class="config__slider--title" data-text="MODEL">MODEL</div>
+                <div class="config__slider--content">
+                  <div class="config__slider--subContent">DISCOVER YOUR</div>
+                  <div class="config__slider--nameCar">URUS</div>
+                </div>
+                <a href="../html/Urus.html" class="config__slider--btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                      <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                        transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                      <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="config__slider--pagination d-flex">
+              <div class="pagination-item active" data-index="1">Revuelto</div>
+              <div class="pagination-item " data-index="2">Huracán</div>
+              <div class="pagination-item " data-index="3">Urus</div>
+            </div>
+          </div>
+        </div>
+        <img alt="" class="config__slider--bg" src="../resources/HomePage/imgs/config1.webp"></img>
+      </div>
+    </div>
+
+    <div class="deal_slider">
+      <div class="deal_slider_bg">
+        <span>
+          <img src="../resources/HomePage/imgs/deal_slider.jpg" alt="">
+        </span>
+        <div class="deal_slider_content">
+          <div class="deal_slider_overlay"></div>
+          <div class="deal_slider_link offset-sm-1">
+            <h4>DEALER LOCATOR</h4>
+            <h2 class="">
+              FIND YOUR <br />
+              COUNTRY DEALER
+            </h2>
+            <div class="deal_slider_btn ">
+              <a class="deal__slider--btn" href="model.html">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                    <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                      transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                    <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="news__section mt-5 mb-5">
+      <div class="main_new row no-gutters">
+        <div class="col-12 col-md-10 offset-md-1">
+          <div class="col-12">
+            <h3 class="news-section-title--secondary">News</h3>
+            <h1 class="news-section-title--primary">Lamboghini world</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1 pb-5">
+          <div class="row no-gutters">
+            <div class="col-12">
+              <a href="" class="d-block">
+
+                <img src="../resources/HomePage/imgs/new2.webp" class=" main_new_image" />
+
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1">
+          <div class="col-12 col-xl-6">
+            <h5 class="news__section_main_new_time">5 May 2023</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-8">
+              <div class="col-12">
+                <a href="" class="d-block">
+                  <h3 class="news-title--primary">
+                    LAMBORGHINI HURACÁN STERRATO: CALIFORNIA DRIFTING
+                  </h3>
+                </a>
+                <div class="d-none d-md-block main-news-abstract">
+                  <p class="">
+                    The diverse landscape of California provides the perfect environment in which to appreciate
+                    the eclectic spirit of the Huracán Sterrato, evident as soon as the tires hit tarmac and then
+                    sand, on road and raceway.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 text-md-right">
+              <a href="" class="boxed d-none d-md-inline-block light news_section_readmore">
+                <span>READMORE</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news_list">
+        <div class="news__section_new">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="row no-gutters">
+              <div class="col-12 col-xl-6">
+                <a href="" class="d-block">
+                  <div class="">
+                    <img src="../resources/HomePage/imgs/new3.webp" class="img-fluid" />
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-xl-6 pl-xl-5">
+                <div class="h-100 d-md-flex flex-column data">
+                  <div class="date">
+                    <time datetime="2023-05-08">8 May 2023</time>
+                  </div>
+                  <div class="my-md-auto">
+                    <a href="" class="d-block text-dark">
+                      <h2 class="news-title--primary">
+                        Automobili Lamborghini continues to grow: upward trend
+                        in Q1 2023
+                      </h2>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="" class="boxed d-none d-xl-inline-block light news_section_readmore">
+                      <span class="d-block">READMORE</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news__section_new">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="row no-gutters">
+              <div class="col-12 col-xl-6">
+                <a href="" class="d-block">
+                  <div class="">
+                    <img src="../resources/HomePage/imgs/new4.webp" class="img-fluid" />
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-xl-6 pl-xl-5">
+                <div class="h-100 d-md-flex flex-column data">
+                  <div class="date">
+                    <time datetime="2023-05-08">8 May 2023</time>
+                  </div>
+                  <div class="my-md-auto">
+                    <a href="" class="d-block text-dark">
+                      <h2 class="news-title--primary">
+                        Automobili Lamborghini continues to grow: upward trend
+                        in Q1 2023
+                      </h2>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="" class="boxed d-none d-xl-inline-block light news_section_readmore">
+                      <span class="d-block">READMORE</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news_readmore">
+        <div class="row">
+          <a href="" class="boxed d-md-inline-block light news_section_readmore">
+            <span>SEE ALL</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer container-fluid">
+      <div class="content row no-gutters">
+        <div class="">
+          <div class="row">
+            <ul class="order-0 col-12 info-subject text-uppercase d-md-flex">
+              <li class="footer-item mr-5">
+                <p class="footer-item-title">Subject:</p>
+                <p class="footer-item-content">Thuc Tap Co So Nganh
+                </p>
+                <span class="line-effect"></span>
+              </li>
+              <li class="footer-item mr-5">
+                <p class="footer-item-title">Teacher:</p>
+                <p class="footer-item-content">Nguyen Thi My Binh</p>
+                <span class="line-effect"></span>
+              </li>
+              <li class="footer-item mr-5">
+                <p class="footer-item-title">Team:</p>
+                <p class="footer-item-content">10</p>
+                <span class="line-effect"></span>
+              </li>
+            </ul>
+            <div class="col order-1">
+              <ul class="footer-menu text-uppercase">
+                <li class="footer-item col-6 col-md-auto mr-md-4 mr-lg-5">
+                  <p>
+                    Dinh Tuan Dat
+                    <span class="line-effect"></span>
+                  </p>
+                </li>
+                <li class="footer-item col-6 col-md-auto mr-md-4 mr-lg-5">
+                  <p>
+                    Trinh Tuan Dat
+                    <span class="line-effect"></span>
+                  </p>
+                </li>
+                <li class="footer-item col-6 col-md-auto mr-md-4 mr-lg-5">
+                  <p>
+                    Tran Duc Huy
+                    <span class="line-effect"></span>
+                  </p>
+                </li>
+                <li class="footer-item col-6 col-md-auto mr-md-4 mr-lg-5">
+                  <p>
+                    Nguyen Thien Lam
+                    <span class="line-effect"></span>
+                  </p>
+                </li>
+                <li class="footer-item col-6 col-md-auto mr-md-4 mr-lg-5">
+                  <p>
+                    Le Minh Tien
+                    <span class="line-effect"></span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-social order-5 order-md-2 ml-md-auto col-md-auto">
+              <a class="col-2 col-md-auto" href="https://github.com/DiAyTi2004/TTCSN-Lamboghini_Website"
+                target="_blank">
+                <i class="footer-icon fa-brands fa-github"></i>
+              </a>
+              <a class="col-2 col-md-auto"
+                href="https://drive.google.com/drive/folders/1pZQJv9B7hnCOqSFP88pEr90bhcXTx5F7" target="_blank">
+                <i class="footer-icon fa-brands fa-google-drive"></i>
+              </a>
+              <a class="col-2 col-md-auto"
+                href="https://docs.google.com/document/d/1l0y60eo60weLiJv5kQyD_oORHAsc3gbQ0-GrpMYBHZg/edit"
+                target="_blank">
+                <i class="footer-icon fa-solid fa-file-word"></i>
+              </a>
+            </div>
+            <p class="footer-disclaimer order-3 col-12">The consumption and emissions values in the website refer to
+              your geographical IP. This value might be unrealistic if you navigate using VPN or if the position of your
+              Internet provider is imprecise. If you believe you are incorrectly geolocalized, contact your dealer to
+              get valid consumption and emissions information in your area.</p>
+            <p class="footer-copyright order-4 col-12">Copyright © 2023 Automobili Lamborghini S.p.A. a sole shareholder
+              company part of Audi Group.<br>
+              All rights reserved. VAT no. IT 00591801204
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <script src="../js/common/Loading.js"></script>
+  <script src="../js/common/Huy_header.js"></script>
+  <script src="../js/HomePage/HomePage.js"></script>
+  <script src="../js/HomePage/VideoSlider.js"></script>
+  <script src="../js/HomePage/ModelSlider.js"></script>
+  <script src="../js/HomePage/Config.js"></script>
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
