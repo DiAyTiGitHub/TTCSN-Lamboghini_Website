@@ -518,19 +518,26 @@ button:hover {
   height: 4rem;
 }
 
-.banner_revuelto{
+.banner{
   margin-bottom: 2rem;
   padding: 0;
 }
 
-.banner_revuelto .banner_bg {
+.banner .banner_bg {
   position: relative;
   min-height: 30rem;
   background-color: #181818
 }
 
+.banner .banner_pc {
+  display: block;
+}
 
-.banner_revuelto .banner_bg img {
+.banner .banner_tablet{
+  display: none;
+}
+
+.banner .banner_bg img {
   position: absolute;
   inset: 0px;
   box-sizing: border-box;
@@ -545,13 +552,13 @@ button:hover {
   max-height: 100%;
 }
 
-.banner_revuelto .banner_content {
+.banner .banner_content {
   position: relative;
   z-index: 1;
   width: 100%;
 }
 
-.banner_revuelto .banner_content .link {
+.banner .banner_content .link {
   position: absolute;
   left: 0;
   top: 50%;
@@ -560,7 +567,7 @@ button:hover {
   color: #ffffff;
 }
 
-.banner_revuelto .banner_content .link h2{
+.banner .banner_content .link h2{
   font-size: 3rem;
   line-height: 1.05;
 }
@@ -584,11 +591,11 @@ button:hover {
 }
 
 @media (min-width: 1025px) {
-  .banner_revuelto .banner_bg {
+  .banner .banner_bg {
       min-height: 30rem;
 
   }
-  .banner_revuelto .banner_bg img {
+  .banner .banner_bg img {
     object-fit: contain;
     object-position: right;
     /* min-width: 86rem;
@@ -599,10 +606,20 @@ button:hover {
 }
 
 @media (min-width: 768px){
-  .banner_revuelto .banner_bg img {
+  .banner .banner_bg img {
       /* object-fit: cover; */
       object-position: 16rem 0rem;
   }
+}
+
+@media (max-width: 1025px) {
+  .banner .banner_pc{
+    display: none;
+  }
+  .banner .banner_tablet{
+    display: block;
+  }
+  
 }
 
 @media (max-width: 992px) {
