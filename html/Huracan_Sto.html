@@ -14,7 +14,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <title>Huracán_Sterrato | Lamborghini</title>
+  <title>Huracan Sto | Lamborghini</title>
 </head>
 
 <link rel="stylesheet" href="../css/common/common.css" />
@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="../css/Revuelto/Revuelto.css" />
 <link rel="stylesheet" href="../css/Revuelto/Technical_spec.css" />
 <link rel="stylesheet" href="../css/common/Footer.css">
+<link rel="stylesheet" href="../css/common/CarSound.css">
 <link rel="stylesheet"
   href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
 <link rel="stylesheet" href="../css/common/Breadcrumb.css">
@@ -631,7 +632,7 @@
     <div class="d-none d-lg-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-10 offset-1">
+          <div class="col-10 offset-1" style="margin-bottom: 40px;">
             <div class="row">
               <div class="col-5">
                 <div class="text-wrapper">
@@ -664,7 +665,16 @@
             <div class="skew-cont">
               <div class="skew-fix">
                 <div class="placeholder">
-                  placeholder
+                  <div class="car__sound__wrapper">
+                    <canvas id="canvas">
+                    </canvas>
+                    <div class="audio__wrapper">
+                      <div class="car__wheel">
+                        <audio controls=true id="audioPlayer"
+                          src="../resources/Huracan_Sto/sounds/Huracan_STO.mp3"></audio>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -685,7 +695,7 @@
                 </g>
               </svg>
             </div>
-            <div class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
+            <div id="playSoundBtn" class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
               <span class="spec-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                   <g stroke-width="1.5" transform="translate(-1624 -187.923)">
@@ -698,8 +708,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="spec-text">Lamborghini<br>
-                Centro Stile Design
+              <span class="spec-text">Click to <br>enjoy the engine
               </span>
             </div>
           </div>
@@ -1485,7 +1494,8 @@
     <div class="banner_bg d-flex">
       <span
         style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-        <img src="../resources/Huracan_Sto/sto.webp" alt="" decoding="async" data-nimg="fill" class="d-flex" id="banner_img">
+        <img src="../resources/Huracan_Sto/sto.webp" alt="" decoding="async" data-nimg="fill" class="d-flex"
+          id="banner_img">
       </span>
       <div class="banner_content">
         <div class="link offset-sm-1">
@@ -1669,6 +1679,9 @@
   <script src="../js/Revuelto/HighlightSlider.js"></script>
   <script src="../js/Revuelto/CarInfor.js"></script>
   <!-- <script src="../js/Revuelto/Banner.js"></script> -->
+  <script src="../js/common/zen-renderer.js"></script>
+  <script src="../js/common/visualize.js"></script>
+  <script src="../js/common/CarSound.js"></script>
 </body>
 
 </html>
