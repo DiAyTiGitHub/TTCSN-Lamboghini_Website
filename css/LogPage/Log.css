@@ -1,0 +1,42 @@
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+* {
+    color: #f1f1f1;
+}
+.container-fluid {
+    min-height: 400px;
+    margin-top: 3rem;
+}
+.image-wrapper {
+    position: relative;
+}
+
+.background-img {
+    position: relative;
+}   
+
+.car-crop {
+    position: absolute;
+    z-index: 5;
+    width: 238%;
+    left: -80%;
+    bottom: 2%;
+}   
+
+.logContainer {
+    background-color: rgba(87,87,86,255);
+}
+
+.text-wrapper > h1 {
+    margin-bottom: 5rem;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: rgba(230,156,11,255) !important;
+    border-color: orange !important;
+}
