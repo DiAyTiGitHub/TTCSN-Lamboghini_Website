@@ -1,0 +1,13 @@
+.error-alert {
+    position: relative;
+    /* z-index: 1; */
+    width: 100%;
+}
+
+.error-bg {
+    width: 100%;
+}
+
+.error-content {
+    position: absolute;
+}
