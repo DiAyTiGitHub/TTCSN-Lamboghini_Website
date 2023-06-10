@@ -24,7 +24,9 @@
 <link rel="stylesheet" href="../css/Revuelto/Revuelto.css" />
 <link rel="stylesheet" href="../css/Revuelto/Technical_spec.css" />
 <link rel="stylesheet" href="../css/common/Footer.css">
-<link rel="stylesheet" href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+<link rel="stylesheet" href="../css/common/CarSound.css">
+<link rel="stylesheet"
+  href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
 <link rel="stylesheet" href="../css/common/Breadcrumb.css">
 
 <body>
@@ -89,12 +91,14 @@
               <span class="bars-overplay-tittle">DOCUMENTATION</span>
               <ul class="bars-overplay-setting">
                 <li class="bars-overplay-social"><a href="https://github.com/DiAyTi2004/TTCSN-Lamboghini_Website"
-                  target="_blank"><i class="fa-brands fa-github"></i></a> </li>
-                <li class="bars-overplay-social"><a href="https://drive.google.com/drive/folders/1pZQJv9B7hnCOqSFP88pEr90bhcXTx5F7"
-                  target="_blank"><i class="fa-brands fa-google-drive"></i></a>
+                    target="_blank"><i class="fa-brands fa-github"></i></a> </li>
+                <li class="bars-overplay-social"><a
+                    href="https://drive.google.com/drive/folders/1pZQJv9B7hnCOqSFP88pEr90bhcXTx5F7" target="_blank"><i
+                      class="fa-brands fa-google-drive"></i></a>
                 </li>
-                <li class="bars-overplay-social"><a href="https://docs.google.com/document/d/1l0y60eo60weLiJv5kQyD_oORHAsc3gbQ0-GrpMYBHZg/edit"
-                  target="_blank"><i class="fa-solid fa-file-word"></i></a> </li>
+                <li class="bars-overplay-social"><a
+                    href="https://docs.google.com/document/d/1l0y60eo60weLiJv5kQyD_oORHAsc3gbQ0-GrpMYBHZg/edit"
+                    target="_blank"><i class="fa-solid fa-file-word"></i></a> </li>
               </ul>
             </div>
           </div>
@@ -474,7 +478,7 @@
     </div>
   </div>
 
-  
+
 
   <div class="technical__spec">
     <!-- desktop-view -->
@@ -627,13 +631,15 @@
     <div class="d-none d-lg-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-10 offset-1">
+          <div class="col-10 offset-1" style="margin-bottom: 40px;">
             <div class="row">
               <div class="col-5">
                 <div class="text-wrapper">
                   <span class="header-span">FEEL THE ENGINE</span>
-                  <p>Listen to the all-encompassing sound of hybridization technology: the unmistakable roar of the V12 aspirated 
-                    engine coupled with powerful electric motors. Let yourself be swept away by the strength of the new Lamborghini sound.
+                  <p>Listen to the all-encompassing sound of hybridization technology: the unmistakable roar of the V12
+                    aspirated
+                    engine coupled with powerful electric motors. Let yourself be swept away by the strength of the new
+                    Lamborghini sound.
                   </p>
                   <div class="d-flex">
                     <img class="icon" src="../resources/Revuelto/earphones.svg" alt="">
@@ -641,12 +647,13 @@
                       for an 8D sound experience.
                     </span>
                   </div>
-                </div> 
+                </div>
               </div>
               <div class="col-6 offset-1">
                 <div class="text-wrapper">
                   <span class="header-span">CENTRO STILE</span>
-                  <p>The Revuelto combines classic Lamborghini proportions with strong, sculpted lines that promise a new future. Explore 
+                  <p>The Revuelto combines classic Lamborghini proportions with strong, sculpted lines that promise a
+                    new future. Explore
                     a silhouette that embodies confidence, power, strength, and groundbreaking aerodynamics.
                   </p>
                 </div>
@@ -659,8 +666,17 @@
             <div class="skew-cont">
               <div class="skew-fix">
                 <div class="placeholder">
-                  placeholder
-                </div>  
+                  <div class="car__sound__wrapper">
+                    <canvas id="canvas">
+                    </canvas>
+                    <div class="audio__wrapper">
+                      <div class="car__wheel">
+                        <audio controls=true id="audioPlayer"
+                          src="../resources/Revuelto/sounds/LB744_Exhaust_MIX8D_230303.mp3"></audio>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -675,12 +691,12 @@
                   </clipPath>
                 </defs>
                 <g clip-path="url(#polygon-cp)">
-                  <image class="" src="" alt="" href="../resources/Revuelto/revuelto_centro_stile_01.jpg" width="100%" height="100%"
-                    x="0%" y="0%"></image>
+                  <image class="" src="" alt="" href="../resources/Revuelto/revuelto_centro_stile_01.jpg" width="100%"
+                    height="100%" x="0%" y="0%"></image>
                 </g>
               </svg>
             </div>
-            <div class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
+            <div id="playSoundBtn" class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
               <span class="spec-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                   <g stroke-width="1.5" transform="translate(-1624 -187.923)">
@@ -693,8 +709,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="spec-text">Lamborghini<br>
-                Centro Stile Design
+              <span class="spec-text">Click to  <br> enjoy the engine
               </span>
             </div>
           </div>
@@ -705,33 +720,47 @@
       <div class="container-fluid">
         <div class="tablet-spacing">
           <div class="text-wrapper">
-            <span class="header-span">FEEL THE ENGINE</div>
-            <p>Listen to the all-encompassing sound of hybridization technology: the unmistakable roar of the V12 aspirated engine
-               coupled with powerful electric motors. Let yourself be swept away by the strength of the new Lamborghini sound.
-            </p>
+            <span class="header-span">FEEL THE ENGINE
           </div>
-          <div class="d-flex">
-            <img class="icon" src="../resources/Revuelto/earphones.svg" alt="">
-            <span class="icon-text">Use headphones or earphones <br>
-              for an 8D sound experience.
-            </span>
+          <p>Listen to the all-encompassing sound of hybridization technology: the unmistakable roar of the V12
+            aspirated engine
+            coupled with powerful electric motors. Let yourself be swept away by the strength of the new Lamborghini
+            sound.
+          </p>
+        </div>
+        <div class="d-flex">
+          <img class="icon" src="../resources/Revuelto/earphones.svg" alt="">
+          <span class="icon-text">Use headphones or earphones <br>
+            for an 8D sound experience.
+          </span>
+        </div>
+        <!-- <div class="car__sound__wrapper car__sound__wrapper--inMoblie">
+          <canvas id="canvas">
+          </canvas>
+          <div class="audio__wrapper">
+            <div class="car__wheel">
+              <audio controls=true id="audioPlayer"
+                src="../resources/Revuelto/sounds/LB744_Exhaust_MIX8D_230303.mp3"></audio>
+            </div>
           </div>
-          <div class="text-wrapper">
-            <span class="header-span">CENTRO STILE</span>
-            <p>
-              The Revuelto combines classic Lamborghini proportions with strong, sculpted lines that promise a new future. Explore a
-               silhouette that embodies confidence, power, strength, and groundbreaking aerodynamics.
-            </p>
-          </div>
-          <img src="../resources/Revuelto/revuelto_centro_stile_01.jpg" alt="" class="tablet-img">
-          <div class="justify-content-center">
-            <button class="tablet-design-button">LAMBORGHINI CENTRO STILE DESIGN</button>
-          </div>
+        </div> -->
+        <div class="text-wrapper">
+          <span class="header-span">CENTRO STILE</span>
+          <p>
+            The Revuelto combines classic Lamborghini proportions with strong, sculpted lines that promise a new future.
+            Explore a
+            silhouette that embodies confidence, power, strength, and groundbreaking aerodynamics.
+          </p>
+        </div>
+        <img src="../resources/Revuelto/revuelto_centro_stile_01.jpg" alt="" class="tablet-img">
+        <div class="justify-content-center">
+          <button class="tablet-design-button">LAMBORGHINI CENTRO STILE DESIGN</button>
         </div>
       </div>
     </div>
   </div>
-  
+  </div>
+
   <div class="car__infor">
     <div class="d-none d-lg-block">
       <div class="container-fluid">
@@ -752,14 +781,15 @@
                   <span class="header-span">CONNECT WITH YOUR REVUELTO</span>
                   <p>
                     The suite of connected technologies featured in the Revuelto takes the best of two worlds
-                    from the services already available for Urus and Huracán to bring driving engagement to 
+                    from the services already available for Urus and Huracán to bring driving engagement to
                     a level never experienced before.
                   </p>
                   <div class="d-none d-md-flex align-items-center btn-open car__infor-btn">
                     <span class="spec-btn">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                         <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                            transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
                           <g class="icon on-dark" transform="translate(627 -5248.5)">
                             <path d="M0 0v15" transform="translate(1022.5 5458.5)"></path>
                             <path d="M0 0v15" transform="rotate(90 -2218 3248)"></path>
@@ -786,7 +816,7 @@
             <span class="header-span">CONNECT WITH YOUR REVUELTO</span>
             <p>
               The suite of connected technologies featured in the Revuelto takes the best of two worlds
-              from the services already available for Urus and Huracán to bring driving engagement to 
+              from the services already available for Urus and Huracán to bring driving engagement to
               a level never experienced before.
             </p>
             <div class="justify-content-center">
@@ -796,7 +826,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row car__infor-details">
       <div class="car__infor-header d-md-none">
         <div class="header-title">CONNECTED SERVICES</div>
@@ -904,7 +934,8 @@
             <h2 class="spec-title">FUN-TO-DRIVE</h2>
             <ul class="spec-data-list">
               <li class="spec-data-item">
-                <span class="data">Innovative services aimed at improving driving pleasure and your skills as a driver.</span>
+                <span class="data">Innovative services aimed at improving driving pleasure and your skills as a
+                  driver.</span>
               </li>
               <li class="spec-data-item">
                 <span class="data">Board Diaries</span>
@@ -915,7 +946,8 @@
             <h2 class="spec-title">PEACE OF MIND</h2>
             <ul class="spec-data-list">
               <li class="spec-data-item">
-                <span class="data">The maximum convenience in managing the status and condition of your car. Your Revuelto right at your fingertips, whenever and wherever you need it.</span>
+                <span class="data">The maximum convenience in managing the status and condition of your car. Your
+                  Revuelto right at your fingertips, whenever and wherever you need it.</span>
               </li>
               <li class="spec-data-item">
                 <span class="data">Amazon Alexa Entertainment</span>
@@ -950,7 +982,8 @@
             <h2 class="spec-title">ENTERTAINMENT</h2>
             <ul class="spec-data-list">
               <li class="spec-data-item">
-                <span class="data">Cutting-edge features that make the driving experience even more enjoyable and engaging.</span>
+                <span class="data">Cutting-edge features that make the driving experience even more enjoyable and
+                  engaging.</span>
               </li>
               <li class="spec-data-item">
                 <span class="data">Smartphone Interface</span>
@@ -965,7 +998,7 @@
     </div>
   </div>
 
-  
+
 
   <div class="technical__spec">
     <div class="container-fluid">
@@ -1527,33 +1560,37 @@
 
   <div class="more"></div>
 
-  <div class = "banner container-fluid">
-      <div class = "banner_bg d-flex">
-        <span class="banner_pc" style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-          <img src="../resources/Revuelto/banner_revuelto.webp" alt="" decoding="async" data-nimg="fill" class="d-flex" id="banner_img">
-        </span>
-        <span class="banner_tablet" style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-          <img src="../resources/Revuelto/banner_revuelto_tablet.webp" alt="" decoding="async" data-nimg="fill" class="d-flex" id="banner_img">
-        </span>
-        <div class = "banner_content">
-          <div class = "link offset-sm-1">
-            <h2 class = "mb-5">DISCOVERY MORE</h2>
-            <div class="banner_btn">
-              <button class = "contact_btn">
-                <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
-                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                    <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                      transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
-                    <path class="btnPath icon-on-dark on-dark" d="M0 0l7.432 5.674L14.864 0"
-                      transform="rotate(-90 935.432 -711.068)"></path>
-                  </g>
-                </svg>
-                <span style="color: #fff;">Contact your Dealer</span>
-              </button>
-            </div>
+  <div class="banner container-fluid">
+    <div class="banner_bg d-flex">
+      <span class="banner_pc"
+        style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+        <img src="../resources/Revuelto/banner_revuelto.webp" alt="" decoding="async" data-nimg="fill" class="d-flex"
+          id="banner_img">
+      </span>
+      <span class="banner_tablet"
+        style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+        <img src="../resources/Revuelto/banner_revuelto_tablet.webp" alt="" decoding="async" data-nimg="fill"
+          class="d-flex" id="banner_img">
+      </span>
+      <div class="banner_content">
+        <div class="link offset-sm-1">
+          <h2 class="mb-5">DISCOVERY MORE</h2>
+          <div class="banner_btn">
+            <button class="contact_btn">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
+                  <path class="btnPath icon-on-dark on-dark" d="M0 0l7.432 5.674L14.864 0"
+                    transform="rotate(-90 935.432 -711.068)"></path>
+                </g>
+              </svg>
+              <span style="color: #fff;">Contact your Dealer</span>
+            </button>
           </div>
         </div>
       </div>
+    </div>
   </div>
 
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -1584,15 +1621,15 @@
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
       <!-- <button id="carousel-slider-prev" class="carousel-slider-button" role="button" data-slide="prev"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
-          <g stroke-width="1" transform="translate(-1624 -187.923)">
-            <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-              transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
-            <path class="btnPath icon-on-dark on-dark" d="M0 5.675L7.432 0l7.432 5.675"
-              transform="rotate(-90 935.432 -711.068)">
-            </path>
-          </g>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
+        <g stroke-width="1" transform="translate(-1624 -187.923)">
+          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+            transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
+          <path class="btnPath icon-on-dark on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+            transform="rotate(-90 935.432 -711.068)">
+          </path>
+        </g>
+      </svg>
       <!-- </button> -->
       <span class="sr-only">Previous</span>
     </a>
@@ -1600,15 +1637,15 @@
       <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
       <span class="sr-only">Next</span>
       <!-- <button id="carousel-slider-next" class="carousel-slider-button" role="button" data-slide="next"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
-          <g stroke-width="1" transform="translate(-1624 -187.923)">
-            <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-              transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
-            <path class="btnPath icon-on-dark on-dark" d="M0 0l7.432 5.674L14.864 0"
-              transform="rotate(-90 935.432 -711.068)">
-            </path>
-          </g>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
+        <g stroke-width="1" transform="translate(-1624 -187.923)">
+          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+            transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
+          <path class="btnPath icon-on-dark on-dark" d="M0 0l7.432 5.674L14.864 0"
+            transform="rotate(-90 935.432 -711.068)">
+          </path>
+        </g>
+      </svg>
       <!-- </button> -->
     </a>
   </div>
@@ -1673,15 +1710,22 @@
             <a class="col-2 col-md-auto" href="https://github.com/DiAyTi2004/TTCSN-Lamboghini_Website" target="_blank">
               <i class="footer-icon fa-brands fa-github"></i>
             </a>
-            <a class="col-2 col-md-auto" href="https://drive.google.com/drive/folders/1pZQJv9B7hnCOqSFP88pEr90bhcXTx5F7" target="_blank">
+            <a class="col-2 col-md-auto" href="https://drive.google.com/drive/folders/1pZQJv9B7hnCOqSFP88pEr90bhcXTx5F7"
+              target="_blank">
               <i class="footer-icon fa-brands fa-google-drive"></i>
             </a>
-            <a class="col-2 col-md-auto" href="https://docs.google.com/document/d/1l0y60eo60weLiJv5kQyD_oORHAsc3gbQ0-GrpMYBHZg/edit" target="_blank">
+            <a class="col-2 col-md-auto"
+              href="https://docs.google.com/document/d/1l0y60eo60weLiJv5kQyD_oORHAsc3gbQ0-GrpMYBHZg/edit"
+              target="_blank">
               <i class="footer-icon fa-solid fa-file-word"></i>
             </a>
           </div>
-          <p class="footer-disclaimer order-3 col-12">The consumption and emissions values in the website refer to your geographical IP. This value might be unrealistic if you navigate using VPN or if the position of your Internet provider is imprecise. If you believe you are incorrectly geolocalized, contact your dealer to get valid consumption and emissions information in your area.</p>
-          <p class="footer-copyright order-4 col-12">Copyright © 2023 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group.<br>
+          <p class="footer-disclaimer order-3 col-12">The consumption and emissions values in the website refer to your
+            geographical IP. This value might be unrealistic if you navigate using VPN or if the position of your
+            Internet provider is imprecise. If you believe you are incorrectly geolocalized, contact your dealer to get
+            valid consumption and emissions information in your area.</p>
+          <p class="footer-copyright order-4 col-12">Copyright © 2023 Automobili Lamborghini S.p.A. a sole shareholder
+            company part of Audi Group.<br>
             All rights reserved. VAT no. IT 00591801204
           </p>
         </div>
@@ -1709,6 +1753,9 @@
   <script src="../js/Revuelto/HighlightSlider.js"></script>
   <script src="../js/Revuelto/CarInfor.js"></script>
   <!-- <script src="../js/Revuelto/Banner.js"></script> -->
+  <script src="../js/common/zen-renderer.js"></script>
+  <script src="../js/common/visualize.js"></script>
+  <script src="../js/common/CarSound.js"></script>
 </body>
 
 </html>

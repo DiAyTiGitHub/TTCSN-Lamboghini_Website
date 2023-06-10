@@ -1,0 +1,77 @@
+.car__sound__wrapper {
+    margin-left: 20%;
+    position: relative;
+    width: fit-content;
+}
+
+.ar__sound__wrapper--inMoblie{
+    
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+    overflow: visible;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.audio__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes wheel-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.car__wheel {
+    background-image: url('../../resources/common/imgs/wheel.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: wheel-animation 0.2s linear infinite;
+    animation-play-state: paused;
+    /* initially paused */
+}
+
+#audioPlayer {
+    position: absolute;
+    width: 0;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.placeholder {
+    background-color: black;
+    text-align: center;
+    color: black;
+    height: 100%;
+}

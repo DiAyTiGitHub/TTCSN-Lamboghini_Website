@@ -210,7 +210,7 @@ p {
   height: 100%;
   transform: skew(-36deg);
   transform-origin: center center;
-  background-color: gray;
+  background-color: #f8f8f7;
   overflow: hidden;
   right: 16rem;
 }
@@ -414,7 +414,7 @@ p {
 }
 
 .placeholder {
-  background-color: #f1f1f1;
+  background-color: transparent;
   text-align: center;
   color: black;
   height: 100%;
