@@ -3,7 +3,7 @@ function CarSoundImpl() {
     var canvas = document.getElementById("canvas");
 
     var visualizer = new MusicVisualizer.Visualizer(canvas, audio);
-    var zenRenderer = new ZenRenderer(34);
+    var zenRenderer = new ZenRenderer(40);
     visualizer.renderer = zenRenderer;
     visualizer.analyzerNode.fftSize = 512;
     visualizer.audioFilters.push(new MusicVisualizer.simpleDampenFilter());
@@ -22,34 +22,53 @@ function CarSoundImpl() {
     updateVis();
 
     const playSoundBtn = document.getElementById("playSoundBtn");
+    const clickElement = playSoundBtn.querySelector('.spec-text');
     const controlBtn = document.querySelector('.car__wheel');
+
+    //handle for mobile
+    const mobilePlayBtn = document.querySelector('.carSound__playBtn');
+    const path1 = mobilePlayBtn.querySelector('.mobilePathBtn1');
+    const path2 = mobilePlayBtn.querySelector('.mobilePathBtn2');
+
     let state = 0;
-    controlBtn.onclick = function () {
-        state = 1 - state;
+
+    function implementAudioState() {
         if (state == 1) {
             audio.play();
+            clickElement.innerHTML = `Pause the <br> engine sound`;
             controlBtn.style.animationPlayState = 'running';
+            path1.style.fill = 'black';
+            path2.style.fill = 'white';
+            path2.style.stroke = 'white';
         }
         else {
             audio.pause();
+            clickElement.innerHTML = `Click to <br>enjoy the engine`;
             controlBtn.style.animationPlayState = 'paused';
+            path1.style.fill = 'white';
+            path2.style.fill = 'black';
+            path2.style.stroke = 'black';
         }
     }
 
-    playSoundBtn.onclick = function () {
+    function toggleState() {
         state = 1 - state;
-        if (state == 1) {
-            audio.play();
-            controlBtn.style.animationPlayState = 'running';
-        }
-        else {
-            audio.pause();
-            controlBtn.style.animationPlayState = 'paused';
-        }
     }
+
+    function playBtnImpl() {
+        toggleState();
+        implementAudioState();
+    }
+
+    controlBtn.onclick = playBtnImpl;
+
+    playSoundBtn.onclick = playBtnImpl;
+
+    mobilePlayBtn.onclick = playBtnImpl;
 
     audio.addEventListener('ended', function () {
-        controlBtn.style.animationPlayState = 'paused';
+        state = 0;
+        implementAudioState();
     });
 }
 

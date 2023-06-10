@@ -8,7 +8,7 @@ function ZenRenderer(size) {
     this.growing = false;
     this.shrinking = false;
     this.growth = 0;
-    this.growthRate = .002;
+    this.growthRate = .001;
     this.segments = [];
 
     // 60fps * 10 seconds
