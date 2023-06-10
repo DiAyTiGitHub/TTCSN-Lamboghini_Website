@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="../css/common/Breadcrumb.css">
 <link rel="stylesheet" href="../css/Huracan_Evo_Spyder/Huracan_Evo_Spyder.css">
 <link rel="stylesheet" href="../css/Huracan_Evo_Spyder/Technical_spec.css" />
-
+<link rel="stylesheet" href="../css/common/CarSound.css">
 
 <body>
   <div class="loading__overlay">
@@ -631,7 +631,7 @@
     <div class="d-none d-lg-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-10 offset-1">
+          <div class="col-10 offset-1" style="margin-bottom: 40px;">
             <div class="row">
               <div class="col-5">
                 <div class="text-wrapper">
@@ -663,7 +663,16 @@
             <div class="skew-cont">
               <div class="skew-fix">
                 <div class="placeholder">
-                  placeholder
+                  <div class="car__sound__wrapper">
+                    <canvas id="canvas">
+                    </canvas>
+                    <div class="audio__wrapper">
+                        <div class="car__wheel">
+                            <audio controls=true id="audioPlayer"
+                                src="../resources/Huracan_Evo_Spyder/sounds/Huracan_V1.mp3"></audio>
+                        </div>
+                    </div>
+                </div>
                 </div>  
               </div>
             </div>
@@ -684,7 +693,7 @@
                 </g>
               </svg>
             </div>
-            <div class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
+            <div id="playSoundBtn" class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
               <span class="spec-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                   <g stroke-width="1.5" transform="translate(-1624 -187.923)">
@@ -697,8 +706,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="spec-text">Lamborghini<br>
-                Centro Stile Design
+              <span class="spec-text">Click to <br>enjoy the engine
               </span>
             </div>
           </div>
@@ -1414,6 +1422,10 @@
   <script src="../js/Huracan_Evo_Spyder/MediaQuery.js"></script>
   <script src="../js/Huracan_Evo_Spyder/Overlay.js"></script>
   <script src="../js/Huracan_Evo_Spyder/TechnicalSpec.js"></script>
+
+  <script src="../js/common/zen-renderer.js"></script>
+  <script src="../js/common/visualize.js"></script>
+  <script src="../js/common/CarSound.js"></script>
 </body>
 
 </html>
