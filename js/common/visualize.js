@@ -19,7 +19,7 @@ var MusicVisualizer = {
         this.canvas = canvas;
         this.audio = audio;
         this.renderer;
-        var dataArray;
+        var dataArray; 
         this.renderer;
         this.audioFilters = [];
         this.paints = []; 

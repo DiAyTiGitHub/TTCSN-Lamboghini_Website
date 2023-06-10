@@ -2,7 +2,7 @@
 function ZenRenderer(size) {
     // Data
     this.rotation = 40;
-    this.rotationSpeed = 0;
+    this.rotationSpeed = 0.5;
     // Is the circle broken apart?
     this.broken = false;
     this.growing = false;
@@ -12,7 +12,7 @@ function ZenRenderer(size) {
     this.segments = [];
 
     // 60fps * 10 seconds
-    this.timeUntilNextState = 600 * 10;
+    this.timeUntilNextState = 600 * 100;
 
     if (size == null) size = 250;
     this.size = size;
@@ -100,7 +100,7 @@ function ZenRenderer(size) {
                 if (this.growth <= 0) {
                     this.shrinking = false;
                     this.broken = false;
-                    this.timeUntilNextState = (600 * 10) + (600 * (Math.random() * 10));
+                    this.timeUntilNextState = (600 * 100) + (600 * (Math.random() * 100));
                     this.segments = [];
                 }
             }
