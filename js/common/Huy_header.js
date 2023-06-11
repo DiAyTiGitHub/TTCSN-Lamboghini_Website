@@ -127,11 +127,11 @@ const activeMenuSubMobile = (idMenuSub) => {
     } else {
         if ((idMenuSub.id == 'mhuracan')) {
             idMenuSub.classList.add('active');
-            idMenuSub.style.height = '275px';
+            idMenuSub.style.height = '350px';
         }
         else if ((idMenuSub.id == 'murus')) {
             idMenuSub.classList.add('active');
-            idMenuSub.style.height = '180px';
+            idMenuSub.style.height = '200px';
         }
     }
 }
