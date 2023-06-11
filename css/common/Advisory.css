@@ -10,7 +10,7 @@
     border-radius: unset;
     background-color: black;
     text-transform: uppercase;
-    border: 1px solid black;
+    border: 1px solid black !important;
     color: white;
     transition: all linear 0.2s;
 }
