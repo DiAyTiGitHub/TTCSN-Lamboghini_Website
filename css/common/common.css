@@ -76,8 +76,40 @@ html {
     margin: unset !important;
 }
 
-.contact_btn{
+.contact_btn {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.note__wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2px !important;
+    height: fit-content;
+}
+
+.note__content {
+    color: white !important;
+    padding: unset !important;
+    margin: unset !important;
+    text-align: center !important;
+    font-size: 16px;
+    font-family: Roboto, Helvetica Neue, Arial;
+    margin: unset;
+    height: 100%;
+}
+
+@media (max-width: 420px) {
+    .note__wrapper {
+        display: none;
+    }
 }
