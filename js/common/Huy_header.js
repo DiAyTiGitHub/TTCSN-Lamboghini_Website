@@ -203,9 +203,13 @@ const header = () => {
             activeMenuMobile(menuItemMain, navListMobile);
 
             menuItemMainList.forEach(menuItem => {
+
                 const classMenuMobile = menuItem.querySelector('a');
                 classMenuMobile.onclick = e => {
-                    e.preventDefault();
+                    console.log(e);
+                    if (e.srcElement.innerText != "REVUELTO") {
+                        e.preventDefault();
+                    }
                 }
 
                 menuItem.onclick = e => {
@@ -223,15 +227,15 @@ const header = () => {
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
-  let currentScrollPos = window.pageYOffset;
-    
-  x= document.querySelector('#header').clientHeight;
-  if (prevScrollpos > currentScrollPos) {
-    document.querySelector('#header').style.top = `${x}px`;
-  } else {
-    document.querySelector('#header').style.top = `${-x}px`;
-  }
-  prevScrollpos = currentScrollPos;
+    let currentScrollPos = window.pageYOffset;
+
+    x = document.querySelector('#header').clientHeight;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector('#header').style.top = `${x}px`;
+    } else {
+        document.querySelector('#header').style.top = `${-x}px`;
+    }
+    prevScrollpos = currentScrollPos;
 }
 document.querySelector('#header').style.top = `${document.querySelector('#header').clientHeight}px`;
 header();
