@@ -2,7 +2,7 @@
 function ZenRenderer(size) {
     // Data
     this.rotation = 40;
-    this.rotationSpeed = 0.5;
+    this.rotationSpeed = 0.444;
     // Is the circle broken apart?
     this.broken = false;
     this.growing = false;
