@@ -1,0 +1,26 @@
+.news-section-title--secondary {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.news-section-title--primary {
+    font-size: 76px;
+    letter-spacing: -2.28px;
+    line-height: 73.72px;
+}
+
+.paragraphs {
+    margin-top: 45px;
+   
+}
+
+.paragraphs p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.36px;
+    line-height: 32.04px;
+}
+
+.texts-wrapper {
+    padding: 0 20px;
+}
