@@ -31,7 +31,7 @@
 
 .error-content {
     z-index: 1;
-    position:absolute;  
+    position: absolute;
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
@@ -54,4 +54,10 @@
 .link-item:hover {
     -webkit-text-decoration: none;
     text-decoration: none;
+}
+
+@media (max-width: 420px) {
+    .error-mesenge {
+        display: none;
+    }
 }
