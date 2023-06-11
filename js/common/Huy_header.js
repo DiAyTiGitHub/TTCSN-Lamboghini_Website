@@ -207,7 +207,9 @@ const header = () => {
                 const classMenuMobile = menuItem.querySelector('a');
                 classMenuMobile.onclick = e => {
                     console.log(e);
-                    if (e.srcElement.innerText != "REVUELTO") {
+                    if (e.srcElement.innerText == "REVUELTO" || e.srcElement.innerText == "OVERVIEW") {
+                       
+                    } else {
                         e.preventDefault();
                     }
                 }
