@@ -1,0 +1,127 @@
+.news__section {
+    width: 100%;
+    margin-top: 190px;
+}
+.news__section a {
+    text-decoration: none;
+}
+
+
+.main_new {
+    
+}
+
+.news-section-title--secondary {
+    font-size: 32px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 41.6px;
+    letter-spacing: 1.36px;
+    text-align: left;
+    color: #202020;
+    text-transform: uppercase;
+}
+
+.news-section-title--primary {
+    padding-right: 2rem;
+    font-size: 5.0rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.9;
+    text-align: left;
+    color: #202020;
+    margin-top: 2rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+    .news-section-title--secondary {
+        font-size: 2.2rem;
+    }
+
+    .news-section-title--primary {
+        font-size: 3.2rem;
+    }
+
+}
+
+.main_new_image {
+    width: 100%;
+    height: auto;
+}
+
+.news-title--primary {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0.064rem;
+    text-transform: uppercase;
+    color: #000;
+}
+
+
+.main-news-abstract {
+    margin-top: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: 0.032rem;
+}
+.news_section_readmore a {
+    text-decoration: none;
+}
+.news_section_readmore {
+    padding: 0.8rem;
+    text-align: center;
+   
+    min-width: 12rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    letter-spacing: 0.064rem;
+    color: #202020;
+    border: 1px solid #cbcbca;
+    display: inline-block;
+    transition: color 0.3s ease-in-out,background-color 0.3s ease-in-out;
+   
+}
+
+.news_section_readmore:hover {
+    color: #ffffff;
+    background-color: #181818;
+    text-decoration: none;
+}
+
+.news_list {
+    padding-top: 4rem;
+}
+
+.news__section_new {
+    margin-bottom: 60px;
+}
+
+.news_readmore {
+    margin-top: 40px;
+}
+.news_readmore .row {           
+    justify-content: center;
+}
+.news_readmore .row a {
+    background-color: #000;
+    color: #ffffff;
+    
+}
+
+.news_readmore .row a:hover {
+    background-color: #ffffff;
+    color: #000
+}
