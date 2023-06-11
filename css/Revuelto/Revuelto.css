@@ -210,7 +210,7 @@ p {
   height: 100%;
   transform: skew(-36deg);
   transform-origin: center center;
-  background-color: gray;
+  background-color: #f8f8f7;
   overflow: hidden;
   right: 16rem;
 }
@@ -414,7 +414,7 @@ p {
 }
 
 .placeholder {
-  background-color: #f1f1f1;
+  background-color: transparent;
   text-align: center;
   color: black;
   height: 100%;
@@ -518,15 +518,19 @@ button:hover {
   height: 4rem;
 }
 
+/* banner */
 .banner{
-  margin-bottom: 2rem;
+  display: block;
   padding: 0;
 }
 
 .banner .banner_bg {
   position: relative;
-  min-height: 30rem;
-  background-color: #181818
+  min-height: 23rem;
+  background-color: #181818;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 
 .banner .banner_pc {
@@ -535,21 +539,6 @@ button:hover {
 
 .banner .banner_tablet{
   display: none;
-}
-
-.banner .banner_bg img {
-  position: absolute;
-  inset: 0px;
-  box-sizing: border-box;
-  padding: 0px;border: none;
-  margin: auto;
-  display: block;
-  width: 0px;
-  height: 0px;
-  min-width: 100%;
-  max-width: 100%;
-  min-height: 100%;
-  max-height: 100%;
 }
 
 .banner .banner_content {
@@ -572,10 +561,6 @@ button:hover {
   line-height: 1.05;
 }
 
-.banner_btn {
-  
-}
-
 .banner_btn svg {
   width: 3rem;
 }
@@ -590,26 +575,20 @@ button:hover {
   border: none;
 }
 
-@media (min-width: 1025px) {
-  .banner .banner_bg {
-      min-height: 30rem;
-
+@media (min-width: 768px){
+  .banner .banner_bg img {
+      object-fit: cover;
+      object-position: 16rem 0rem;
   }
+}
+
+@media (min-width: 1025px) {
   .banner .banner_bg img {
     object-fit: contain;
     object-position: right;
-    /* min-width: 86rem;
-    min-height: 36rem; */
+    min-width: 42rem;
+    min-height: 22rem;
   } 
-  
-
-}
-
-@media (min-width: 768px){
-  .banner .banner_bg img {
-      /* object-fit: cover; */
-      object-position: 16rem 0rem;
-  }
 }
 
 @media (max-width: 1025px) {
@@ -619,9 +598,38 @@ button:hover {
   .banner .banner_tablet{
     display: block;
   }
-  
+  .banner .banner_bg {
+    min-height: 36rem;
+  }
+  .banner .banner_tablet img{
+    object-fit: contain;
+    object-position: bottom;
+  }  
+  .banner .banner_content .link {
+    top: 28%;
+  }
 }
 
+@media (max-width: 600px){
+  .banner .banner_bg {
+    min-height: 28rem;
+  }
+  .banner .banner_content .link h2{
+    font-size: 2.2rem;
+    line-height: 1.05;
+  }
+  .banner_content .link {
+    margin-left: 2rem
+  }
+  .banner_btn svg {
+    width: 2rem;
+  }
+  
+  .banner_btn span {
+    font-size: 1.5rem;
+  }
+}
+/* end banner */
 @media (max-width: 992px) {
   .carousel-inner {
     display: flex;

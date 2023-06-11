@@ -1,0 +1,12 @@
+.error-alert {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.error-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}

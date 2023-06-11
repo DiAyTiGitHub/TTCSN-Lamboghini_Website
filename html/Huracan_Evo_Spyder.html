@@ -21,11 +21,13 @@
 <link rel="stylesheet" href="../css/common/LoadingOverlay.css">
 <link rel="stylesheet" href="../css/common/Huy_Header.css">
 <link rel="stylesheet" href="../css/common/Footer.css">
-<link rel="stylesheet" href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+<link rel="stylesheet"
+  href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
 <link rel="stylesheet" href="../css/common/Breadcrumb.css">
 <link rel="stylesheet" href="../css/Huracan_Evo_Spyder/Huracan_Evo_Spyder.css">
 <link rel="stylesheet" href="../css/Huracan_Evo_Spyder/Technical_spec.css" />
-
+<link rel="stylesheet" href="../css/common/CarSound.css">
+<link rel="stylesheet" href="../css/common/Advisory.css">
 
 <body>
   <div class="loading__overlay">
@@ -33,12 +35,69 @@
       <div class="loading__overlay__content"><span class="loading__spinner"></span></div>
     </div>
   </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Our system has received received your requirement.<br>
+              Please notice your phone.<br>
+              Nearest dealers will contact you about our car soonly!</p>
+          </form>
+        </div>
+        <div class="modal-footer modelFooter">
+          <button type="button" class="btn modalBtn" data-dismiss="modal">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modhttps://getbootstrap.com/docs/4.0/components/buttons/al-title" id="exampleModalLabel">Contact to
+            your Lamboghini dealer</h5>
+          <button type="button" class="close closeModelBtn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Your Address:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message and requirement:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer modelFooter">
+          <button type="button" class="btn modalBtn" data-dismiss="modal">Later</button>
+          <button type="button" class="btn modalBtn" data-dismiss="modal" data-toggle="modal"
+            data-target="#exampleModal" data-whatever="@fat">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="main">
     <div id="header">
       <div class="header-nav">
         <div class="header-nav-left">
           <div class="logo">
-            <img src="../resources/common/imgs/logo.webp" alt="">
+            <img src="../resources/common/imgs/logo.webp" alt="Lamboghini Logo">
           </div>
           <ul class="header-nav-left__list">
             <li class="header-nav-left__item">
@@ -48,16 +107,15 @@
               <a class="models" href="../html/Model.html">models</a>
             </li>
             <li class="header-nav-left__item">
-              <a class="models" href=" ">news</a>
+              <a class="models" href="./News.html">news</a>
             </li>
           </ul>
-
         </div>
 
         <div class="header-nav-right">
           <ul class="header-nav-right__list">
             <li class="header-nav-right__item">
-              <a href="">Your account</a>
+              <a href="./ErrorPage.html">Your account</a>
             </li>
           </ul>
           <div class="header-nav-right__icon">
@@ -89,12 +147,14 @@
               <span class="bars-overplay-tittle">DOCUMENTATION</span>
               <ul class="bars-overplay-setting">
                 <li class="bars-overplay-social"><a href="https://github.com/DiAyTi2004/TTCSN-Lamboghini_Website"
-                  target="_blank"><i class="fa-brands fa-github"></i></a> </li>
-                <li class="bars-overplay-social"><a href="https://drive.google.com/drive/folders/1pZQJv9B7hnCOqSFP88pEr90bhcXTx5F7"
-                  target="_blank"><i class="fa-brands fa-google-drive"></i></a>
+                    target="_blank"><i class="fa-brands fa-github"></i></a> </li>
+                <li class="bars-overplay-social"><a
+                    href="https://drive.google.com/drive/folders/1pZQJv9B7hnCOqSFP88pEr90bhcXTx5F7" target="_blank"><i
+                      class="fa-brands fa-google-drive"></i></a>
                 </li>
-                <li class="bars-overplay-social"><a href="https://docs.google.com/document/d/1l0y60eo60weLiJv5kQyD_oORHAsc3gbQ0-GrpMYBHZg/edit"
-                  target="_blank"><i class="fa-solid fa-file-word"></i></a> </li>
+                <li class="bars-overplay-social"><a
+                    href="https://docs.google.com/document/d/1l0y60eo60weLiJv5kQyD_oORHAsc3gbQ0-GrpMYBHZg/edit"
+                    target="_blank"><i class="fa-solid fa-file-word"></i></a> </li>
               </ul>
             </div>
           </div>
@@ -300,13 +360,13 @@
         </div>
       </div>
     </div>
-    
+
     <div class="intro">
       <nav class="d-none d-md-block" aria-label="breadcrumb" id="breadcrumbs">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="./HomePage.html">Home</a></li>
           <li class="breadcrumb-item"><a href="./Model.html">Models</a></li>
-          <li class="breadcrumb-item"><a href="./Model.html">Huracán Models</a></li>
+          <li class="breadcrumb-item"><a href="./Huracan.html">Huracán Models</a></li>
           <li class="breadcrumb-item active" aria-current="page">HURACÁN EVO SPYDER</li>
         </ol>
       </nav>
@@ -316,8 +376,8 @@
             <div id="overlay-header">
               <div id="overlay-h2" data-text="HURACÁN EVO SPYDER"></div>
               <h1 id="overlay-h1">EVERY DAY AMPLIFIED</h1>
-              <!-- <div class="overlay-button">
-                <a href="" class="on-dark" style="transform: translate(0px, 0px);">
+              <div class="overlay-button">
+                <a href="#car__video" class="on-dark" style="transform: translate(0px, 0px);">
                   <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                     <g stroke-width="1.5" transform="translate(-1624 -187.923)">
                       <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
@@ -327,7 +387,7 @@
                     </g>
                   </svg>
                 </a>
-              </div> -->
+              </div>
             </div>
           </div>
           <div class="px-md-0 col-lg-7 col-md-8 col-sm-10 col-12 offset-md-1 position-absolute info-sect">
@@ -352,7 +412,9 @@
               </div>
             </div>
           </div>
-          <a id="config-wrapper" href="">
+
+          <button id="config-wrapper" type="button" class="btn deal__slider--btn" data-toggle="modal"
+            data-target=".bd-example-modal-lg">
             <div class="d-none d-lg-flex align-items-center">
               <div class="overlay-button">
                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
@@ -371,7 +433,8 @@
                 </div>
               </div>
             </div>
-          </a>
+          </button>
+
         </div>
       </div>
       <video id="bg-vid" src="../resources/Huracan_Evo_Spyder/hura_evo_spy_intro.mp4" type="video/mp4" muted autoplay
@@ -379,14 +442,13 @@
     </div>
   </div>
 
-  <div class="car__video">
+  <div id="car__video" class="car__video">
     <div class="container-fluid">
       <div class="row vid-row">
         <div class="col-12 col-lg-10 offset-lg-1 position-relative no-gutters">
           <div class="vid-cont">
             <video class="vid" width="1366" height="653" autoplay muted loop playsinline
-              src="../resources/Huracan_Evo_Spyder/hura_evo_cpy_vid.webm"
-              type="mp4"></video>
+              src="../resources/Huracan_Evo_Spyder/hura_evo_cpy_vid.webm" type="mp4"></video>
             <button class="button" id="exit-button" style="display: none">
               <svg class="svg" viewBox="0 0 50.464 58.271">
                 <g stroke-width="1.5" transform="translate(-1624 -187.923)">
@@ -436,13 +498,13 @@
                 <div class="text-wrapper">
                   <span class="header-span">OVERVIEW</span>
                   <p>
-                    Just before the 60th anniversary of the marque, Lamborghini unveiled Revuelto, the first HPEV 
-                    (High Performance Electrified Vehicle) hybrid super sports car. With the Revuelto, Lamborghini 
-                    has established a new benchmark in performance, on-board technology, and driving pleasure. 
-                    The ultimate thrill provided by the Revuelto is reached thanks to a powertrain that delivers 
-                    1015 CV total, combining the power of a brand-new 12-cylinder internal combustion engine with 
-                    three high-density electric motors and a groundbreaking transversal dual clutch e-gearbox. 
-                    The power of hybridization is harnessed to take performance and driving emotions to an unprecedented 
+                    Just before the 60th anniversary of the marque, Lamborghini unveiled Revuelto, the first HPEV
+                    (High Performance Electrified Vehicle) hybrid super sports car. With the Revuelto, Lamborghini
+                    has established a new benchmark in performance, on-board technology, and driving pleasure.
+                    The ultimate thrill provided by the Revuelto is reached thanks to a powertrain that delivers
+                    1015 CV total, combining the power of a brand-new 12-cylinder internal combustion engine with
+                    three high-density electric motors and a groundbreaking transversal dual clutch e-gearbox.
+                    The power of hybridization is harnessed to take performance and driving emotions to an unprecedented
                     level.
                   </p>
                 </div>
@@ -485,12 +547,12 @@
               <div class="col-12 col-lg-10 col-xl-8 offset-2 offset-xl-4 no-gutters">
                 <span class="header-span">EXTERIOR</span>
                 <p>
-                  The aim of this design was to eliminate the roof without sacrificing aerodynamic 
-                  efficiency or torsional stiffness, while enhancing the original, iconic lines and 
+                  The aim of this design was to eliminate the roof without sacrificing aerodynamic
+                  efficiency or torsional stiffness, while enhancing the original, iconic lines and
                   proportions with elegant aerodynamic solutions. <br>
-                  From the front aerodynamic details to the front hood inlets, from the air intake 
-                  on each side skirt to the exhausts, it speaks one single language: that of natural 
-                  evolution, expressing the most advanced technologies while enhancing the inherent 
+                  From the front aerodynamic details to the front hood inlets, from the air intake
+                  on each side skirt to the exhausts, it speaks one single language: that of natural
+                  evolution, expressing the most advanced technologies while enhancing the inherent
                   beauty of pure lines.
                 </p>
               </div>
@@ -508,8 +570,8 @@
                   </clipPath>
                 </defs>
                 <g clip-path="url(#polygon-cp)">
-                  <image class="left" src="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_01.webp" width="100%" height="100%"
-                    x="0%" y="0%"></image>
+                  <image class="left" src="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_01.webp"
+                    width="100%" height="100%" x="0%" y="0%"></image>
                 </g>
               </svg>
             </div>
@@ -527,8 +589,8 @@
                   </clipPath>
                 </defs>
                 <g clip-path="url(#polygon-cp)">
-                  <image class="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_03.webp" width="100%" height="100%" x="0%"
-                    y="0%"></image>
+                  <image class="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_03.webp" width="100%"
+                    height="100%" x="0%" y="0%"></image>
                 </g>
               </svg>
             </div>
@@ -544,8 +606,8 @@
                   </clipPath>
                 </defs>
                 <g clip-path="url(#polygon-cp)">
-                  <image class="" src="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_02.webp" width="100%" height="100%"
-                    x="0%" y="0%"></image>
+                  <image class="" src="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_02.webp"
+                    width="100%" height="100%" x="0%" y="0%"></image>
                 </g>
               </svg>
             </div>
@@ -563,8 +625,8 @@
                   </clipPath>
                 </defs>
                 <g clip-path="url(#polygon-cp)">
-                  <image class="" src="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_04.webp" width="100%" height="100%"
-                    x="0%" y="0%"></image>
+                  <image class="" src="" alt="" href="../resources/Huracan_Evo_Spyder/hura_evo_spy_s_04.webp"
+                    width="100%" height="100%" x="0%" y="0%"></image>
                 </g>
               </svg>
             </div>
@@ -594,12 +656,12 @@
           <div class="text-wrapper">
             <span class="header-span">EXTERIOR</span>
             <p>
-              The aim of this design was to eliminate the roof without sacrificing aerodynamic 
-              efficiency or torsional stiffness, while enhancing the original, iconic lines and 
+              The aim of this design was to eliminate the roof without sacrificing aerodynamic
+              efficiency or torsional stiffness, while enhancing the original, iconic lines and
               proportions with elegant aerodynamic solutions. <br>
-              From the front aerodynamic details to the front hood inlets, from the air intake 
-              on each side skirt to the exhausts, it speaks one single language: that of natural 
-              evolution, expressing the most advanced technologies while enhancing the inherent 
+              From the front aerodynamic details to the front hood inlets, from the air intake
+              on each side skirt to the exhausts, it speaks one single language: that of natural
+              evolution, expressing the most advanced technologies while enhancing the inherent
               beauty of pure lines.
             </p>
           </div>
@@ -631,12 +693,13 @@
     <div class="d-none d-lg-block">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-10 offset-1">
+          <div class="col-10 offset-1" style="margin-bottom: 40px;">
             <div class="row">
               <div class="col-5">
                 <div class="text-wrapper">
                   <span class="header-span">FEEL THE ENGINE</span>
-                  <p>Let yourself be carried away by pure “en plein air” fun amplified by the sound of an engine that roars with fury.
+                  <p>Let yourself be carried away by pure “en plein air” fun amplified by the sound of an engine that
+                    roars with fury.
                   </p>
                   <div class="d-flex">
                     <img class="icon" src="../resources/Revuelto/earphones.svg" alt="">
@@ -644,13 +707,13 @@
                       for an 8D sound experience.
                     </span>
                   </div>
-                </div> 
+                </div>
               </div>
               <div class="col-6 offset-1">
                 <div class="text-wrapper">
                   <span class="header-span">LAMBORGHINI CENTRO STILE</span>
-                  <p>The front splitter allows a dual passage of air through the underbody, 
-                    where advanced deflectors offer enhanced aerodynamic advantages. 
+                  <p>The front splitter allows a dual passage of air through the underbody,
+                    where advanced deflectors offer enhanced aerodynamic advantages.
                     A new suspended spoiler in the rear channels air with maximum aerodynamic efficiency.
                   </p>
                 </div>
@@ -663,8 +726,17 @@
             <div class="skew-cont">
               <div class="skew-fix">
                 <div class="placeholder">
-                  placeholder
-                </div>  
+                  <div class="car__sound__wrapper">
+                    <canvas id="canvas">
+                    </canvas>
+                    <div class="audio__wrapper">
+                      <div class="car__wheel">
+                        <audio controls=true id="audioPlayer"
+                          src="../resources/Huracan_Evo_Spyder/sounds/Huracan_V1.mp3"></audio>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -679,12 +751,12 @@
                   </clipPath>
                 </defs>
                 <g clip-path="url(#polygon-cp)">
-                  <image class="" src="" alt="" href="../resources/Huracan_Evo_Spyder/01.webp" width="100%" height="100%"
-                    x="0%" y="0%"></image>
+                  <image class="" src="" alt="" href="../resources/Huracan_Evo_Spyder/01.webp" width="100%"
+                    height="100%" x="0%" y="0%"></image>
                 </g>
               </svg>
             </div>
-            <div class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
+            <div id="playSoundBtn" class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
               <span class="spec-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                   <g stroke-width="1.5" transform="translate(-1624 -187.923)">
@@ -697,8 +769,7 @@
                   </g>
                 </svg>
               </span>
-              <span class="spec-text">Lamborghini<br>
-                Centro Stile Design
+              <span class="spec-text">Click to <br>enjoy the engine
               </span>
             </div>
           </div>
@@ -709,30 +780,51 @@
       <div class="container-fluid">
         <div class="tablet-spacing">
           <div class="text-wrapper">
-            <span class="header-span">FEEL THE ENGINE</div>
-            <p>Let yourself be carried away by pure “en plein air” fun amplified by the sound of an engine that roars with fury.
-            </p>
+            <span class="header-span">FEEL THE ENGINE
           </div>
-          <div class="d-flex">
-            <img class="icon" src="../resources/Revuelto/earphones.svg" alt="">
-            <span class="icon-text">Use headphones or earphones <br>
-              for an 8D sound experience.
-            </span>
-          </div>
-          <div class="text-wrapper">
-            <span class="header-span">LAMBORGHINI CENTRO STILE</span>
-            <p>The front splitter allows a dual passage of air through the underbody, 
-              where advanced deflectors offer enhanced aerodynamic advantages. 
-              A new suspended spoiler in the rear channels air with maximum aerodynamic efficiency.
-            </p>
-          </div>
-          <img src="../resources/Huracan_Evo_Spyder/01.webp" alt="" class="tablet-img">
-          <div class="justify-content-center">
-            <button class="tablet-design-button expand-button">LAMBORGHINI CENTRO STILE DESIGN</button>
+          <p>Let yourself be carried away by pure “en plein air” fun amplified by the sound of an engine that roars with
+            fury.
+          </p>
+        </div>
+        <div class="d-flex">
+          <img class="icon" src="../resources/Revuelto/earphones.svg" alt="">
+          <span class="icon-text">Use headphones or earphones <br>
+            for an 8D sound experience.
+          </span>
+        </div>
+
+        <!-- mobile code -->
+        <div class="carSoundMobile">
+          <div class="carSound__img">
+            <div class="carSound__playBtn__wrapper">
+              <div class="carSound__playBtn">
+                <svg class="svg" viewBox="0 0 50.464 58.271">
+                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                    <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                      transform="translate(1623.5 187.345)" class="btnPath on-light mobilePathBtn1"> </path>
+                    <path class="btnPath icon-on-light on-light mobilePathBtn2"
+                      d="M22.732 24.713, 32.732 30.713, 22.732 36.713Z" transform="translate(1623 186.923)"></path>
+                  </g>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="text-wrapper">
+          <span class="header-span">LAMBORGHINI CENTRO STILE</span>
+          <p>The front splitter allows a dual passage of air through the underbody,
+            where advanced deflectors offer enhanced aerodynamic advantages.
+            A new suspended spoiler in the rear channels air with maximum aerodynamic efficiency.
+          </p>
+        </div>
+        <img src="../resources/Huracan_Evo_Spyder/01.webp" alt="" class="tablet-img">
+        <!-- <div class="justify-content-center">
+          <button class="tablet-design-button expand-button">LAMBORGHINI CENTRO STILE DESIGN</button>
+        </div> -->
       </div>
     </div>
+  </div>
   </div>
 
   <div class="car__infor">
@@ -754,15 +846,18 @@
                 <div class="text-wrapper">
                   <span class="header-span">CONNECT WITH YOUR HURACÁN EVO SPYDER</span>
                   <p>
-                    With the new connected services, the experience on board your Huracán EVO Spyder becomes even more enjoyable, 
-                    remotely as well using the Lamborghini UNICA app. Exclusive comfort, navigation, safety and entertainment 
+                    With the new connected services, the experience on board your Huracán EVO Spyder becomes even more
+                    enjoyable,
+                    remotely as well using the Lamborghini UNICA app. Exclusive comfort, navigation, safety and
+                    entertainment
                     features will let you manage your Lamborghini better than ever before.
                   </p>
                   <div class="d-none d-md-flex align-items-center btn-open car__infor-btn">
                     <span class="spec-btn">
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                         <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z" transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                            transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
                           <g class="icon on-dark" transform="translate(627 -5248.5)">
                             <path d="M0 0v15" transform="translate(1022.5 5458.5)"></path>
                             <path d="M0 0v15" transform="rotate(90 -2218 3248)"></path>
@@ -771,7 +866,7 @@
                       </svg>
                     </span>
                     <span class="spec-text">Connected Services<br>
-                          of HURACÁN
+                      of HURACÁN
                     </span>
                   </div>
                 </div>
@@ -788,8 +883,9 @@
           <div class="text-wrapper">
             <span class="header-span">CONNECT WITH YOUR HURACÁN EVO SPYDER</span>
             <p>
-              With the new connected services, the experience on board your Huracán EVO Spyder becomes even more enjoyable, 
-              remotely as well using the Lamborghini UNICA app. Exclusive comfort, navigation, safety and entertainment 
+              With the new connected services, the experience on board your Huracán EVO Spyder becomes even more
+              enjoyable,
+              remotely as well using the Lamborghini UNICA app. Exclusive comfort, navigation, safety and entertainment
               features will let you manage your Lamborghini better than ever before.
             </p>
             <div class="justify-content-center">
@@ -799,7 +895,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="row car__infor-details">
       <div class="car__infor-header d-md-none">
         <div class="header-title">CONNECTED SERVICES</div>
@@ -830,7 +926,7 @@
         <div class="column-wapper row">
           <div class="wrapper col-12 col-md-6">
             <h2 class="spec-title">CONNECTED NAVIGATION SERVICES</h2>
-            <p class = "spec-paragraphs">Precise real-time travel, route and destination updates.</p>
+            <p class="spec-paragraphs">Precise real-time travel, route and destination updates.</p>
             <ul class="spec-data-list">
               <li class="spec-data-item">
                 <span class="data">Real Time traffic Information </span>
@@ -839,7 +935,8 @@
           </div>
           <div class="wrapper col-12 col-md-6">
             <h2 class="spec-title">PEACE OF MIND</h2>
-            <p class = "spec-paragraphs">The maximum convenience in managing the status and condition of your car. Your Huracán at your fingertips whenever and wherever you want..</p>
+            <p class="spec-paragraphs">The maximum convenience in managing the status and condition of your car. Your
+              Huracán at your fingertips whenever and wherever you want..</p>
             <ul class="spec-data-list">
               <li class="spec-data-item">
                 <span class="data">Car Finder</span>
@@ -857,7 +954,7 @@
           </div>
           <div class="wrapper col-12 col-md-6">
             <h2 class="spec-title">SAFETY AND SECURITY</h2>
-            <p class = "spec-paragraphs">Advanced assistance services to monitor your vehicle anywhere in the world.</p>
+            <p class="spec-paragraphs">Advanced assistance services to monitor your vehicle anywhere in the world.</p>
             <ul class="spec-data-list">
               <li class="spec-data-item">
                 <span class="data">Geofencing Alert</span>
@@ -875,7 +972,8 @@
           </div>
           <div class="wrapper col-12 col-md-6">
             <h2 class="spec-title">ENTERTAINMENT</h2>
-            <p class = "spec-paragraphs">Cutting-edge features that make the driving experience even more enjoyable and engaging.</p>
+            <p class="spec-paragraphs">Cutting-edge features that make the driving experience even more enjoyable and
+              engaging.</p>
             <ul class="spec-data-list">
               <li class="spec-data-item">
                 <span class="data">Web Radio</span>
@@ -890,7 +988,8 @@
           </div>
           <div class="wrapper col-12 col-md-6">
             <h2 class="spec-title">FUN TO DRIVE</h2>
-            <p class = "spec-paragraphs">Innovative services aimed at improving driving pleasure and your skills as a drive</p>
+            <p class="spec-paragraphs">Innovative services aimed at improving driving pleasure and your skills as a
+              drive</p>
             <ul class="spec-data-list">
               <li class="spec-data-item">
                 <span class="data">Lamborghini Connected Telemetry</span>
@@ -957,8 +1056,8 @@
               Technical Specifications
             </span>
           </div>
-          <div class="d-md-none btn-open-mobile">
-            <button class="boxed">EXPAND ALL TECHNICAL SPEC.</button>
+          <div class="d-md-none btn-open-mobile" style="margin-bottom: 12px;">
+            <button class="boxed">EXPAND ALL TECHNICAL SPEC</button>
           </div>
         </div>
       </div>
@@ -1038,7 +1137,8 @@
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">COOLING SYSTEM </span>
-                  <span class="data ml-md-5 flex-fill"> Water and oil cross flow cooling system with fixed air intakes </span>
+                  <span class="data ml-md-5 flex-fill"> Water and oil cross flow cooling system with fixed air intakes
+                  </span>
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">ENGINE MANAGEMENT SYSTEM </span>
@@ -1059,11 +1159,13 @@
               <ul class="spec-data-list">
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">TRANSMISSION TYPE</span>
-                  <span class="data ml-md-5 flex-fill">All-wheel drive with electronically controlled hydraulic multi-plate clutch</span>
+                  <span class="data ml-md-5 flex-fill">All-wheel drive with electronically controlled hydraulic
+                    multi-plate clutch</span>
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">GEARBOX </span>
-                  <span class="data ml-md-5 flex-fill">7-speed Lamborghini Doppia Frizione (LDF) dual-clutch transmission, with characteristics according to the driving mode selected</span>
+                  <span class="data ml-md-5 flex-fill">7-speed Lamborghini Doppia Frizione (LDF) dual-clutch
+                    transmission, with characteristics according to the driving mode selected</span>
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">CLUTCH </span>
@@ -1105,11 +1207,13 @@
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">MIRRORS</span>
-                  <span class="data ml-md-5 flex-fill">Heated external mirrors, electrically adjustable and foldable</span>
+                  <span class="data ml-md-5 flex-fill">Heated external mirrors, electrically adjustable and
+                    foldable</span>
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">AERODYNAMICS</span>
-                  <span class="data ml-md-5 flex-fill">Front splitter with integrated wing, Underbody with aerodynamic deflectors and rear diffuser, backend with integrated slotted spoiler</span>
+                  <span class="data ml-md-5 flex-fill">Front splitter with integrated wing, Underbody with aerodynamic
+                    deflectors and rear diffuser, backend with integrated slotted spoiler</span>
                 </li>
               </ul>
             </div>
@@ -1139,19 +1243,23 @@
               <ul class="spec-data-list">
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">CONTROL SYSTEM</span>
-                  <span class="data ml-md-5 flex-fill">ESC integrating ABS and TCS with different characteristics according to the driving mode selected</span>
+                  <span class="data ml-md-5 flex-fill">ESC integrating ABS and TCS with different characteristics
+                    according to the driving mode selected</span>
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">SUSPENSION TYPE</span>
-                  <span class="data ml-md-5 flex-fill">Front and rear aluminum double-wishbone suspension electronically controlled by Lamborghini Magneto-rheological System</span>
+                  <span class="data ml-md-5 flex-fill">Front and rear aluminum double-wishbone suspension electronically
+                    controlled by Lamborghini Magneto-rheological System</span>
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">STEERING SYSTEM</span>
-                  <span class="data ml-md-5 flex-fill">Electromechanical power steering and Lamborghini Dynamic Steering (LDS) with variable steering ratio. Rear Wheel Steering.</span>
+                  <span class="data ml-md-5 flex-fill">Electromechanical power steering and Lamborghini Dynamic Steering
+                    (LDS) with variable steering ratio. Rear Wheel Steering.</span>
                 </li>
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">BODY CONTROL</span>
-                  <span class="data ml-md-5 flex-fill">Lamborghini Dinamica Veicolo Integrata (LDVI) controlling: All Wheel Steering, Torque Vectoring, Traction Control, All Wheel Drive</span>
+                  <span class="data ml-md-5 flex-fill">Lamborghini Dinamica Veicolo Integrata (LDVI) controlling: All
+                    Wheel Steering, Torque Vectoring, Traction Control, All Wheel Drive</span>
                 </li>
               </ul>
             </div>
@@ -1160,7 +1268,8 @@
               <ul class="spec-data-list">
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">BRAKES</span>
-                  <span class="data ml-md-5 flex-fill">Carbon-ceramic brakes with fixed monoblock calipers with 6 pistons (front) and 4 pistons (rear), in aluminum, CCB disks</span>
+                  <span class="data ml-md-5 flex-fill">Carbon-ceramic brakes with fixed monoblock calipers with 6
+                    pistons (front) and 4 pistons (rear), in aluminum, CCB disks</span>
                 </li>
               </ul>
             </div>
@@ -1169,7 +1278,8 @@
               <ul class="spec-data-list">
                 <li class="spec-data-item d-md-flex align-items-center">
                   <span class="label">AIRBAGS</span>
-                  <span class="data ml-md-5 flex-fill">Driver, passenger and side airgbags; kneels airbags in selected markets</span>
+                  <span class="data ml-md-5 flex-fill">Driver, passenger and side airgbags; kneels airbags in selected
+                    markets</span>
                 </li>
               </ul>
             </div>
@@ -1224,6 +1334,41 @@
     </div>
   </div>
 
+  <div class="banner container-fluid">
+    <div class="banner_bg d-flex">
+      <span class="banner_pc"
+        style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+        <img src="../resources/Huracan_Evo_Spyder/hura_evo_spy_banner_01_.webp"
+          style="position: absolute;inset: 0px;box-sizing: border-box;padding: 0px;border: none;margin: auto;display: block;width: 0px;height: 0px;min-width: 100%;max-width: 100%;min-height: 100%;max-height: 100%;"
+          alt="" decoding="async" data-nimg="fill" class="d-flex" id="banner_img">
+      </span>
+      <span class="banner_tablet"
+        style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+        <img src="../resources/Huracan_Evo_Spyder/hura_evo_spy_banner_01_m.webp"
+          style="position: absolute;inset: 0px;box-sizing: border-box;padding: 0px;border: none;margin: auto;display: block;width: 0px;height: 0px;min-width: 100%;max-width: 100%;min-height: 100%;max-height: 100%;"
+          alt="" decoding="async" data-nimg="fill" class="d-flex" id="banner_img">
+      </span>
+      <div class="banner_content">
+        <div class="link offset-sm-1">
+          <h2 class="mb-5">CONTACT <br> YOUR DEALER</h2>
+          <div class="banner_btn">
+            <button class="contact_btn deal__slider--btn" data-toggle="modal" data-target=".bd-example-modal-lg">
+              <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
+                  <path class="btnPath icon-on-dark on-dark" d="M0 0l7.432 5.674L14.864 0"
+                    transform="rotate(-90 935.432 -711.068)"></path>
+                </g>
+              </svg>
+              <!-- <span style="color: #fff; margin-left: 12px;">Contact your Dealer</span> -->
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -1252,15 +1397,15 @@
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
       <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
       <!-- <button id="carousel-slider-prev" class="carousel-slider-button" role="button" data-slide="prev"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
-          <g stroke-width="1" transform="translate(-1624 -187.923)">
-            <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-              transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
-            <path class="btnPath icon-on-dark on-dark" d="M0 5.675L7.432 0l7.432 5.675"
-              transform="rotate(-90 935.432 -711.068)">
-            </path>
-          </g>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
+        <g stroke-width="1" transform="translate(-1624 -187.923)">
+          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+            transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
+          <path class="btnPath icon-on-dark on-dark" d="M0 5.675L7.432 0l7.432 5.675"
+            transform="rotate(-90 935.432 -711.068)">
+          </path>
+        </g>
+      </svg>
       <!-- </button> -->
       <span class="sr-only">Previous</span>
     </a>
@@ -1268,15 +1413,15 @@
       <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
       <span class="sr-only">Next</span>
       <!-- <button id="carousel-slider-next" class="carousel-slider-button" role="button" data-slide="next"> -->
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
-          <g stroke-width="1" transform="translate(-1624 -187.923)">
-            <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-              transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
-            <path class="btnPath icon-on-dark on-dark" d="M0 0l7.432 5.674L14.864 0"
-              transform="rotate(-90 935.432 -711.068)">
-            </path>
-          </g>
-        </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271" class="svg carousel-slider-svg">
+        <g stroke-width="1" transform="translate(-1624 -187.923)">
+          <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+            transform="translate(1623.5 187.345)" class="btnPath on-dark"></path>
+          <path class="btnPath icon-on-dark on-dark" d="M0 0l7.432 5.674L14.864 0"
+            transform="rotate(-90 935.432 -711.068)">
+          </path>
+        </g>
+      </svg>
       <!-- </button> -->
     </a>
   </div>
@@ -1386,6 +1531,10 @@
   <script src="../js/Huracan_Evo_Spyder/MediaQuery.js"></script>
   <script src="../js/Huracan_Evo_Spyder/Overlay.js"></script>
   <script src="../js/Huracan_Evo_Spyder/TechnicalSpec.js"></script>
+
+  <script src="../js/common/zen-renderer.js"></script>
+  <script src="../js/common/visualize.js"></script>
+  <script src="../js/common/CarSound.js"></script>
 </body>
 
 </html>

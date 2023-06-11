@@ -1,0 +1,124 @@
+.car__sound__wrapper {
+    margin-left: 20%;
+    position: relative;
+    width: fit-content;
+}
+
+.car__sound__wrapper--inMoblie{
+    
+}
+
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#canvas {
+    overflow: visible;
+    width: 666px;
+    height: 666px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.audio__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes wheel-animation {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.car__wheel {
+    background-image: url('../../resources/common/imgs/wheel.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    height: 77%;
+    width: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: wheel-animation 0.2s linear infinite;
+    animation-play-state: paused;
+    /* initially paused */
+}
+
+#audioPlayer {
+    position: absolute;
+    width: 0;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.placeholder {
+    background-color: black;
+    text-align: center;
+    color: black;
+    height: 100%;
+}
+
+.spec-text{
+    cursor: pointer;
+}
+
+.carSoundMobile{
+    margin: 24px 0px;
+    width: 100%;
+    height: 140px;
+}
+
+.carSound__img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 12px;
+    position: relative;
+    background-image: url('../../resources/common/imgs/sound_wave_mobile.jpg');
+}
+
+.carSound__playBtn__wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carSound__playBtn{
+    width: 70px;
+    z-index: 50;
+}
+
+.mobilePathBtn1{
+    stroke: black;
+    fill: white;
+}
+
+.mobilePathBtn2{
+    fill: black;
+    stroke: black;
+}

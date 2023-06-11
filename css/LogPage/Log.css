@@ -1,0 +1,127 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+* {
+    color: #f1f1f1;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    height: 100%;
+    background-color: #f1f1f1 !important;
+}
+
+.container-fluid {
+    min-height: 400px;
+    background-color: transparent;
+}
+
+.image-wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.background-img {
+    position: relative;
+    height: 100%;
+}
+
+.background-img>img {
+    height: 100%;
+}
+
+.img__wrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.car-crop {
+    position: absolute;
+    z-index: 5;
+    width: 238%;
+    left: -80%;
+    bottom: 2%;
+}
+
+.logContainer {
+    background-color: rgba(87, 87, 86, 255);
+    height: fit-content;
+    position: relative;
+}
+
+.text-wrapper>h1 {
+    margin-bottom: 5rem;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+    background-color: rgba(230, 156, 11, 255) !important;
+    border-color: orange !important;
+}
+
+.title {
+    margin-bottom: 36px !important;
+}
+
+.submitBtn {
+    margin-top: 24px;
+    padding: 12px 24px;
+    text-transform: uppercase;
+    border-radius: unset;
+    background-color: black;
+    outline: none;
+    cursor: pointer;
+}
+
+.submitBtn:active {
+    background-color: white;
+    color: black;
+}
+
+.submitBtn>a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.submitBtn>a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.form-check {
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form__sep__wrapper {
+    display: inline-block;
+}
+
+.form__sep {
+    margin: 24px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    align-self: center;
+}
+
+.form__container {
+    min-height: 80vh;
+}

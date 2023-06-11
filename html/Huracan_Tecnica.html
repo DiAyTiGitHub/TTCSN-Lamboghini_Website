@@ -25,9 +25,11 @@
 <link rel="stylesheet" href="../css/Revuelto/Revuelto.css" />
 <link rel="stylesheet" href="../css/Revuelto/Technical_spec.css" />
 <link rel="stylesheet" href="../css/common/Footer.css">
+<link rel="stylesheet" href="../css/common/CarSound.css">
 <link rel="stylesheet"
     href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
 <link rel="stylesheet" href="../css/common/Breadcrumb.css">
+<link rel="stylesheet" href="../css/common/Advisory.css">
 
 <body>
     <div class="loading__overlay">
@@ -35,6 +37,64 @@
             <div class="loading__overlay__content"><span class="loading__spinner"></span></div>
         </div>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <p>Our system has received received your requirement.<br>
+                            Please notice your phone.<br>
+                            Nearest dealers will contact you about our car soonly!</p>
+                    </form>
+                </div>
+                <div class="modal-footer modelFooter">
+                    <button type="button" class="btn modalBtn" data-dismiss="modal">CONFIRM</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modhttps://getbootstrap.com/docs/4.0/components/buttons/al-title" id="exampleModalLabel">
+                        Contact to
+                        your Lamboghini dealer</h5>
+                    <button type="button" class="close closeModelBtn" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Your Address:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Message and requirement:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer modelFooter">
+                    <button type="button" class="btn modalBtn" data-dismiss="modal">Later</button>
+                    <button type="button" class="btn modalBtn" data-dismiss="modal" data-toggle="modal"
+                        data-target="#exampleModal" data-whatever="@fat">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="main">
         <div id="header">
             <div class="header-nav">
@@ -50,7 +110,7 @@
                             <a class="models" href="../html/Model.html">models</a>
                         </li>
                         <li class="header-nav-left__item">
-                            <a class="models" href=" ">news</a>
+                            <a class="models" href="./News.html">news</a>
                         </li>
                     </ul>
 
@@ -59,7 +119,7 @@
                 <div class="header-nav-right">
                     <ul class="header-nav-right__list">
                         <li class="header-nav-right__item">
-                            <a href="">Your account</a>
+                            <a href="./ErrorPage.html">Your account</a>
                         </li>
                     </ul>
                     <div class="header-nav-right__icon">
@@ -320,7 +380,7 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./HomePage.html">Home</a></li>
                     <li class="breadcrumb-item"><a href="./Model.html">Models</a></li>
-                    <li class="breadcrumb-item"><a href="./Model.html">Models Huracán</a></li>
+                    <li class="breadcrumb-item"><a href="./Huracan.html">Models Huracán</a></li>
                     <li class="breadcrumb-item active" aria-current="page">HURACÁN TECNICA</li>
                 </ol>
             </nav>
@@ -331,7 +391,7 @@
                             <div id="overlay-h2" data-text="HURACÁN TECNICA"></div>
                             <h1 id="overlay-h1">TAKE ALL YOUR SOULS TO DRIVE</h1>
                             <div class="overlay-button">
-                                <a href="" class="on-dark" style="transform: translate(0px, 0px);">
+                                <a href="#car__video" class="on-dark" style="transform: translate(0px, 0px);">
                                     <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                                         <g stroke-width="1.5" transform="translate(-1624 -187.923)">
                                             <path
@@ -368,7 +428,8 @@
                             </div>
                         </div>
                     </div>
-                    <a id="config-wrapper" href="">
+                    <button id="config-wrapper" type="button" class="btn deal__slider--btn" data-toggle="modal"
+                        data-target=".bd-example-modal-lg">
                         <div class="d-none d-lg-flex align-items-center">
                             <div class="overlay-button">
                                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
@@ -389,7 +450,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </button>
                 </div>
             </div>
             <video id="bg-vid" src="../resources/Huracan_Tecnica/intro_huracan_tecnica.mp4" type="video/mp4" muted
@@ -397,7 +458,7 @@
         </div>
     </div>
 
-    <div class="car__video">
+    <div id="car__video" class="car__video">
         <div class="container-fluid">
             <div class="row vid-row">
                 <div class="col-12 col-lg-10 offset-lg-1 position-relative no-gutters">
@@ -445,7 +506,8 @@
                         <div class="image-wrapper ">
                             <div class="skew-cont">
                                 <div class="skew-fix">
-                                    <img class="info-image" src="../resources/Huracan_Tecnica/hura_tecnica_over_01.webp" alt="">
+                                    <img class="info-image" src="../resources/Huracan_Tecnica/hura_tecnica_over_01.webp"
+                                        alt="">
                                 </div>
                             </div>
                         </div>
@@ -663,7 +725,7 @@
         <div class="d-none d-lg-block">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-10 offset-1">
+                    <div class="col-10 offset-1" style="margin-bottom: 40px;">
                         <div class="row">
                             <div class="col-5">
                                 <div class="text-wrapper">
@@ -697,7 +759,16 @@
                         <div class="skew-cont">
                             <div class="skew-fix">
                                 <div class="placeholder">
-                                    placeholder
+                                    <div class="car__sound__wrapper">
+                                        <canvas id="canvas">
+                                        </canvas>
+                                        <div class="audio__wrapper">
+                                            <div class="car__wheel">
+                                                <audio controls=true id="audioPlayer"
+                                                    src="../resources/Huracan_Tecnica/sounds/sound_aven_ulti_rds.mp3"></audio>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -719,7 +790,8 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
+                        <div id="playSoundBtn"
+                            class="expand-button d-none d-md-flex align-items-center btn-open position-absolute">
                             <span class="spec-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                                     <g stroke-width="1.5" transform="translate(-1624 -187.923)">
@@ -733,8 +805,7 @@
                                     </g>
                                 </svg>
                             </span>
-                            <span class="spec-text">Lamborghini<br>
-                                Centro Stile Design
+                            <span class="spec-text">Click to <br>enjoy the engine
                             </span>
                         </div>
                     </div>
@@ -759,6 +830,26 @@
                         for an 8D sound experience.
                     </span>
                 </div>
+                <!-- mobile code -->
+                <div class="carSoundMobile">
+                    <div class="carSound__img">
+                        <div class="carSound__playBtn__wrapper">
+                            <div class="carSound__playBtn">
+                                <svg class="svg" viewBox="0 0 50.464 58.271">
+                                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                                        <path
+                                            d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                                            transform="translate(1623.5 187.345)"
+                                            class="btnPath on-light mobilePathBtn1"> </path>
+                                        <path class="btnPath icon-on-light on-light mobilePathBtn2"
+                                            d="M22.732 24.713, 32.732 30.713, 22.732 36.713Z"
+                                            transform="translate(1623 186.923)"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="text-wrapper">
                     <span class="header-span">CENTRO STILE</span>
                     <p>
@@ -768,9 +859,9 @@
                     </p>
                 </div>
                 <img src="../resources/Huracan_Tecnica/hura_tecnica_centro_stile_01.webp" alt="" class="tablet-img">
-                <div class="justify-content-center">
+                <!-- <div class="justify-content-center">
                     <button class="tablet-design-button">LAMBORGHINI CENTRO STILE DESIGN</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
@@ -817,7 +908,7 @@
                                             </svg>
                                         </span>
                                         <span class="spec-text">Connected Services<br>
-                                            of HURACÁN
+                                            of TECNICA
                                         </span>
                                     </div>
                                 </div>
@@ -838,9 +929,11 @@
                             from the services already available for Urus and Huracán to bring driving engagement to
                             a level never experienced before.
                         </p>
-                        <!-- <div class="justify-content-center">
-              <button class="tablet-design-button car__infor-btn-open-mobile">CONNECTED SERVICES OF REVUELTO </button>
-            </div> -->
+                        <div class="justify-content-center">
+                            <button class="tablet-design-button car__infor-btn-open-mobile"
+                                style="margin-bottom: 36px;">CONNECTED SERVICES OF
+                                TECNICA </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1029,7 +1122,7 @@
                             Technical Specifications
                         </span>
                     </div>
-                    <div class="d-md-none btn-open-mobile">
+                    <div class="d-md-none btn-open-mobile" style="margin-bottom: 36px;">
                         <button class="boxed">EXPAND ALL TECHNICAL SPEC.</button>
                     </div>
                 </div>
@@ -1317,7 +1410,7 @@
         </div>
     </div>
 
-    <div class="highlight">
+    <!-- <div class="highlight">
         <div class="desktop d-none d-lg-block container-fluid px-0">
             <div class="row no-gutters ">
                 <div class="col-6">
@@ -1532,25 +1625,26 @@
         </div>
     </div>
 
-    <div class="more"></div>
+    <div class="more"></div> -->
 
     <div class="banner container-fluid">
         <div class="banner_bg d-flex">
             <span class="banner_pc"
                 style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-                <img src="../resources/Huracan_Tecnica/hura_tecnica_banner_02.webp" alt="" decoding="async" data-nimg="fill"
-                    class="d-flex" id="banner_img">
+                <img src="../resources/Huracan_Tecnica/hura_tecnica_banner_02.webp" alt="" decoding="async"
+                    data-nimg="fill" class="d-flex" id="banner_img">
             </span>
             <span class="banner_tablet"
                 style="box-sizing: border-box; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
-                <img src="../resources/Huracan_Tecnica/hura_tecnica_banner_02_m.webp" alt="" decoding="async" data-nimg="fill"
-                    class="d-flex" id="banner_img">
+                <img src="../resources/Huracan_Tecnica/hura_tecnica_banner_02_m.webp" alt="" decoding="async"
+                    data-nimg="fill" class="d-flex" id="banner_img">
             </span>
             <div class="banner_content">
                 <div class="link offset-sm-1">
                     <h2 class="mb-5">DISCOVERY MORE</h2>
                     <div class="banner_btn">
-                        <button class="contact_btn">
+                        <button class="contact_btn deal__slider--btn" data-toggle="modal"
+                            data-target=".bd-example-modal-lg">
                             <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                                 <g stroke-width="1.5" transform="translate(-1624 -187.923)">
                                     <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
@@ -1559,7 +1653,7 @@
                                         transform="rotate(-90 935.432 -711.068)"></path>
                                 </g>
                             </svg>
-                            <span style="color: #fff;">Contact your Dealer</span>
+                            <span style="color: #fff; margin-left: 12px;">Contact your Dealer</span>
                         </button>
                     </div>
                 </div>
@@ -1730,6 +1824,9 @@
     <script src="../js/Revuelto/HighlightSlider.js"></script>
     <script src="../js/Revuelto/CarInfor.js"></script>
     <!-- <script src="../js/Revuelto/Banner.js"></script> -->
+    <script src="../js/common/zen-renderer.js"></script>
+    <script src="../js/common/visualize.js"></script>
+    <script src="../js/common/CarSound.js"></script>
 </body>
 
 </html>
