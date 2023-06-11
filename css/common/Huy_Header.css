@@ -734,7 +734,7 @@
 #header .header-menu .header-menu-item .header-menu-item__list ul li a {
   display: block;
   margin-bottom: 2.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
   color: #6f6f6f;
@@ -773,7 +773,7 @@
   display: block;
   width: fit-content;
   margin-bottom: 2.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   text-transform: uppercase;
   color: white;
