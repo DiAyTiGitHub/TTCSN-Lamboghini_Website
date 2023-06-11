@@ -27,6 +27,7 @@
 <link rel="stylesheet" href="../css/Huracan_Evo_Spyder/Huracan_Evo_Spyder.css">
 <link rel="stylesheet" href="../css/Huracan_Evo_Spyder/Technical_spec.css" />
 <link rel="stylesheet" href="../css/common/CarSound.css">
+<link rel="stylesheet" href="../css/common/Advisory.css">
 
 <body>
   <div class="loading__overlay">
@@ -34,12 +35,69 @@
       <div class="loading__overlay__content"><span class="loading__spinner"></span></div>
     </div>
   </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Our system has received received your requirement.<br>
+              Please notice your phone.<br>
+              Nearest dealers will contact you about our car soonly!</p>
+          </form>
+        </div>
+        <div class="modal-footer modelFooter">
+          <button type="button" class="btn modalBtn" data-dismiss="modal">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modhttps://getbootstrap.com/docs/4.0/components/buttons/al-title" id="exampleModalLabel">Contact to
+            your Lamboghini dealer</h5>
+          <button type="button" class="close closeModelBtn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Your Address:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message and requirement:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer modelFooter">
+          <button type="button" class="btn modalBtn" data-dismiss="modal">Later</button>
+          <button type="button" class="btn modalBtn" data-dismiss="modal" data-toggle="modal"
+            data-target="#exampleModal" data-whatever="@fat">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="main">
     <div id="header">
       <div class="header-nav">
         <div class="header-nav-left">
           <div class="logo">
-            <img src="../resources/common/imgs/logo.webp" alt="">
+            <img src="../resources/common/imgs/logo.webp" alt="Lamboghini Logo">
           </div>
           <ul class="header-nav-left__list">
             <li class="header-nav-left__item">
@@ -49,16 +107,15 @@
               <a class="models" href="../html/Model.html">models</a>
             </li>
             <li class="header-nav-left__item">
-              <a class="models" href=" ">news</a>
+              <a class="models" href="./News.html">news</a>
             </li>
           </ul>
-
         </div>
 
         <div class="header-nav-right">
           <ul class="header-nav-right__list">
             <li class="header-nav-right__item">
-              <a href="">Your account</a>
+              <a href="./ErrorPage.html">Your account</a>
             </li>
           </ul>
           <div class="header-nav-right__icon">
@@ -355,7 +412,9 @@
               </div>
             </div>
           </div>
-          <a id="config-wrapper" href="">
+
+          <button id="config-wrapper" type="button" class="btn deal__slider--btn" data-toggle="modal"
+            data-target=".bd-example-modal-lg">
             <div class="d-none d-lg-flex align-items-center">
               <div class="overlay-button">
                 <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
@@ -374,7 +433,8 @@
                 </div>
               </div>
             </div>
-          </a>
+          </button>
+
         </div>
       </div>
       <video id="bg-vid" src="../resources/Huracan_Evo_Spyder/hura_evo_spy_intro.mp4" type="video/mp4" muted autoplay
@@ -1292,7 +1352,7 @@
         <div class="link offset-sm-1">
           <h2 class="mb-5">CONTACT <br> YOUR DEALER</h2>
           <div class="banner_btn">
-            <button class="contact_btn">
+            <button class="contact_btn deal__slider--btn" data-toggle="modal" data-target=".bd-example-modal-lg">
               <svg class="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
                 <g stroke-width="1.5" transform="translate(-1624 -187.923)">
                   <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
@@ -1301,6 +1361,7 @@
                     transform="rotate(-90 935.432 -711.068)"></path>
                 </g>
               </svg>
+              <!-- <span style="color: #fff; margin-left: 12px;">Contact your Dealer</span> -->
             </button>
           </div>
         </div>
