@@ -1,0 +1,31 @@
+.deal__slider--btn {
+    outline: none;
+    border: unset;
+    background-color: transparent;
+}
+
+.modalBtn {
+    flex: 1;
+    outline: none;
+    border-radius: unset;
+    background-color: black;
+    text-transform: uppercase;
+    border: 1px solid black;
+    color: white;
+    transition: all linear 0.2s;
+}
+
+.modalBtn:hover {
+    color: black;
+    background-color: white;
+}
+
+.modelFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-title {
+    text-transform: uppercase;
+}
