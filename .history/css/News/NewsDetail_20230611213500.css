@@ -1,0 +1,16 @@
+.news-section-title--secondary {
+    font-size: 34px;
+    font-weight: 500;
+}
+
+.news-section-title--primary {
+    font-size: 76px;
+}
+
+.paragraphs {
+    margin-top: 45px;
+}
+
+.texts-wrapper {
+    padding: 0 20px;
+}
