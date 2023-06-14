@@ -635,11 +635,11 @@ button:hover {
     display: flex;
   }
 
-  .carousel-item {
-    /* display: block;
+  /*.carousel-item {
+    display: block;
     margin-right: 0;
-    flex: 0 0 calc(100%/1.4); */
-  }
+    flex: 0 0 calc(100%/1.4); 
+  }*/
 }
 
 @media (max-width: 768px) {

@@ -175,6 +175,34 @@
     transform: translateX(0) scale(1);
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .pagination-item {
+        position: relative;
+        font-size: 16px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1;
+        letter-spacing: 0.32px;
+        text-align: left;
+        padding: 0 65px 20px 0;
+        border: none;
+        color: rgba(32, 32, 32, 1);
+        background-color: transparent;
+        outline: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+    }
+
+    .config__slider--content {
+        color: black;
+        font-size: 62px;
+        font-weight: 700;
+        letter-spacing: -2.28px;
+        line-height: 73.72px;
+        margin: 9px 0 30px 0;
+    }
+}
 
 @media only screen and (max-width: 767px) {
     .config__slider--content {

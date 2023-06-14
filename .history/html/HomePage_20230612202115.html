@@ -14,20 +14,22 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <title>Lamboghini - Models</title>
+  <title>Lamboghini - Home Page</title>
 </head>
 
 <link rel="stylesheet" href="../css/common/common.css" />
-<link rel="stylesheet" href="../css/common/LoadingOverlay.css">
+<link rel="stylesheet" href="../css/HomePage/config.css">
 <link rel="stylesheet" href="../css/common/Huy_Header.css">
-<link rel="stylesheet" href="../css/Model/Model.css" />
-<link rel="stylesheet" href="../css/Model/ModelSlider.css">
-<link rel="stylesheet" href="../css/Revuelto/Revuelto.css" />
-<link rel="stylesheet" href="../css/Model/CarsInfor.css">
 <link rel="stylesheet" href="../css/common/Footer.css" />
+<link rel="stylesheet" href="../css/common/LoadingOverlay.css">
+<link rel="stylesheet" href="../css/HomePage/HomePage.css" />
+<link rel="stylesheet" href="../css/HomePage/ModelSlider.css" />
+<link rel="stylesheet" href="../css/HomePage/NewSection.css" />
+<link rel="stylesheet" href="../css/common/Footer.css">
+<link rel="stylesheet" href="../css/common/Advisory.css">
 <link rel="stylesheet"
   href="../resources/common/icons/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
-<link rel="stylesheet" href="../css/common/Breadcrumb.css">
+
 
 <body>
   <div class="note__wrapper">
@@ -35,13 +37,68 @@
       consumption combined: 14,1-14,5 l/100km (WLTP); CO2-emissions combined: 320-328 g/km (WLTP); Under homologation:
       Revuelto</p>
   </div>
-  
+
   <div class="loading__overlay">
     <div class="loading__overlay__inner">
       <div class="loading__overlay__content"><span class="loading__spinner"></span></div>
     </div>
   </div>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank you!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <p>Our system has received received your requirement.<br>
+              Please notice your phone.<br>
+              Nearest dealers will contact you about our car soonly!</p>
+          </form>
+        </div>
+        <div class="modal-footer modelFooter">
+          <button type="button" class="btn modalBtn" data-dismiss="modal">CONFIRM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modhttps://getbootstrap.com/docs/4.0/components/buttons/al-title" id="exampleModalLabel">Contact to
+            your Lamboghini dealer</h5>
+          <button type="button" class="close closeModelBtn" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Your Address:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Message and requirement:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer modelFooter">
+          <button type="button" class="btn modalBtn" data-dismiss="modal">Later</button>
+          <button type="button" class="btn modalBtn" data-dismiss="modal" data-toggle="modal"
+            data-target="#exampleModal" data-whatever="@fat">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <div class="main">
     <div id="header">
@@ -189,7 +246,7 @@
                           <li class="menu-sub-item"><a href="./Urus_Performante.html">URUS PERFORMANTE</a></li>
                         </ul>
                         <ul style="padding-top: 19px;">
-                          <li class="menu-sub-item"><a href="./Urus.html">overview</a> </li>
+                          
                         </ul>
                       </div>
                     </li>
@@ -325,319 +382,341 @@
       </div>
     </div>
 
-    <div class="slider">
-      <nav class="d-none d-md-block" aria-label="breadcrumb" id="breadcrumbs">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="./HomePage.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Models</li>
-        </ol>
-      </nav>
-      <div class="slides">
-
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-
-        <div class="slide first">
-          <img src="../resources/Model/slider1.jpg" alt="">
-          <div class="slide-info">
-            <span class="slide-name name1">REVUELTO</span>
-            <span class="slide-intro intro1">FROM NOW ON</span>
-            <a href="#revuelto_infor">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
-                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
-                  <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
-                  </path>
-                </g>
-              </svg>
-            </a>
+    <div class="video__slider">
+      <div class="container-fluid px-0 h-100">
+        <span alt="" class="img_bg" src=""></span>
+        <div class="row mx-0 align-items-end bg-overlay">
+          <div class="px-md-0 col-12 col-sm-10 col-md-7 col-xl-8 offset-sm-1">
+            <div class="wapper px-1">
+              <div class="video__slider--title" data-text="GIRO 60th Anniversary"></div>
+              <div class="video__slider--content move">
+                JOIN US!
+              </div>
+              <a href="#content" class="video__slider--btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                    <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                      transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                    <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+            </div>
           </div>
-          <div class="bg-overplay"></div>
-
-        </div>
-        <div class="slide second">
-          <img src="../resources/Model/slider2.jpg" alt="">
-          <div class="slide-info">
-            <span class="slide-name name2">HURACÁN</span>
-            <span class="slide-intro intro2">BEYOND THE CONCRETE</span>
-            <a href="#huracan_infor">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
-                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
-                  <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
-                  </path>
-                </g>
-              </svg>
-            </a>
-          </div>
-          <div class="bg-overplay"></div>
-
-        </div>
-        <div class="slide third">
-          <img src="../resources/Model/slider3.jpg" alt="">
-          <div class="slide-info">
-            <span class="slide-name name3">URUS</span>
-            <span class="slide-intro intro3">UNLOCK ANY ROAD</span>
-            <a href="#urus_infor">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
-                <g stroke-width="1.5" transform="translate(-1624 -187.923)">
-                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
-                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
-                  <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
-                  </path>
-                </g>
-              </svg>
-            </a>
-          </div>
-          <div class="bg-overplay"></div>
-
-        </div>
-        <div class="navigation-auto">
-          <label for="radio1" class="auto-btn auto-btn1"></label>
-          <label for="radio2" class="auto-btn auto-btn2"></label>
-          <label for="radio3" class="auto-btn auto-btn3"></label>
         </div>
       </div>
     </div>
 
-    <div class="cars-info container-fluid">
-      <div id="revuelto_infor">
-        <div class="car-info-item row align-items-stretch d-none d-lg-flex">
-          <div class="texts col-8">
-            <div class="row align-items-center">
-              <div class="offset-1 offset-lg-2 col-8 col-lg-7 col-xl-6">
-                <div class="texts-wrapper">
-                  <div class="row">
-                    <div class="col-12 col-md-8">
-                      <div class="logo-title">
-                        <img src="../resources/Model/revuelto.png" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <p class="cars-infor-content">The Revuelto is the beginning of a new era for Lamborghini, who has
-                    harnessed the power of hybridization technology to create the first HPEV (High Performance Electrified
-                    Vehicle). Responding to the need for sustainability and powerful performance, the Lamborghini Revuelto
-                    rewrites all paradigms and represents a technical masterpiece beyond anyone’s imagination. The iconic
-                    V12 engine finds a new life in this futuristic automotive masterwork that delivers unparalleled
-                    performance and driving emotions.</p>
-                  <div class="cars-infor-btn d-block d-md-flex">
-                    <a class="links" href="./Revuelto.html">revuelto</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="imgs col-4">
-            <svg class="img-item" height="100%" viewBox="0 0 24 11" xmlns="http://www.w3.org/2000/svg"
-              xlink:href="http://www.w3.org/1999/xlink" class="clip-svg">
-              <defs>
-                <clipPath id="clip-polygon--uid140">
-                  <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                  <rect x="8" y="0" width="8" height="11"></rect>
-                  <polygon points="15.9 0, 24 0, 16 11, 15.9 11"></polygon>
-                </clipPath>
-              </defs>
-              <g clip-path="url(#clip-polygon--uid140)">
-                <image class=""
-                  src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_01.jpg"
-                  alt="Lamborghini Models"
-                  href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_01.jpg"
-                  width="102%" height="102%" x="-1%" y="-1%"></image>
-              </g>
-            </svg>
-            <svg class="img-item" height="100%" viewBox="0 0 24 11" xmlns="http://www.w3.org/2000/svg"
-              xlink:href="http://www.w3.org/1999/xlink" class="clip-svg">
-              <defs>
-                <clipPath id="clip-polygon--uid139">
-                  <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                  <rect x="8" y="0" width="8" height="11"></rect>
-                  <polygon points="15.9 0, 24 0, 16 11, 15.9 11"></polygon>
-                </clipPath>
-              </defs>
-              <g clip-path="url(#clip-polygon--uid139)">
-                <image class=""
-                  src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02.jpg"
-                  alt="Lamborghini Models"
-                  href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_02.jpg"
-                  width="115%" height="115%" x="-7.5%" y="-7.5%"></image>
-              </g>
-            </svg>
-          </div>
-        </div>
-        <div class="d-block d-lg-none">
-          <div class="tablet-spacing">
-            <img src="../resources/Model/img_model_01_mobile.webp" alt="" class="tablet-img">
-            <div class="text-wrapper">
-              <div class="logo-title">
-                <img src="../resources/Model/revuelto.png" alt="">
-              </div>
-              <p>
-                The Revuelto is the beginning of a new era for Lamborghini, who has harnessed the power of hybridization
-                technology to create the first HPEV (High Performance Electrified Vehicle). Responding to the need for
-                sustainability and powerful performance, the Lamborghini Revuelto rewrites all paradigms and represents
-                a technical masterpiece beyond anyone’s imagination. The iconic V12 engine finds a new life in this
-                futuristic automotive masterwork that delivers unparalleled performance and driving emotions.
-              </p>
-            </div>
-            <div class="justify-content-center">
-              <button class="tablet-design-button">REVUELTO</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="huracan_infor">
-        <div class="car-info-item row align-items-stretch d-none d-lg-flex bgc-grey">
-          <div class="imgs col-4">
-            <svg class="img-item-2" height="100%" viewBox="0 0 24 11" xmlns="http://www.w3.org/2000/svg"
-              xlink:href="http://www.w3.org/1999/xlink" class="clip-svg">
-              <defs>
-                <clipPath id="clip-polygon--uid166">
-                  <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                  <rect x="8" y="0" width="8" height="11"></rect>
-                  <polygon points="15.9 0, 24 0, 16 11, 15.9 11"></polygon>
-                </clipPath>
-              </defs>
-              <g clip-path="url(#clip-polygon--uid166)">
-                <image class=""
-                  src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_03.jpg"
-                  alt="Lamborghini Models"
-                  href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_03.jpg"
-                  width="110%" height="110%" x="-5%" y="-5%"></image>
-              </g>
-            </svg>
-            <svg class="img-item-2" height="100%" viewBox="0 0 30.3 11" xmlns="http://www.w3.org/2000/svg"
-              xlink:href="http://www.w3.org/1999/xlink" class="clip-svg">
-              <defs>
-                <clipPath id="clip-polygon--uid167">
-                  <polygon points=" 8 0, 8.1 0, 8.1 11, 0 11"></polygon>
-                  <rect x="8" y="0" width="14.3" height="11"></rect>
-                  <polygon points="22.2 0, 30.3 0, 22.3 11, 22.2 11"></polygon>
-                </clipPath>
-              </defs>
-              <g clip-path="url(#clip-polygon--uid167)">
-                <image class=""
-                  src="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_04.jpg"
-                  alt="Lamborghini Models"
-                  href="https://www.lamborghini.com/sites/it-en/files/DAM/lamborghini/facelift_2019/models_gw/2023/03_29_revuelto/gate_models_s_04.jpg"
-                  width="102%" height="102%" x="-1%" y="-1%"></image>
-              </g>
-            </svg>
-          </div>
-          <div class="texts col-8">
-            <div class="row align-items-center">
-              <div class="offset-3 offset-lg-4 col-8 col-lg-7 col-xl-6">
-                <div class="texts-wrapper">
-                  <div class="row">
-                    <div class="col-12 col-md-8">
-                      <div class="logo-title">
-                        <img src="../resources/Model/Huracán_logo.webp" alt="">
-                      </div>
-                    </div>
-                  </div>
-                  <p class="cars-infor-content">From our past, we've learned perfection. This is how the first model of
-                    the Lamborghini Huracán was born. More performance, more control, more innovation. The Huracán is
-                    equipped with a powerful V10 engine and the latest technologies to perform at its absolute best.
-                    Engineered to guarantee the best performance and control under any driving condition, it's easy to
-                    take to the limit, not to mention extremely fun, thanks to technology like the Lamborghini Doppia
-                    Frizione (LDF) dual clutch gearbox and the electronically-controlled four-wheel drive. Enjoy the best
-                    driving experience, ever. Discover all the Lamborghini Huracán models.</p>
-                  <div class="cars-infor-btn d-block d-md-flex">
-                    <div class="d-flex flex-wrap w-md-100">
-                      <a class="links" href="./Huracan.html">overview</a>
-                      <a class="links" href="./Huracan_Sterrato.html">Huracán STERRATO</a>
-                      <a class="links" href="./Huracan_Tecnica.html">Huracán TECNICA</a>
-                      <a class="links" href="./Huracan_Sto.html">HURACÁN STO</a>
-                      <a class="links" href="./Huracan_Evo_Spyder.html">Huracán EVO SPYDER</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="d-block d-lg-none">
-          <div class="tablet-spacing">
-            <img src="../resources/Model/img_model_02_mobile.webp" alt="" class="tablet-img">
-            <div class="text-wrapper">
-              <div class="logo-title">
-                <img src="../resources/Model/Huracán_logo.webp" alt="">
-              </div>
-              <p>
-                From our past, we've learned perfection. This is how the first model of the Lamborghini Huracán was
-                born. More performance, more control, more innovation. The Huracán is equipped with a powerful V10
-                engine and the latest technologies to perform at its absolute best. Engineered to guarantee the best
-                performance and control under any driving condition, it's easy to take to the limit, not to mention
-                extremely fun, thanks to technology like the Lamborghini Doppia Frizione (LDF) dual clutch gearbox and
-                the electronically-controlled four-wheel drive. Enjoy the best driving experience, ever. Discover all
-                the Lamborghini Huracán models.
-              </p>
-            </div>
-            <div class="justify-content-center">
-              <button class="tablet-design-button">HURACÁN</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="urus_infor">
-        <div class="car-info-item row align-items-stretch d-none d-lg-flex d-none d-lg-flex mt-5">
-          <div class="texts col-lg-3 col-4 offset-1">
-            <div class="row align-items-center">
-              <div class="texts-wrapper">
-                <div class="row">
-                  <div class="col-12 col-md-8">
-                    <div class="logo-title">
-                      <img src="../resources/Model/Image 34.webp" alt="">
-                    </div>
-                  </div>
-                </div>
-                <p class="cars-infor-content">Lamborghini Urus is the world’s first Super Sport Utility Vehicle, in which
-                  luxury, sportiness and performance meet comfort and versatility. It offers best-in-class driving
-                  dynamics, alongside its unmistakable elegance of design. Urus embodies the characteristics of multiple
-                  souls: sporty, elegant and off-road, and has a suitability for everyday driving in a range of
-                  environments. With its surprisingly distinct engine sound, combined with high performance, Lamborghini
-                  Urus is anything but typical.</p>
-                <div class="cars-infor-btn d-block d-md-flex">
-                  <div class="d-flex flex-wrap w-md-100">
-                    <a class="links" href="./Urus.html">overview</a>
-                    <a class="links" href="./Urus_S.html">Urus s</a>
-                    <a class="links" href="./Urus_Performante.html">Urus Performante</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="image-wrapper col-lg-8 col-7">
-            <div class="img-item-3 skew-cont">
+    <div class="model__slider" id="content">
+      <div class="slider2">
+        <div class="slides2">
+          <div class="slide2" data-index="0">
+            <div class="slide2-skew">
               <div class="skew-fix">
-                <img src="../resources/Model/gate_models_over_rev_01.webp" alt="">
+                <img src="../resources/HomePage/imgs/huy_model_slider_urus.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slide2" data-index="1">
+            <div class="slide2-skew">
+              <div class="skew-fix">
+                <img src="../resources/HomePage/imgs/huy_model_slider_huracan.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="slide2 active" data-index="2">
+            <div class="slide2-skew">
+              <div class="skew-fix">
+                <img src="../resources/HomePage/imgs/huy_model_slider_revuelto.jpg" alt="" />
               </div>
             </div>
           </div>
         </div>
-        <div class="d-block d-lg-none">
-          <div class="tablet-spacing">
-            <img src="../resources/Model/img_model_03_mobile.webp" alt="" class="tablet-img">
-            <div class="text-wrapper">
-              <div class="logo-title">
-                <img src="../resources/Model/Image 34.webp" alt="">
+        <div class="slider2-navigation">
+          <span class="tittle">MODELS</span>
+          <div class="slider2-navigation-btn">
+            <span class="btn btn-left">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                <g stroke-width="1" transform="translate(-1624 -187.923)">
+                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                  <path class="icon on-dark" d="M0 5.675L7.432 0l7.432 5.675" transform="rotate(-90 935.432 -711.068)">
+                  </path>
+                </g>
+              </svg>
+            </span>
+
+            <span class="btn btn-right">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                <g stroke-width="1" transform="translate(-1624 -187.923)">
+                  <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                    transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                  <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                  </path>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+        <div class="slide2-text-container">
+          <div class="slogan1 text-container">
+            <span class="name-car" data-text="HURACÁN">HURACÁN</span>
+            <span class="slogan-car">BEYOND THE CONCRETE</span>
+          </div>
+
+          <div class="slogan2 text-container active">
+            <span class="name-car" data-text="REVUELTO">REVUELTO</span>
+            <span class="slogan-car">FROM NOW ON</span>
+          </div>
+
+          <div class="slogan0 text-container">
+            <span class="name-car" data-text="URUS">URUS</span>
+            <span class="slogan-car"> UNLOCK ANY ROAD</span>
+          </div>
+          <div class="slider2-explore">
+            <a href="./Model.html">
+              <span class="slider2-explore-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                    <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                      transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                    <g class="icon on-dark" transform="translate(627 -5248.5)">
+                      <path d="M0 0v15" transform="translate(1022.5 5458.5)"></path>
+                      <path d="M0 0v15" transform="rotate(90 -2218 3248)"></path>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+            </a>
+            <span class="slider2-explore-text">Explore the <br />
+              models</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="config__slider">
+      <div class="d-none d-md-block config__slider--wrapper">
+        <div class="row align-content-stretch no-gutters">
+          <div class="col-10 offset-1 offset-lg-1 texts">
+            <div class="links">
+              <div class="link-item active" data-index="1">
+                <div class="config__slider--title" data-text="MODEL">MODEL</div>
+                <div class="config__slider--content text-uppercase">
+                  <div class="config__slider--subContent">DISCOVER YOUR</div>
+                  <div class="config__slider--nameCar">REVUELTO</div>
+                </div>
+                <a href="../html/Revuelto.html" class="config__slider--btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                      <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                        transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                      <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
               </div>
-              <p>
-                Lamborghini Urus is the world’s first Super Sport Utility Vehicle, in which luxury, sportiness and
-                performance meet comfort and versatility. It offers best-in-class driving dynamics, alongside its
-                unmistakable elegance of design. Urus embodies the characteristics of multiple souls: sporty, elegant
-                and off-road, and has a suitability for everyday driving in a range of environments. With its
-                surprisingly distinct engine sound, combined with high performance, Lamborghini Urus is anything but
-                typical.
-              </p>
+              <div class="link-item" data-index="2">
+                <div class="config__slider--title" data-text="MODEL">MODEL</div>
+                <div class="config__slider--content">
+                  <div class="config__slider--subContent">DISCOVER YOUR</div>
+                  <div class="config__slider--nameCar">HURACÁN</div>
+                </div>
+                <a href="../html/Huracan.html" class="config__slider--btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                      <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                        transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                      <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+              <div class="link-item" data-index="3">
+                <div class="config__slider--title" data-text="MODEL">MODEL</div>
+                <div class="config__slider--content">
+                  <div class="config__slider--subContent">DISCOVER YOUR</div>
+                  <div class="config__slider--nameCar">URUS</div>
+                </div>
+                <a href="../html/Urus.html" class="config__slider--btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                    <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                      <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                        transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                      <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                      </path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
             </div>
-            <div class="justify-content-center">
-              <button class="tablet-design-button">URUS S</button>
-              <button class="tablet-design-button">URUS FERFORMANTE</button>
+            <div class="config__slider--pagination d-flex">
+              <div class="pagination-item active" data-index="1">Revuelto</div>
+              <div class="pagination-item " data-index="2">Huracán</div>
+              <div class="pagination-item " data-index="3">Urus</div>
             </div>
           </div>
+        </div>
+        <img alt="" class="config__slider--bg" src="../resources/HomePage/imgs/config1.webp"></img>
+      </div>
+    </div>
+
+    <div class="deal_slider">
+      <div class="deal_slider_bg">
+        <span>
+          <img src="../resources/HomePage/imgs/deal_slider.jpg" alt="">
+        </span>
+        <div class="deal_slider_content">
+          <div class="deal_slider_overlay"></div>
+          <div class="deal_slider_link offset-sm-1">
+            <h4>DEALER LOCATOR</h4>
+            <h2 class="">
+              FIND YOUR <br />
+              COUNTRY DEALER
+            </h2>
+            <div class="deal_slider_btn">
+              <button type="button" class="btn deal__slider--btn" data-toggle="modal"
+                data-target=".bd-example-modal-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.464 58.271">
+                  <g stroke-width="1.5" transform="translate(-1624 -187.923)">
+                    <path d="M50.464 43.992L25.732 58.271 1 43.992V15.434L25.732 1.155l24.732 14.279z"
+                      transform="translate(1623.5 187.345)" class="hexagon on-dark"></path>
+                    <path class="icon on-dark" d="M0 0l7.432 5.674L14.864 0" transform="rotate(-90 935.432 -711.068)">
+                    </path>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="news__section mt-5 mb-5">
+      <div class="main_new row no-gutters">
+        <div class="col-12 col-md-10 offset-md-1">
+          <div class="col-12">
+            <h3 class="news-section-title--secondary">News</h3>
+            <h1 class="news-section-title--primary">Lamboghini world</h1>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1 pb-5">
+          <div class="row no-gutters">
+            <div class="col-12">
+              <a href="" class="d-block">
+                <img src="../resources/HomePage/imgs/new2.webp" class=" main_new_image" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1">
+          <div class="col-12 col-xl-6">
+            <h5 class="news__section_main_new_time">5 May 2023</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-10 offset-md-1">
+          <div class="row no-gutters">
+            <div class="col-12 col-md-8">
+              <div class="col-12">
+                <a href="" class="d-block">
+                  <h3 class="news-title--primary">
+                    LAMBORGHINI HURACÁN STERRATO: CALIFORNIA DRIFTING
+                  </h3>
+                </a>
+                <div class="d-none d-md-block main-news-abstract">
+                  <p class="">
+                    The diverse landscape of California provides the perfect environment in which to appreciate
+                    the eclectic spirit of the Huracán Sterrato, evident as soon as the tires hit tarmac and then
+                    sand, on road and raceway.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 text-md-right">
+              <a href="" class="boxed d-none d-md-inline-block light news_section_readmore">
+                <span>READMORE</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news_list">
+        <div class="news__section_new">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="row no-gutters">
+              <div class="col-12 col-xl-6">
+                <a href="" class="d-block">
+                  <div class="">
+                    <img src="../resources/HomePage/imgs/new3.webp" class="img-fluid" />
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-xl-6 pl-xl-5">
+                <div class="h-100 d-md-flex flex-column data">
+                  <div class="date">
+                    <time datetime="2023-05-08">8 May 2023</time>
+                  </div>
+                  <div class="my-md-auto">
+                    <a href="" class="d-block text-dark">
+                      <h2 class="news-title--primary">
+                        Automobili Lamborghini continues to grow: upward trend
+                        in Q1 2023
+                      </h2>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="" class="boxed d-none d-xl-inline-block light news_section_readmore">
+                      <span class="d-block">READMORE</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="news__section_new">
+          <div class="col-12 col-md-10 offset-md-1">
+            <div class="row no-gutters">
+              <div class="col-12 col-xl-6">
+                <a href="" class="d-block">
+                  <div class="">
+                    <img src="../resources/HomePage/imgs/new4.webp" class="img-fluid" />
+                  </div>
+                </a>
+              </div>
+              <div class="col-12 col-xl-6 pl-xl-5">
+                <div class="h-100 d-md-flex flex-column data">
+                  <div class="date">
+                    <time datetime="2023-05-08">8 May 2023</time>
+                  </div>
+                  <div class="my-md-auto">
+                    <a href="" class="d-block text-dark">
+                      <h2 class="news-title--primary">
+                        Automobili Lamborghini continues to grow: upward trend
+                        in Q1 2023
+                      </h2>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="" class="boxed d-none d-xl-inline-block light news_section_readmore">
+                      <span class="d-block">READMORE</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news_readmore">
+        <div class="row">
+          <a href="./News.html" class="boxed d-md-inline-block light news_section_readmore">
+            <span>SEE ALL</span>
+          </a>
         </div>
       </div>
     </div>
@@ -728,9 +807,13 @@
   </div>
 
   <!-- Optional JavaScript -->
-  <script src="../js/common/Huy_header.js"></script>
   <script src="../js/common/Loading.js"></script>
-  <script src="../js/Model/ModelSlider.js"></script>
+  <script src="../js/common/Huy_header.js"></script>
+  <script src="../js/HomePage/HomePage.js"></script>
+  <script src="../js/HomePage/VideoSlider.js"></script>
+  <script src="../js/HomePage/ModelSlider.js"></script>
+  <script src="../js/HomePage/Config.js"></script>
+
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

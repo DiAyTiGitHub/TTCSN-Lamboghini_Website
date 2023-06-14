@@ -175,7 +175,6 @@
     transform: translateX(0) scale(1);
 }
 
-
 @media only screen and (max-width: 767px) {
     .config__slider--content {
         font-size: 40px;
@@ -183,6 +182,6 @@
     }
 
     .pagination-item {
-        padding: 0px 30px 15px 0px;
+        padding: 0px 30px 15px 0px
     }
 }
