@@ -131,7 +131,7 @@ const activeMenuSubMobile = (idMenuSub) => {
         }
         else if ((idMenuSub.id == 'murus')) {
             idMenuSub.classList.add('active');
-            idMenuSub.style.height = '200px';
+            idMenuSub.style.height = '210px';
         }
     }
 }
